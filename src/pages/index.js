@@ -10,7 +10,8 @@ import Button from "../components/Button"
 export default function Home() {
   return (
     <PageLayout
-      heroImage="hero-image-placeholder.jpg"
+      heroImage="home"
+      ext="jpg"
       mainHeading="Botanicals Design"
       subHeading="Explore all that we have to offer"
       pageHeading="Who we are"

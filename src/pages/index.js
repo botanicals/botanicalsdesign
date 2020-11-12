@@ -5,6 +5,8 @@ import PageLayout from "../layouts/PageLayout"
 import Section from "../components/Section"
 import Row from "../components/Row"
 import Column from "../components/Column"
+import Picture from "../components/Picture"
+import Button from "../components/Button"
 
 export default function Home() {
   return (
@@ -64,18 +66,23 @@ export default function Home() {
               </a>
               .
             </p>
-            <button>Request a free consultation today</button>
+            <Button href="/request-consultation">
+              Request a free consultation today
+            </Button>
+            <Button inverse href="/request-consultation">
+              Request a free consultation today
+            </Button>
           </Column>
           <Column width={50}>
-            <figure>
-              <img
-                src="/images/index/botanicals-owners-nicole-braden-hancock.jpg"
-                alt="Botanicals owners and siblings Braden and Niki Hancock."
-              />
-              <figcaption>
-                Botanicals owners and siblings Braden and Niki Hancock.
-              </figcaption>
-            </figure>
+            <Picture
+              column={50}
+              page="index"
+              breakpoint="default"
+              imageName="botanicals-owners-nicole-braden-hancock"
+              ext="jpg"
+              alt="Botanicals owners and siblings Braden and Niki Hancock."
+              caption=" Botanicals owners and siblings Braden and Niki Hancock."
+            />
           </Column>
         </Row>
       </Section>
@@ -108,48 +115,7 @@ export default function Home() {
               </a>
             </p>
           </Column>
-          <Column width={50}>
-            <figure>
-              <img
-                src="/images/index/botanicals-owners-nicole-braden-hancock.jpg"
-                alt="a custom s shaped planter botancials designed for ihc genomics"
-              />
-              <figcaption>
-                A custom S-shaped planter we designed for IHC Genomics
-              </figcaption>
-            </figure>
-          </Column>
-        </Row>
-      </Section>
-      <Section>
-        <Row>
-          <Column width={100}>hello</Column>
-          <Column width={33}>hello</Column>
-          <Column width={33}>hello</Column>
-          <Column width={33}>hello</Column>
-        </Row>
-        <Row>
-          <Column width={25}>hello</Column>
-          <Column width={25}>hello</Column>
-          <Column width={50}>hello</Column>
-        </Row>
-        <Row>
-          <Column width={25}>hello</Column>
-          <Column width={25}>hello</Column>
-          <Column width={25}>hello</Column>
-          <Column width={25}>hello</Column>
-        </Row>
-        <Row>
-          <Column width={33}>hello</Column>
-          <Column width={66}>hello</Column>
-        </Row>
-        <Row>
-          <Column width={33}>hello</Column>
-          <Column width={33}>hello</Column>
-          <Column width={33}>hello</Column>
-        </Row>
-        <Row>
-          <Column width={100}>hello</Column>
+          <Column width={50}></Column>
         </Row>
       </Section>
       <Section fullWidth sectionHeading="We create beautiful plantscapes">

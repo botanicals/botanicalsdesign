@@ -1,0 +1,15 @@
+// BEGIN CODE COMPILED FROM _LAYOUT.SCSS //
+
+.main-content-container {
+  // this is the layout of the container where the content built using wordpress goes
+  width: $content-div-width;
+  margin: 6rem auto;
+  padding: 0 2%;
+
+  &--announcements-section {
+    padding: 2rem 2%;
+    margin: 0 5%;
+  }
+}
+
+// END LAYOUT CODE //

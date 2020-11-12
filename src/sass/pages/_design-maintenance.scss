@@ -1,0 +1,71 @@
+.background-color-orange {
+  background-color: #d79a2b;
+}
+
+.background-color-orange-green {
+  background-color: #be9f24;
+}
+
+.background-color-green-orange {
+  background-color: #a4a51d;
+}
+
+.background-color-green {
+  background-color: #8baa16;
+}
+
+.discovery-div {
+  //background-image: url('assets/discovery.jpg');
+  background-size: cover;
+
+  p {
+    color: white;
+    padding: 0 1rem;
+  }
+}
+
+.design-div {
+  //background-image: url('assets/design.jpg');
+  background-size: cover;
+}
+
+.install-div {
+  //background-image: url('assets/install.jpg');
+  background-size: cover;
+}
+
+.maintain-div {
+  //background-image: url('assets/maintain.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.technician-div {
+  //background-image: url('assets/trainedtechnicians.jpg');
+  background-size: cover;
+}
+
+.quality-div {
+  //background-image: url('assets/qualitycontrol.jpg');
+  background-size: cover;
+}
+
+.replacement-div {
+  //background-image: url('assets/plantreplacement.jpg');
+  background-size: cover;
+}
+
+.heading--white {
+  text-transform: uppercase;
+  color: white;
+  padding: 1rem 3rem;
+}
+
+.paragraph--white {
+  color: white !important;
+  padding: 0 3rem !important;
+}
+
+.maintenance-process-heading {
+  color: white !important;
+}

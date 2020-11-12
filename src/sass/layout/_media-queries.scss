@@ -1,0 +1,145 @@
+// BEGIN MEDIA QUERIES COMPILED FROM _MEDIA-QUERIES.SCSS //
+
+@media (max-width: 1460px) {
+  // the following code bumps the header logo up and the
+  // navigation down so they don't overlap as the window gets smaller
+  .header__logo {
+    top: 3.5rem;
+  }
+
+  .navigation {
+    top: 7.5rem;
+  }
+}
+
+@media (max-width: 1135px) {
+  // positioning the header back into the center
+  &.header__logo {
+    top: $half-height-of-header;
+  }
+
+  // this adjusts how the navigation was positioned to allow
+  // the mega menu plugin mobile slide menu to work correctly
+  .navigation {
+    position: relative;
+    transform: translate(0, 0);
+    top: 0;
+    right: 0;
+  }
+}
+
+@media (max-width: 550px) {
+  // adjusting headline font size
+  .page-banner {
+    &__main-heading {
+      font-size: 4rem;
+    }
+  }
+
+  // adjusting the headline font size for the
+  // headlines in the maintenance process divs
+  .maintenance-process-heading {
+    font-size: 4rem;
+    letter-spacing: 0;
+  }
+
+  // increasing the height of the header
+  .header {
+    height: $height-of-header * 2.5;
+  }
+
+  // adjusting the image margin to compensate for change in header height
+  .hero-image-container__image {
+    margin-top: -$height-of-header * 2.5;
+  }
+
+  // the following code switches out the logos in the header
+  .header__logo {
+    &--desktop {
+      display: none;
+    }
+    &--mobile {
+      transform: translate(-50%, -50%);
+      left: 50%;
+      top: 50%;
+      display: block;
+    }
+  }
+
+  // the following code switches out the footer sections
+  .footer {
+    &__desktop-tablet {
+      display: none;
+    }
+    &__mobile {
+      display: block;
+    }
+  }
+
+  // centering the information in the design and maintenance
+  // processes pages as the columns fall to their own lines
+  .heading--white,
+  .paragraph--white {
+    text-align: center;
+  }
+
+  // adjusting the h1 font size
+  .heading__h1 {
+    font-size: 5rem;
+  }
+}
+
+@media (max-width: 400px) {
+  // increasing the height of the header
+  .header {
+    height: $height-of-header * 2;
+  }
+
+  // adjusting the image margin to compensate for change in header height
+  .hero-image-container__image {
+    margin-top: -$height-of-header * 2;
+  }
+
+  // adjusting headline font size
+  .page-banner {
+    &__main-heading {
+      font-size: 4rem;
+    }
+  }
+
+  // quick fix for the footer logo's width
+  .footer__logo {
+    width: 100%;
+  }
+}
+
+@media (max-width: 350px) {
+  // adjusting headline font size
+  .page-banner {
+    &__main-heading {
+      font-size: 3.5rem;
+    }
+  }
+
+  // adjusting the headline font size for the
+  // headlines in the maintenance process divs
+  .maintenance-process-heading {
+    font-size: 3rem;
+    letter-spacing: 0;
+  }
+
+  // adjusting headline font size
+  .page-banner {
+    &__main-heading {
+      font-size: 2.8rem;
+    }
+  }
+
+  // adjusting the size of the h2 header
+  // for smaller mobile sizes
+  .heading__h2 {
+    font-size: 3rem;
+  }
+}
+
+// END MEDIA QUERIES //

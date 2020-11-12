@@ -1,0 +1,20 @@
+// BEGIN COMPILED CODE FROM _BASE.SCSS //
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%; // DEFINES 1REM AS 10PX
+}
+
+body {
+  background: #fff;
+  box-sizing: border-box;
+}
+
+// END BASE CODE //

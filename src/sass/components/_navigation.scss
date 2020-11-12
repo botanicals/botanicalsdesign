@@ -1,0 +1,39 @@
+// BEGIN CODE COMPILED FROM _NAVIGATION.SCSS //
+
+.navigation {
+  // this positions the navigation in the header
+  // the navigation in the header is currently built by the mega menu plugin
+  position: absolute;
+  transform: translate(0, -50%);
+  top: $half-height-of-header;
+  right: 4rem;
+}
+
+// the following code styles all of the links and navigations in the footer //
+.navigation__list {
+  list-style-type: none;
+  text-transform: uppercase;
+}
+
+.navigation__links {
+  font-size: $font-size-default;
+  color: $color-white;
+  text-decoration: none;
+  display: inline-block;
+
+  &:not(:last-child) {
+    margin-right: 2rem;
+  }
+
+  &:hover {
+    color: $color-light-gray;
+  }
+
+  &--footer {
+    font-size: $font-size-default;
+    text-transform: none;
+    display: block;
+  }
+}
+
+// END NAVIGATION CODE //

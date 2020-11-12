@@ -1,0 +1,41 @@
+.button {
+  cursor: pointer;
+  display: block;
+  text-transform: uppercase;
+  font-family: "futura-pt", sans-serif;
+  font-size: 1.8rem;
+  border: 2px solid $color-primary-red;
+  background-color: $color-primary-red;
+  color: $color-white;
+  padding: 1.5rem 2rem;
+  border-radius: 8px;
+  margin: 4rem 0;
+  box-shadow: 0 0 8px 2px $color-light-gray;
+  transition: all 0.2s;
+
+  &:hover {
+    transform: translateY(-1px) scale(1.02);
+    box-shadow: 0 0 5px 3px darken($color-light-gray, 5%);
+  }
+
+  &:active {
+    transform: scale(0.98);
+  }
+
+  &:focus {
+    outline: 2px solid $color-white;
+    box-shadow: 0 0 10px 5px darken($color-light-gray, 15%);
+  }
+
+  &--inverse {
+    box-shadow: none;
+    border: 2px solid $color-primary-red;
+    color: $color-primary-red;
+    background-color: transparent;
+
+    &:hover {
+      background-color: $color-primary-red;
+      color: $color-white;
+    }
+  }
+}

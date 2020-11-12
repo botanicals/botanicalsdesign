@@ -24,9 +24,9 @@
 
 .page-banner {
   &__container {
-    width: $content-div-width;
+    max-width: $default-section-width;
     margin: 0 auto;
-    padding: 0 2%;
+    padding: 0 $default-section-horizontal-padding;
   }
 
   &__main-heading {

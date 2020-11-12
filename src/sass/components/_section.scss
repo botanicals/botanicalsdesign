@@ -1,0 +1,17 @@
+.main__section {
+  max-width: $default-section-width;
+  margin: 2.5rem auto;
+  padding: 0.5rem $default-section-horizontal-padding;
+
+  &--full-width {
+    background-color: rgb(235, 235, 235);
+    max-width: $full-section-width;
+    padding: 0;
+  }
+
+  &__full-width-content-container {
+    max-width: $default-section-width;
+    margin: 0 auto;
+    padding: 0.5rem $default-section-horizontal-padding;
+  }
+}

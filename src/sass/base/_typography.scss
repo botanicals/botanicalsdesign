@@ -41,6 +41,15 @@ p {
   margin-bottom: 1.5rem;
 }
 
+a {
+  text-decoration: none;
+  color: $color-primary-red;
+  &:hover {
+    text-decoration: underline;
+    color: darken($color-primary-red, 5%);
+  }
+}
+
 .heading {
   font-weight: 400;
   text-transform: uppercase;

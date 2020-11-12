@@ -20,12 +20,12 @@
 
   // this adjusts how the navigation was positioned to allow
   // the mega menu plugin mobile slide menu to work correctly
-  .navigation {
-    position: relative;
-    transform: translate(0, 0);
-    top: 0;
-    right: 0;
-  }
+  // .navigation {
+  //   position: relative;
+  //   transform: translate(0, 0);
+  //   top: 0;
+  //   right: 0;
+  // }
 }
 
 @media (max-width: 550px) {
@@ -62,16 +62,6 @@
       transform: translate(-50%, -50%);
       left: 50%;
       top: 50%;
-      display: block;
-    }
-  }
-
-  // the following code switches out the footer sections
-  .footer {
-    &__desktop-tablet {
-      display: none;
-    }
-    &__mobile {
       display: block;
     }
   }

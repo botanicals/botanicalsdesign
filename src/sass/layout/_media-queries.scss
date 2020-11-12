@@ -135,6 +135,12 @@
     }
   }
 
+  // adjusting the size of the h1 header
+  // for smaller mobile sizes
+  .heading__h1 {
+    font-size: 3rem;
+  }
+
   // adjusting the size of the h2 header
   // for smaller mobile sizes
   .heading__h2 {

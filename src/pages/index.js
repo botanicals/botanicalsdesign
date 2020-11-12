@@ -1,5 +1,4 @@
 import React from "react"
-import "../styles/main.scss"
 
 import PageLayout from "../layouts/PageLayout"
 import Section from "../components/Section"
@@ -22,15 +21,11 @@ export default function Home() {
             <p>
               Botanicals is a family-owned business operating out of St George,
               Utah. We offer custom plantscape{" "}
-              <a href="https://botanicalsdesign.com/services/design/">
-                designs and installations
-              </a>
-              , as well as{" "}
-              <a href="https://botanicalsdesign.com/services/maintenance/">
-                plant maintenance accounts{" "}
-              </a>
+              <a href="/services/design/">designs and installations</a>, as well
+              as{" "}
+              <a href="/services/maintenance/">plant maintenance accounts </a>
               to care for your plants.{" "}
-              <a href="https://botanicalsdesign.com/request-consultation/">
+              <a href="/request-consultation/">
                 Request a free consultation today
               </a>{" "}
               to start designing your commercial or residential spaces.
@@ -53,23 +48,18 @@ export default function Home() {
               In the last few years, we have also expanded our business to own
               three retail locations where we sell ceramic pottery, metal art,
               yard decor, and more. We have one{" "}
-              <a href="https://botanicalsdesign.com/locations/saint-george/">
-                location in St George, Utah
-              </a>
+              <a href="/locations/saint-george/">location in St George, Utah</a>
               ,{" "}
-              <a href="https://botanicalsdesign.com/locations/sandy/">
+              <a href="/locations/sandy/">
                 another further north in Sandy, Utah
               </a>
               , and{" "}
-              <a href="https://botanicalsdesign.com/locations/kaysville/">
+              <a href="/locations/kaysville/">
                 another even further north in Kaysville, Utah
               </a>
               .
             </p>
             <Button href="/request-consultation">
-              Request a free consultation today
-            </Button>
-            <Button inverse href="/request-consultation">
               Request a free consultation today
             </Button>
           </Column>
@@ -96,10 +86,8 @@ export default function Home() {
             </p>
 
             <p>
-              <a href="https://botanicalsdesign.com/request-consultation/">
-                Request a free consultation
-              </a>
-              , and we will work with you through the entire process of getting
+              <a href="/request-consultation/">Request a free consultation</a>,
+              and we will work with you through the entire process of getting
               your plantscapes planned, designed, and installed, relieving you
               from the worry of hitting your deadline. At this time, our
               services are in Southern Utah only, but we are also working to the
@@ -110,7 +98,7 @@ export default function Home() {
               We design for both commercial and residential spaces, indoor and
               outdoor. We often work closely with Architects, Interior
               Designers, and Landscapers.{" "}
-              <a href="https://botanicalsdesign.com/prospective-clients/">
+              <a href="/prospective-clients/">
                 Learn more about how we work with our clientele&#8230;
               </a>
             </p>

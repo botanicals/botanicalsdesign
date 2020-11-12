@@ -1,3 +1,8 @@
+# images -- for now, while I am still editing them
+/static/heroes
+/static/images
+/static/posts
+
 # Logs
 logs
 *.log

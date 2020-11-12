@@ -7,12 +7,12 @@ function Section(props) {
     >
       {props.fullWidth ? (
         <div className="section__full-width-content-container">
-          <h2 class="heading heading__h2">{props.sectionHeading}</h2>
+          <h2 className="heading heading__h2">{props.sectionHeading}</h2>
           {props.children}
         </div>
       ) : (
         <>
-          <h2 class="heading heading__h2">{props.sectionHeading}</h2>
+          <h2 className="heading heading__h2">{props.sectionHeading}</h2>
           {props.children}
         </>
       )}

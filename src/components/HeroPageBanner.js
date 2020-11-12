@@ -12,7 +12,7 @@ function HeroPageBanner(props) {
                 ? `/heroes/${props.heroImage}`
                 : "/heroes/hero-image-placeholder.jpg"
             }
-            alt="hero image"
+            alt="botanicals design page hero"
           />
           <div className="hero-image-container__page-banner">
             <div className="page-banner__container">

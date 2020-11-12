@@ -6,43 +6,47 @@ import Section from "../components/Section"
 
 function Footer() {
   return (
-    <footer class="footer">
+    <footer className="footer">
       <Section>
         <Row>
           <Column centered width={100}>
-            <img src="/assets/logos/botanicals-logo.png" class="footer__logo" />
+            <img
+              src="/assets/logos/botanicals-logo.png"
+              className="footer__logo"
+              alt="botanicals logo"
+            />
           </Column>
         </Row>
         <Row>
           <Column width={33}>
-            <h3 class="heading heading__h5 heading__h5--green">
+            <h3 className="heading heading__h5 heading__h5--green">
               Visit Us at our Stores
             </h3>
-            <li class="navigation__list">
+            <li className="navigation__list">
               <a
                 href="/kaysville"
-                class="navigation__links navigation__links--footer"
+                className="navigation__links navigation__links--footer"
               >
-                <h4 class="heading heading__h6 heading__h6--green u-hover-link">
+                <h4 className="heading heading__h6 heading__h6--green u-hover-link">
                   Botanicals Kaysville
                 </h4>
               </a>
             </li>
-            <p class="u-default-font-size">
+            <p className="u-default-font-size">
               395 South Deseret Drive
               <br />
               Kaysville, UT 84037
               <br />
               <a
                 href="tel:8015671255"
-                class="navigation__links navigation__links--footer"
+                className="navigation__links navigation__links--footer"
               >
                 801.567.1255
               </a>
             </p>
             <a
               href="/kaysville-contact"
-              class="navigation__links navigation__links--footer"
+              className="navigation__links navigation__links--footer"
             >
               SEND A MESSAGE
             </a>
@@ -50,82 +54,106 @@ function Footer() {
             <a
               href="https://www.facebook.com/botanicalskaysville/"
               target="_blank"
+              rel="noreferrer"
             >
-              <img src="/assets/icons/fb.png" class="footer__icon" />
+              <img
+                src="/assets/icons/fb.png"
+                className="footer__icon"
+                alt="botanicals kaysville facebook"
+              />
             </a>
             <a
               href="https://www.instagram.com/botanicalsdesign/"
               target="_blank"
-              class="footer__icon--leftmargin"
+              rel="noreferrer"
+              className="footer__icon--leftmargin"
             >
-              <img src="/assets/icons/ig.png" class="footer__icon" />
+              <img
+                src="/assets/icons/ig.png"
+                className="footer__icon"
+                alt="botanicals design instagram"
+              />
             </a>
 
-            <li class="navigation__list">
+            <li className="navigation__list">
               <a
                 href="/sandy"
-                class="navigation__links navigation__links--footer"
+                className="navigation__links navigation__links--footer"
               >
-                <h4 class="heading heading__h6 heading__h6--green u-hover-link">
+                <h4 className="heading heading__h6 heading__h6--green u-hover-link">
                   Botanicals Sandy
                 </h4>
               </a>
             </li>
-            <p class="u-default-font-size">
+            <p className="u-default-font-size">
               8610 South State Street
               <br />
               Sandy, UT 84070
               <br />
               <a
                 href="tel:8015671255"
-                class="navigation__links navigation__links--footer"
+                className="navigation__links navigation__links--footer"
               >
                 801.567.1255
               </a>
             </p>
             <a
               href="/sandy-contact"
-              class="navigation__links navigation__links--footer"
+              className="navigation__links navigation__links--footer"
             >
               SEND A MESSAGE
             </a>
             <br />
-            <a href="https://www.facebook.com/BotanicalsSandy/" target="_blank">
-              <img src="/assets/icons/fb.png" class="footer__icon" />
+            <a
+              href="https://www.facebook.com/BotanicalsSandy/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img
+                src="/assets/icons/fb.png"
+                className="footer__icon"
+                alt="botanicals sandy facebook"
+              />
             </a>
             <a
               href="https://www.instagram.com/botanicalsdesign/"
               target="_blank"
-              class="footer__icon--leftmargin"
+              rel="noreferrer"
+              className="footer__icon--leftmargin"
+              alt="botanicals design instagram"
             >
-              <img src="/assets/icons/ig.png" class="footer__icon" />
+              <img
+                src="/assets/icons/ig.png"
+                className="footer__icon"
+                alt="botanicals design instagram"
+              />
             </a>
 
-            <li class="navigation__list">
+            <li className="navigation__list">
               <a
                 href="/saint-george"
-                class="navigation__links navigation__links--footer"
+                className="navigation__links navigation__links--footer"
               >
-                <h4 class="heading heading__h6 heading__h6--green u-hover-link">
+                <h4 className="heading heading__h6 heading__h6--green u-hover-link">
                   Botanicals St. George
                 </h4>
               </a>
             </li>
-            <p class="u-default-font-size">
+            <p className="u-default-font-size">
               592 North Bluff Street
               <br />
               St. George, UT 84770
               <br />
               <a
                 href="tel:4356562151"
-                class="navigation__links navigation__links--footer"
+                className="navigation__links navigation__links--footer"
               >
                 435.656.2151
               </a>
             </p>
             <a
               href="/stgeorge-contact"
-              class="navigation__links navigation__links--footer"
+              className="navigation__links navigation__links--footer"
             >
               SEND A MESSAGE
             </a>
@@ -133,147 +161,161 @@ function Footer() {
             <a
               href="https://www.facebook.com/botanicalsstgeorge/"
               target="_blank"
+              rel="noreferrer"
             >
-              <img src="/assets/icons/fb.png" class="footer__icon" />
+              <img
+                src="/assets/icons/fb.png"
+                className="footer__icon"
+                alt="botanicals saint george facebook"
+              />
             </a>
             <a
               href="https://www.instagram.com/botanicalsdesign/"
               target="_blank"
-              class="footer__icon--leftmargin"
+              rel="noreferrer"
+              className="footer__icon--leftmargin"
             >
-              <img src="/assets/icons/ig.png" class="footer__icon" />
+              <img
+                src="/assets/icons/ig.png"
+                className="footer__icon"
+                alt="botanicals design instagram"
+              />
             </a>
           </Column>
           <Column width={33}>
-            <h3 class="heading heading__h5 heading__h5--green">
+            <h3 className="heading heading__h5 heading__h5--green">
               Stay up to Date
             </h3>
-            <h4 class="heading heading__h6 heading__h6--green">
+            <h4 className="heading heading__h6 heading__h6--green">
               Explore Our Site
             </h4>
-            <ul class="navigation__list">
+            <ul className="navigation__list">
               <a
                 href="/why-plantscape"
-                class="navigation__links navigation__links--footer"
+                className="navigation__links navigation__links--footer"
               >
                 <li>Plantscapes</li>
               </a>
               <a
                 href="/services"
-                class="navigation__links navigation__links--footer"
+                className="navigation__links navigation__links--footer"
               >
                 <li>Services</li>
               </a>
               <a
                 href="/prospective-clients"
-                class="navigation__links navigation__links--footer"
+                className="navigation__links navigation__links--footer"
               >
                 <li>Prospective Clients</li>
               </a>
               <a
                 href="/portfolios"
-                class="navigation__links navigation__links--footer"
+                className="navigation__links navigation__links--footer"
               >
                 <li>Portfolios</li>
               </a>
               <a
                 href="/locations"
-                class="navigation__links navigation__links--footer"
+                className="navigation__links navigation__links--footer"
               >
                 <li>Locations</li>
               </a>
               <a
                 href="/blog"
-                class="navigation__links navigation__links--footer"
+                className="navigation__links navigation__links--footer"
               >
                 <li>Blog</li>
               </a>
               <a
                 href="/about"
-                class="navigation__links navigation__links--footer"
+                className="navigation__links navigation__links--footer"
               >
                 <li>About</li>
               </a>
             </ul>
-            <h4 class="heading heading__h6 heading__h6--green">Learn More</h4>
-            <ul class="navigation__list">
+            <h4 className="heading heading__h6 heading__h6--green">
+              Learn More
+            </h4>
+            <ul className="navigation__list">
               <a
                 href="/announcements"
-                class="navigation__links navigation__links--footer"
+                className="navigation__links navigation__links--footer"
               >
                 <li>Announcements</li>
               </a>
               <a
                 href="/news-posts"
-                class="navigation__links navigation__links--footer"
+                className="navigation__links navigation__links--footer"
               >
                 <li>Botanicals News</li>
               </a>
               <a
                 href="/events"
-                class="navigation__links navigation__links--footer"
+                className="navigation__links navigation__links--footer"
               >
                 <li>Botanicals Events</li>
               </a>
               <a
                 href="/jobs"
-                class="navigation__links navigation__links--footer"
+                className="navigation__links navigation__links--footer"
               >
                 <li>Careers</li>
               </a>
             </ul>
           </Column>
           <Column width={33}>
-            <h3 class="heading heading__h5 heading__h5--green">Work with Us</h3>
+            <h3 className="heading heading__h5 heading__h5--green">
+              Work with Us
+            </h3>
 
-            <h4 class="heading heading__h6 heading__h6--green">
+            <h4 className="heading heading__h6 heading__h6--green">
               Design Professionals
             </h4>
-            <ul class="navigation__list">
+            <ul className="navigation__list">
               <a
                 href="/prospective-clients#landscapers"
-                class="navigation__links navigation__links--footer"
+                className="navigation__links navigation__links--footer"
               >
                 <li>Landscapers</li>
               </a>
               <a
                 href="/prospective-clients#architects"
-                class="navigation__links navigation__links--footer"
+                className="navigation__links navigation__links--footer"
               >
                 <li>Architects</li>
               </a>
               <a
                 href="/prospective-clients#interior-designers"
-                class="navigation__links navigation__links--footer"
+                className="navigation__links navigation__links--footer"
               >
                 <li>Interior Designers</li>
               </a>
             </ul>
-            <h4 class="heading heading__h6 heading__h6--green">
+            <h4 className="heading heading__h6 heading__h6--green">
               Plantscape Designs
             </h4>
-            <ul class="navigation__list">
+            <ul className="navigation__list">
               <a
                 href="/prospective-clients#residential"
-                class="navigation__links navigation__links--footer"
+                className="navigation__links navigation__links--footer"
               >
                 <li>Residential Spaces</li>
               </a>
               <a
                 href="/prospective-clients#commercial"
-                class="navigation__links navigation__links--footer"
+                className="navigation__links navigation__links--footer"
               >
                 <li>Commercial Spaces</li>
               </a>
             </ul>
 
-            <h4 class="heading heading__h6 heading__h6--green">
+            <h4 className="heading heading__h6 heading__h6--green">
               Get a Free Consultation
             </h4>
-            <ul class="navigation__list">
+            <ul className="navigation__list">
               <a
                 href="/request-consultation"
-                class="navigation__links navigation__links--footer"
+                className="navigation__links navigation__links--footer"
               >
                 <li>Request a Consultation</li>
               </a>
@@ -283,12 +325,13 @@ function Footer() {
 
         <Row>
           <Column centered width={100}>
-            <span class="footer__copywrite-span">
+            <span className="footer__copywrite-span">
               &copy; 2020 BOTANICALS &bull; SITE BY{" "}
               <a
                 href="http://talondurrant.com"
                 target="_blank"
-                class="footer__copywrite-link"
+                className="footer__copywrite-link"
+                rel="noreferrer"
               >
                 TALON DURRANT
               </a>

@@ -52,7 +52,7 @@ function Picture(props) {
           )}
 
           <img
-            class="lazyload"
+            className="lazyload"
             data-srcset={`/images/${props.page}/${props.imageName}-1x.${props.ext}`}
             alt={props.alt}
           />

@@ -51,7 +51,7 @@ function HeroPageBanner(props) {
         ) : (
           <img
             className="hero-image-container__image"
-            src={`/heroes/placeholder.jpg`}
+            src={`/heroes/PLACEHOLDER.jpg`}
             alt="botanicals design page hero"
           />
         )}

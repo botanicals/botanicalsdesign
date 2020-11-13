@@ -1,5 +1,7 @@
 import React from "react"
 
+import "../styles/main.scss"
+
 import PageLayout from "../layouts/PageLayout"
 import Section from "../components/Section"
 import Row from "../components/Row"
@@ -7,7 +9,7 @@ import Column from "../components/Column"
 import Picture from "../components/Picture"
 import Button from "../components/Button"
 
-export default function Home() {
+export default () => {
   return (
     <PageLayout
       heroImage="home"
@@ -77,6 +79,47 @@ export default function Home() {
           </Column>
         </Row>
       </Section>
+      <Section sectionHeading="A Botanicals plantscape">
+        <Row>
+          <Column width={100}>
+            <p>
+              We pride ourselves on our work creating plantscapes that breathe
+              quality and peace back into life. Whether you are looking to liven
+              up your home, workspace, or yard, we have the perfect
+              life-injecting solutions you are needing. Please{" "}
+              <a href="/portfolios/">visit our portfolio</a> to see examples of
+              our most recent work.
+            </p>
+          </Column>
+        </Row>
+        <Row>
+          <Column width={33}>
+            <figure>
+              <img src="/images/index/SubaruWallofLife23.jpg" alt="y" />
+              <figcaption>parade of homes</figcaption>
+            </figure>
+          </Column>
+          <Column width={33}>
+            <figure>
+              <img src="/images/index/untitled-6338.jpg" alt="y" />
+              <figcaption>parade of homes</figcaption>
+            </figure>
+          </Column>
+          <Column width={33}>
+            <figure>
+              <img src="/images/index/_MG_8988-388.jpg" alt="y" />
+              <figcaption>parade of homes</figcaption>
+            </figure>
+          </Column>
+        </Row>
+        <Row>
+          <Column width={100}>
+            <Button inverse href="/portfolio">
+              Visit our portfolio
+            </Button>
+          </Column>
+        </Row>
+      </Section>
       <Section sectionHeading="We love our clients">
         <Row>
           <Column width={50}>
@@ -104,12 +147,115 @@ export default function Home() {
               </a>
             </p>
           </Column>
-          <Column width={50}></Column>
+          <Column width={50}>
+            <figure>
+              <img
+                src="/images/index/custom-container-plantscape-design-genomics.jpg"
+                alt="y"
+              />
+              <figcaption>ihc genomics</figcaption>
+            </figure>
+          </Column>
         </Row>
       </Section>
-      <Section fullWidth sectionHeading="We create beautiful plantscapes">
-        <p>content for this sectoin</p>
+      <Section sectionHeading="Even more than plantscape design">
+        <Row>
+          <Column width={50}>
+            <p>
+              After installing your custom designed plantscape, we don&#8217;t
+              leave you to care for it all by yourself. We offer our{" "}
+              <a href="/services/maintenance/">plant maintenance services</a> to
+              all of our clients.{" "}
+            </p>
+
+            <h3 class="heading heading__h3 heading__h3--green">
+              Our expertly trained service technicians will ensure that your
+              plantscapes stay alive, healthy, and beautiful.{" "}
+            </h3>
+
+            <Button inverse href="/services/maintenance">
+              Learn more about our maintenance service
+            </Button>
+          </Column>
+          <Column width={50}>
+            <figure>
+              <img src="/images/index/untitled-3362.jpg" alt="y" />
+              <figcaption>botanicals maintenance service</figcaption>
+            </figure>
+          </Column>
+        </Row>
       </Section>
+      <Section sectionHeading="Why we love creating plantscapes">
+        <Row>
+          <Column width={50}>
+            <figure>
+              <img src="/images/index/untitled-6314.jpg" alt="y" />
+              <figcaption>parade of homes</figcaption>
+            </figure>
+          </Column>
+          <Column width={50}>
+            <p>
+              People stay longer in places that make them feel at peace. It is
+              proven that plantscapes decrease stress, promote health, increase
+              productivity. Plants purify the air around them and create an
+              atmosphere of serenity. This is
+              <a href="/why-plantscape/">
+                {" "}
+                why we want our plantscapes everywhere
+              </a>
+              . We are a family of plant-lovers and we always look forward to
+              helping others discover what plantscapes can do for them.
+            </p>
+
+            <h3 class="heading heading__h3 heading__h3--green">
+              Want to learn more about Plantscapes? We have a blog!
+            </h3>
+
+            <Button inverse href="/blog">
+              Visit our blog
+            </Button>
+          </Column>
+        </Row>
+      </Section>
+      <Section sectionHeading="Bring life to your space">
+        <p>LOCATIONS COMPONENT GOES HERE</p>
+      </Section>
+      <Section fullWidth sectionHeading="More than just pots&#8230;">
+        <Row>
+          <Column width={50}>
+            <p>
+              We offer more than just pottery and decor at our retail locations.
+              We are constantly evolving and growing at our stores. We are
+              starting to implement more events, such as plantings, bonsai club
+              meetings, and more. Sign up for our retail locations newsletters
+              to stay updated on what we have going on.
+            </p>
+            <h3 className="heading heading__h3 heading__h3--red">
+              Sign up for our Newsletter to stay updated on our events,
+              shipments, and more.
+            </h3>{" "}
+          </Column>
+          <Column width={50}>
+            <p>NEWSLETTER SUBSCRIPTION FORM GOES HERE</p>
+          </Column>
+        </Row>
+      </Section>
+      {/* <Section sectionHeading="Upcoming events">
+        <Row>
+          <Column width={100}>
+            <h3 className="heading heading__h3 heading__h3--green">
+              Upcoming Events
+            </h3>
+            <p>
+              Unfortunately, during this time of uncertainty, all Botanicals
+              events are postponed/canceled.
+            </p>
+            <Button inverse href="#">
+              View all events
+            </Button>
+          </Column>
+        </Row>
+      </Section> */}
     </PageLayout>
   )
 }

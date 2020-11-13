@@ -12,9 +12,9 @@ export default () => {
     <PageLayout
       heroImage="home"
       ext="jpg"
-      mainHeading="Why Plantscape?"
-      subHeading="Plantscapes are the evolution of living design"
-      pageHeading="A Botanicals Plantscape"
+      mainHeading="Announcements"
+      subHeading="Check back regularly for Botanicals updates"
+      pageHeading="Announcements Feed"
     ></PageLayout>
   )
 }

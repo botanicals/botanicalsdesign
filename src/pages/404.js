@@ -3,13 +3,14 @@ import React from "react"
 import PageLayout from "../layouts/PageLayout"
 import Section from "../components/Section"
 
-export default function Home() {
+export default () => {
   return (
     <PageLayout
-      heroImage="hero-image-placeholder.jpg"
       mainHeading="Page not found"
       subHeading=""
       pageHeading="Sorry..."
+      heroImage="home"
+      ext="jpg"
     >
       <Section sectionHeading="We couldn't find the page you are looking for">
         <p>

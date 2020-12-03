@@ -11,9 +11,10 @@
   }
   a {
     color: $color-white;
-    text-decoration: underline;
+    text-decoration: none;
   }
   a:hover {
-    color: $color-light-gray;
+    color: $color-white;
+    text-decoration: underline;
   }
 }

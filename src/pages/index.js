@@ -8,6 +8,7 @@ import Row from "../components/Row"
 import Column from "../components/Column"
 import Picture from "../components/Picture"
 import Button from "../components/Button"
+import Locations from "../components/Locations"
 
 export default () => {
   return (
@@ -62,7 +63,7 @@ export default () => {
               </a>
               .
             </p>
-            <Button href="/request-consultation">
+            <Button inverse href="/request-consultation">
               Request a free consultation today
             </Button>
           </Column>
@@ -94,22 +95,34 @@ export default () => {
         </Row>
         <Row>
           <Column width={33}>
-            <figure>
-              <img src="/images/index/SubaruWallofLife23.jpg" alt="y" />
-              <figcaption>parade of homes</figcaption>
-            </figure>
+            <Picture
+              column={33}
+              page="index"
+              imageName="living-wall-plantscape-design-waiting-area-3"
+              ext="jpg"
+              alt="Findlay Subaru 'Wall of Life'"
+              caption=" Findlay Subaru 'Wall of Life'"
+            />
           </Column>
           <Column width={33}>
-            <figure>
-              <img src="/images/index/untitled-6338.jpg" alt="y" />
-              <figcaption>parade of homes</figcaption>
-            </figure>
+            <Picture
+              column={33}
+              page="index"
+              imageName="botanicals-plantscape-design-parade-of-homes-107"
+              ext="jpg"
+              alt="St George Parade of Homes 2020"
+              caption="St George Parade of Homes 2020"
+            />
           </Column>
           <Column width={33}>
-            <figure>
-              <img src="/images/index/_MG_8988-388.jpg" alt="y" />
-              <figcaption>parade of homes</figcaption>
-            </figure>
+            <Picture
+              column={33}
+              page="index"
+              imageName="aglaonema-in-ceramic-sphere-sitting-area"
+              ext="jpg"
+              alt="IHC Genomics waiting area"
+              caption="IHC Genomics waiting area"
+            />
           </Column>
         </Row>
         <Row>
@@ -148,13 +161,15 @@ export default () => {
             </p>
           </Column>
           <Column width={50}>
-            <figure>
-              <img
-                src="/images/index/custom-container-plantscape-design-genomics.jpg"
-                alt="y"
-              />
-              <figcaption>ihc genomics</figcaption>
-            </figure>
+            <Picture
+              column={50}
+              page="index"
+              breakpoint={1200}
+              imageName="custom-container-plantscape-design-genomics"
+              ext="jpg"
+              alt="A custom S-shaped planter we designed for IHC Genomics"
+              caption=" A custom S-shaped planter we designed for IHC Genomics"
+            />
           </Column>
         </Row>
       </Section>
@@ -178,20 +193,30 @@ export default () => {
             </Button>
           </Column>
           <Column width={50}>
-            <figure>
-              <img src="/images/index/untitled-3362.jpg" alt="y" />
-              <figcaption>botanicals maintenance service</figcaption>
-            </figure>
+            <Picture
+              column={50}
+              page="index"
+              breakpoint={1200}
+              imageName="botanicals-maintenance-service-technician-beth-1"
+              ext="jpg"
+              alt="Botanicals maintenance service ensures your plantscapes stay beautiful"
+              caption="Botanicals maintenance service ensures your plantscapes stay beautiful"
+            />
           </Column>
         </Row>
       </Section>
       <Section sectionHeading="Why we love creating plantscapes">
         <Row>
           <Column width={50}>
-            <figure>
-              <img src="/images/index/untitled-6314.jpg" alt="y" />
-              <figcaption>parade of homes</figcaption>
-            </figure>
+            <Picture
+              column={50}
+              page="index"
+              breakpoint={1200}
+              imageName="botanicals-plantscape-design-parade-of-homes-105"
+              ext="jpg"
+              alt="2020 St George Parade of Homes Botanicals interior"
+              caption="2020 St George Parade of Homes Botanicals interior"
+            />
           </Column>
           <Column width={50}>
             <p>
@@ -218,7 +243,7 @@ export default () => {
         </Row>
       </Section>
       <Section sectionHeading="Bring life to your space">
-        <p>LOCATIONS COMPONENT GOES HERE</p>
+        <Locations />
       </Section>
       <Section fullWidth sectionHeading="More than just pots&#8230;">
         <Row>
@@ -240,7 +265,7 @@ export default () => {
           </Column>
         </Row>
       </Section>
-      {/* <Section sectionHeading="Upcoming events">
+      <Section sectionHeading="Upcoming events">
         <Row>
           <Column width={100}>
             <h3 className="heading heading__h3 heading__h3--green">
@@ -255,7 +280,7 @@ export default () => {
             </Button>
           </Column>
         </Row>
-      </Section> */}
+      </Section>
     </PageLayout>
   )
 }

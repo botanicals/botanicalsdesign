@@ -13,20 +13,22 @@
 .navigation__list {
   list-style-type: none;
   text-transform: uppercase;
+  li {
+    display: inline-block;
+    &:not(:last-child) {
+      margin-right: 2rem;
+    }
+  }
 }
 
 .navigation__links {
   font-size: $font-size-default;
   color: $color-white;
   text-decoration: none;
-  display: inline-block;
-
-  &:not(:last-child) {
-    margin-right: 2rem;
-  }
 
   &:hover {
     color: $color-light-gray;
+    text-decoration: none;
   }
 
   &--footer {

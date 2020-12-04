@@ -6,7 +6,7 @@ $default-section-horizontal-padding: 5%;
 $full-section-width: 100%;
 $height-of-header: 10rem; // height of the header containing navigation and logo
 $half-height-of-header: $height-of-header / 2;
-$height-of-hero-image: 60rem; // this is the height of the hero image -- can be adjusted as desired
+$height-of-hero-image: 600px; // this is the height of the hero image -- matches the image size
 
 // GRID VARIABLES
 // -- note -- the grid is mostly used for the columns in the footer - be mindful of the footer when making changes

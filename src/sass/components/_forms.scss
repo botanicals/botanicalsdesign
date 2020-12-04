@@ -16,7 +16,8 @@ form {
   }
 
   label.top input,
-  label.top select {
+  label.top select,
+  label.top textarea {
     -webkit-appearance: none;
     display: block;
     padding: 0.9rem;
@@ -27,16 +28,22 @@ form {
     //max-width: 20rem;
   }
 
+  label.top textarea {
+    resize: none;
+  }
+
   label.sbs {
     display: block;
     padding: 0.3rem 0;
   }
 
-  label.top input:required {
+  label.top input:required,
+  label.top textarea:required {
     border-bottom: 4px solid $color-primary-red;
   }
 
-  label.top input:required:valid {
+  label.top input:required:valid,
+  labe.top textarea:required:valid {
     border-bottom: 4px solid $color-primary-green;
   }
 
@@ -50,6 +57,10 @@ form {
     margin: 2rem 0 1rem 0;
     cursor: pointer;
     transition: all 0.4s;
+
+    &--contact {
+      margin: 3rem 0 1rem 0;
+    }
 
     &:hover {
       background-color: $color-white;
@@ -69,72 +80,16 @@ form.full-page {
   }
 }
 
-.wpcf7 {
-  background-color: rgb(235, 235, 235);
-  padding: 2rem;
-
-  input[type="text"],
-  input[type="email"],
-  input[type="tel"] {
-    // width: 100%;
-    padding: 1rem;
-    border-radius: 4px;
-    max-width: 100%;
-    border: 1px solid lightgray;
+form.retail-contact {
+  fieldset {
+    margin-bottom: 5rem;
+    border-top: 1px solid $color-black;
   }
 
-  input[type="file"] {
-    // width: 100%;
-    padding: 0.5rem;
-    margin: 0.5rem 0;
-    border-radius: 4px;
-    background-color: white;
-    max-width: 100%;
-    border: 1px solid lightgray;
-  }
-
-  input[type="submit"] {
-    text-transform: uppercase;
-    font-size: 1.4rem;
-    color: white;
-    padding: 1rem;
-    margin: 0.5rem 0;
-    border-radius: 4px;
-    background-color: $color-primary-red;
-    cursor: pointer;
-    transition: all 0.5s;
-    max-width: 100%;
-    border: 1px solid lightgray;
-
-    &:hover {
-      transform: translateY(-1px);
-    }
-
-    &:active {
-      transform: translateY(0);
-    }
-  }
-
-  textarea {
-    font-family: futura-pt, sans-serif;
-    font-size: 1.8rem;
-    padding: 1rem;
-    border-radius: 4px;
-    max-width: 100%;
-    border: 1px solid lightgray;
-  }
-
-  p {
+  legend {
+    padding: 0 0.25rem;
     font-size: 1.8rem;
     text-transform: uppercase;
-    color: $color-primary-red;
-  }
-
-  span {
-    color: $color-primary-red;
-  }
-
-  label {
-    color: $color-primary-green;
+    font-weight: 600;
   }
 }

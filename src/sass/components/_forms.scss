@@ -1,3 +1,74 @@
+form {
+  margin-top: 4rem;
+
+  fieldset {
+    background-color: $color-white;
+    padding: 1rem 2rem;
+  }
+
+  label.top,
+  div {
+    display: block;
+    padding-top: 1.6rem;
+    font-size: 1.3rem;
+    padding-bottom: 0.4rem;
+    text-transform: uppercase;
+  }
+
+  label.top input,
+  label.top select {
+    -webkit-appearance: none;
+    display: block;
+    padding: 0.9rem;
+    border: 0;
+    width: 100%;
+    background-color: darken($color-white, 5%);
+    transition: all 0.4s;
+    //max-width: 20rem;
+  }
+
+  label.sbs {
+    display: block;
+    padding: 0.3rem 0;
+  }
+
+  label.top input:required {
+    border-bottom: 4px solid $color-primary-red;
+  }
+
+  label.top input:required:valid {
+    border-bottom: 4px solid $color-primary-green;
+  }
+
+  input.submit {
+    padding: 0.8rem 1.3rem;
+    border: 1px solid $color-primary-red;
+    background-color: $color-primary-red;
+    color: $color-white;
+    text-transform: uppercase;
+    border-radius: 2px;
+    margin: 2rem 0 1rem 0;
+    cursor: pointer;
+    transition: all 0.4s;
+
+    &:hover {
+      background-color: $color-white;
+      color: $color-primary-red;
+    }
+  }
+}
+
+form.full-page {
+  max-width: 60rem;
+  margin: 5rem auto;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.28), 0 0 2px rgba(0, 0, 0, 0.3);
+  div.img-container {
+    padding: 1rem 2rem;
+    background-color: $color-black;
+    width: 100%;
+  }
+}
+
 .wpcf7 {
   background-color: rgb(235, 235, 235);
   padding: 2rem;

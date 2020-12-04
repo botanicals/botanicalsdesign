@@ -9,6 +9,7 @@ import Column from "../components/Column"
 import Picture from "../components/Picture"
 import Button from "../components/Button"
 import Locations from "../components/Locations"
+import SubscribeForm from "../components/SubscribeForm"
 
 export default () => {
   return (
@@ -245,9 +246,10 @@ export default () => {
       <Section sectionHeading="Bring life to your space">
         <Locations />
       </Section>
-      <Section fullWidth sectionHeading="More than just pots&#8230;">
+      <Section sectionHeading="">
         <Row>
           <Column width={50}>
+            <h2 className="heading heading__h2">More than just pots&#8230;</h2>
             <p>
               We offer more than just pottery and decor at our retail locations.
               We are constantly evolving and growing at our stores. We are
@@ -255,17 +257,17 @@ export default () => {
               meetings, and more. Sign up for our retail locations newsletters
               to stay updated on what we have going on.
             </p>
-            <h3 className="heading heading__h3 heading__h3--red">
+            <h3 className="heading heading__h3 heading__h3--green">
               Sign up for our Newsletter to stay updated on our events,
               shipments, and more.
             </h3>{" "}
           </Column>
           <Column width={50}>
-            <p>NEWSLETTER SUBSCRIPTION FORM GOES HERE</p>
+            <SubscribeForm />
           </Column>
         </Row>
       </Section>
-      <Section sectionHeading="Upcoming events">
+      {/* <Section sectionHeading="Upcoming events">
         <Row>
           <Column width={100}>
             <h3 className="heading heading__h3 heading__h3--green">
@@ -280,7 +282,7 @@ export default () => {
             </Button>
           </Column>
         </Row>
-      </Section>
+      </Section> */}
     </PageLayout>
   )
 }

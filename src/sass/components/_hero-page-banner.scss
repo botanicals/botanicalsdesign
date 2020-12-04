@@ -5,7 +5,7 @@
 
   &__image {
     margin-top: -$height-of-header;
-    //height: $height-of-hero-image;
+    min-height: $height-of-hero-image;
     width: 100%;
   }
 

@@ -41,7 +41,7 @@ function Locations() {
             imageName="botanicals-kaysville-retail-location"
             ext="jpg"
             alt="Botanicals Kaysville retail location"
-            caption=" Botanicals Kaysville retail location"
+            caption=""
           />
         </Column>
         <Column width={33}>
@@ -52,7 +52,7 @@ function Locations() {
             imageName="botanicals-sandy-retail-location"
             ext="jpg"
             alt="Botanicals Sandy retail location"
-            caption="Botanicals Sandy retail location"
+            caption=""
           />
         </Column>
         <Column width={33}>
@@ -63,7 +63,7 @@ function Locations() {
             imageName="botanicals-st-george-retail-location"
             ext="jpg"
             alt="Botanicals St George retail location"
-            caption="Botanicals St George retail location"
+            caption=""
           />
         </Column>
       </Row>

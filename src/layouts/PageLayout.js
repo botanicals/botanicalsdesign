@@ -1,5 +1,5 @@
 import React from "react"
-import { Link } from "gastby"
+//import { Link } from "gastby"
 
 import Header from "../components/Header"
 import Footer from "../components/Footer"
@@ -17,10 +17,7 @@ function PageLayout(props) {
         message={
           <p>
             Botanicals has recently opened a new retail location in Kaysville,
-            Utah!{" "}
-            <Link to="/locations/kaysville">
-              Visit the new page to learn more.
-            </Link>
+            Utah! <a href="#">Visit the new page to learn more.</a>
           </p>
         }
       />

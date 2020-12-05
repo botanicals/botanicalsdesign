@@ -64,7 +64,7 @@ export default () => {
               </a>
               .
             </p>
-            <Button inverse href="/request-consultation">
+            <Button href="/request-consultation">
               Request a free consultation today
             </Button>
           </Column>
@@ -128,9 +128,7 @@ export default () => {
         </Row>
         <Row>
           <Column width={100}>
-            <Button inverse href="/portfolio">
-              Visit our portfolio
-            </Button>
+            <Button href="/portfolio">Visit our portfolio</Button>
           </Column>
         </Row>
       </Section>
@@ -189,7 +187,7 @@ export default () => {
               plantscapes stay alive, healthy, and beautiful.{" "}
             </h3>
 
-            <Button inverse href="/services/maintenance">
+            <Button href="/services/maintenance">
               Learn more about our maintenance service
             </Button>
           </Column>
@@ -237,9 +235,7 @@ export default () => {
               Want to learn more about Plantscapes? We have a blog!
             </h3>
 
-            <Button inverse href="/blog">
-              Visit our blog
-            </Button>
+            <Button href="/blog">Visit our blog</Button>
           </Column>
         </Row>
       </Section>
@@ -277,7 +273,7 @@ export default () => {
               Unfortunately, during this time of uncertainty, all Botanicals
               events are postponed/canceled.
             </p>
-            <Button inverse href="#">
+            <Button href="#">
               View all events
             </Button>
           </Column>

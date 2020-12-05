@@ -1,12 +1,61 @@
 // BEGIN CODE COMPILED FROM _NAVIGATION.SCSS //
-
-.navigation {
-  // this positions the navigation in the header
-  // the navigation in the header is currently built by the mega menu plugin
+#hamburger {
+  cursor: pointer;
+  display: block;
   position: absolute;
-  transform: translate(0, -50%);
-  top: $half-height-of-header;
-  right: 4rem;
+  top: 0;
+  right: 0;
+  background-color: transparent;
+  border: 0;
+  color: $color-primary-green;
+  font-size: 5rem;
+  padding: 2rem;
+}
+
+@media only screen and (max-width: 1099px) {
+  .navigation {
+    top: 0;
+    right: 0;
+    display: none;
+
+    .navigation__list:not(.navigation__list--secondary) {
+      background-color: $color-black;
+      position: absolute;
+      top: 0;
+      right: 0;
+      max-width: 70vw;
+      height: 100vh;
+    }
+
+    .navigation__list li {
+      background-color: $color-black;
+      display: block;
+      width: 100%;
+      padding: 3rem 2.5rem 3rem 1.5rem;
+      &:not(:last-child) {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+      }
+    }
+
+    .navigation__list--secondary {
+      margin-top: 3rem;
+      li {
+        margin: 0;
+        background-color: $color-black;
+      }
+    }
+
+    li.parent-nav {
+      height: 8rem;
+      overflow: hidden;
+      transition: overflow 5s ease-in-out;
+
+      &:hover {
+        height: auto;
+        overflow: visible;
+      }
+    }
+  }
 }
 
 // the following code styles all of the links and navigations in the footer //
@@ -19,22 +68,67 @@
       margin-right: 2rem;
     }
   }
+  .navigation__links {
+    font-size: $font-size-default;
+    color: $color-white;
+    text-decoration: none;
+
+    &:hover {
+      color: $color-light-gray;
+      text-decoration: none;
+    }
+
+    &--footer {
+      font-size: $font-size-default;
+      text-transform: none;
+      display: block;
+    }
+  }
 }
 
-.navigation__links {
-  font-size: $font-size-default;
-  color: $color-white;
-  text-decoration: none;
-
-  &:hover {
-    color: $color-light-gray;
-    text-decoration: none;
+@media only screen and (min-width: 500px) {
+  .navigation {
+    min-width: 30vw;
+    max-width: 50vw;
   }
 
-  &--footer {
-    font-size: $font-size-default;
-    text-transform: none;
+  #hamburger {
+    font-size: 4rem;
+  }
+}
+
+@media only screen and (min-width: 1100px) {
+  #hamburger {
+    display: none;
+  }
+
+  .navigation {
+    background-color: pink;
+
+    position: absolute;
+    transform: translate(0, -50%);
+    top: $half-height-of-header;
+    right: 0;
+
+    .navigation__list li {
+      display: inline-block;
+    }
+  }
+
+  .navigation__links--parent:hover + ul {
     display: block;
+  }
+
+  &--secondary {
+    background-color: $header-banner-color;
+    li {
+      display: block;
+      width: 100%;
+      padding: 3rem 2.5rem 3rem 1.5rem;
+      &:not(:last-child) {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+      }
+    }
   }
 }
 

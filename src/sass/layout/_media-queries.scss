@@ -17,15 +17,6 @@
   &.header__logo {
     top: $half-height-of-header;
   }
-
-  // this adjusts how the navigation was positioned to allow
-  // the mega menu plugin mobile slide menu to work correctly
-  // .navigation {
-  //   position: relative;
-  //   transform: translate(0, 0);
-  //   top: 0;
-  //   right: 0;
-  // }
 }
 
 @media (max-width: 500px) {

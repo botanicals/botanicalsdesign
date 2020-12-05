@@ -1,6 +1,8 @@
 import React from "react"
 import { Link } from "gatsby"
 
+import Navigation from "./Navigation"
+
 function Header() {
   return (
     <>
@@ -15,45 +17,7 @@ function Header() {
             alt="botanicals logo"
           />
         </Link>
-        <div className="navigation">
-          <ul className="navigation__list">
-            <li>
-              <Link to="/why-plantscape" className="navigation__links">
-                Why Plantscape?
-              </Link>
-            </li>
-            <li>
-              <Link to="/services" className="navigation__links">
-                Services
-              </Link>
-            </li>
-            <li>
-              <Link to="/prospective-clients" className="navigation__links">
-                Prospective Clients
-              </Link>
-            </li>
-            <li>
-              <Link to="/portfolios" className="navigation__links">
-                Portfolios
-              </Link>
-            </li>
-            <li>
-              <Link to="/locations" className="navigation__links">
-                Locations
-              </Link>
-            </li>
-            <li>
-              <Link to="/blog" className="navigation__links">
-                Blog
-              </Link>
-            </li>
-            <li>
-              <Link to="/about" className="navigation__links">
-                About
-              </Link>
-            </li>
-          </ul>
-        </div>
+        <Navigation />
       </header>
     </>
   )

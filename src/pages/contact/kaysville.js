@@ -14,7 +14,7 @@ export default () => {
       ext="jpg"
       mainHeading="Botanicals Kaysville Contact"
       subHeading="Please fill out the form below with any questions you may have"
-      pageHeading="Kaysville Retail Contact Form"
+      pageHeading=""
     >
       <Section sectionHeading="">
         <Row>

@@ -1,11 +1,14 @@
 import React, { useState } from "react"
 
-function RetailContactForm(props) {
+function ConsultationForm(props) {
   const [name, setName] = useState()
   const [phone, setPhone] = useState()
   const [email, setEmail] = useState()
   const [subject, setSubject] = useState()
   const [message, setMessage] = useState()
+
+  const [shipments, setShipments] = useState(false)
+  const [updates, setUpdates] = useState(false)
 
   function formSubmit(e) {
     e.preventDefault()
@@ -35,7 +38,7 @@ function RetailContactForm(props) {
   return (
     <form onSubmit={formSubmit} class="retail-contact">
       <fieldset>
-        <legend>Sender Info</legend>
+        <legend>Return Contact Info</legend>
         <label className="top">
           Name*
           <input
@@ -47,8 +50,14 @@ function RetailContactForm(props) {
           />
         </label>
         <label className="top">
-          Phone
-          <input onChange={phoneChange} type="tel" name="phone" value={phone} />
+          Phone*
+          <input
+            onChange={phoneChange}
+            type="tel"
+            name="phone"
+            value={phone}
+            required
+          />
         </label>
         <label className="top">
           Email*
@@ -62,10 +71,19 @@ function RetailContactForm(props) {
         </label>
       </fieldset>
       <fieldset>
-        <legend>Message Info</legend>
+        <legend>About your Space</legend>
 
         <label className="top">
-          Subject*
+          Street Address
+          <input
+            onChange={subjectChange}
+            type="text"
+            name="subject"
+            value={subject}
+          />
+        </label>
+        <label className="top">
+          City, State*
           <input
             onChange={subjectChange}
             type="text"
@@ -75,7 +93,25 @@ function RetailContactForm(props) {
           />
         </label>
         <label className="top">
-          Message*
+          Zipcode
+          <input
+            onChange={subjectChange}
+            type="text"
+            name="subject"
+            value={subject}
+          />
+        </label>
+
+        <div>Residential or Commercial</div>
+        <label class="sbs">
+          <input type="radio" name="rescom" value="residential" /> Residential
+        </label>
+        <label class="sbs">
+          <input type="radio" name="rescom" value="commercial" /> Commercial
+        </label>
+
+        <label className="top">
+          Briefly describe your space*
           <textarea
             onChange={messageChange}
             name="message"
@@ -88,11 +124,11 @@ function RetailContactForm(props) {
         <input
           className="submit submit--contact"
           type="submit"
-          value="Send My Message"
+          value="Send My Consultation Request"
         />
       </fieldset>
     </form>
   )
 }
 
-export default RetailContactForm
+export default ConsultationForm

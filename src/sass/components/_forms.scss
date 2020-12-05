@@ -34,7 +34,7 @@ form {
 
   label.sbs {
     display: block;
-    padding: 0.3rem 0;
+    padding: 0.5rem 0;
   }
 
   label.top input:required,
@@ -43,7 +43,7 @@ form {
   }
 
   label.top input:required:valid,
-  labe.top textarea:required:valid {
+  label.top textarea:required:valid {
     border-bottom: 4px solid $color-primary-green;
   }
 

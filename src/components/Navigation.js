@@ -1,15 +1,35 @@
 import React from "react"
 import { Link } from "gatsby"
+import { useState } from "react"
 
 function Navigation() {
+  const [navListVisible, setNavListVisible] = useState(false)
+
+  function hamburgerClick() {
+    setNavListVisible(true)
+    document.body.style.overflow = "hidden"
+  }
+
+  function closeClick() {
+    setNavListVisible(false)
+    document.body.style.overflow = "unset"
+  }
+
   return (
     <nav className="navigation">
-      <button id="hamburger">
+      <button onClick={hamburgerClick} id="hamburger">
         <span>
           <i>&#9776;</i>
         </span>
       </button>
-      <ul className="navigation__list">
+      <ul className={`navigation__list ${!navListVisible && "hidden"}`}>
+        <li>
+          <button onClick={closeClick} id="close">
+            <span>
+              <i>&#10005;</i>
+            </span>
+          </button>
+        </li>
         <li>
           <Link to="/why-plantscape" className="navigation__links">
             Why Plantscape?
@@ -26,7 +46,7 @@ function Navigation() {
               </Link>
             </li>
             <li>
-              <Link to="/services/design" className="navigation__links">
+              <Link to="/services/maintenance" className="navigation__links">
                 Maintenance
               </Link>
             </li>

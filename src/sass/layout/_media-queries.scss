@@ -1,18 +1,14 @@
 // BEGIN MEDIA QUERIES COMPILED FROM _MEDIA-QUERIES.SCSS //
 
-@media (max-width: 1460px) {
+@media (max-width: 1350px) {
   // the following code bumps the header logo up and the
   // navigation down so they don't overlap as the window gets smaller
   .header__logo {
     top: 3.5rem;
   }
-
-  .navigation {
-    top: 7.5rem;
-  }
 }
 
-@media (max-width: 1135px) {
+@media (max-width: 1100px) {
   // positioning the header back into the center
   &.header__logo {
     top: $half-height-of-header;

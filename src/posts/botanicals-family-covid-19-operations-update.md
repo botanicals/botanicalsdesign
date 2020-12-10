@@ -4,7 +4,7 @@ date: "March 23, 2020"
 keywords: ""
 image: "/posts/2020/operations-update-1.jpg"
 author: "Botanicals"
-excerpt: "We are reaching out to the entire BOTANICALS family to extend our best wishes during the challenging days and weeks ahead. At a time when our regular human contact is modified, we need ..."
+excerpt: "We are reaching out to the entire BOTANICALS family to extend our best wishes during the challenging days and weeks ahead. At a time when our regular ..."
 ---
 
 ### BOTANICALS FAMILY COVID-19 OPERATIONS UPDATE

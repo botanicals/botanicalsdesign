@@ -4,7 +4,7 @@ date: "December 4, 2019"
 keywords: ""
 image: "/posts/2019/importance-of-space-to-family-1.jpg"
 author: "Darren Edwards"
-excerpt: ""
+excerpt: "A friend of mine keeps a small wooden statue of the Buddha on a shelf inside their home. They are not Buddhist or the type of person to keep random ..."
 ---
 
 ### THE DETAILS OF YOUR SPACE HOLD MEMORIES

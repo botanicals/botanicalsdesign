@@ -20,19 +20,21 @@ export default ({ data }) => {
     <PageLayout
       heroImage="blog"
       ext="jpg"
-      mainHeading="Welcome to our blog"
+      mainHeading="Botanicals blog"
       subHeading="Learn about what we have to offer"
-      pageHeading="Blog Feed"
+      pageHeading=""
       seo={seo}
     >
-      {data.allMarkdownRemark.nodes.map(node => (
-        <Post
-          image={node.frontmatter.image}
-          title={node.frontmatter.title}
-          excerpt={node.excerpt}
-          readMore={node.fields.slug}
-        />
-      ))}
+      <div className="blog-posts-container">
+        {data.allMarkdownRemark.nodes.map(node => (
+          <Post
+            image={node.frontmatter.image}
+            title={node.frontmatter.title}
+            excerpt={node.frontmatter.excerpt}
+            readMore={node.fields.slug}
+          />
+        ))}
+      </div>
     </PageLayout>
   )
 }
@@ -46,6 +48,7 @@ export const query = graphql`
           date
           keywords
           image
+          excerpt
         }
         excerpt
         html

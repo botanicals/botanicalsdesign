@@ -1,0 +1,63 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://botanicalsdesign.com/#organization",
+      "name": "Botanicals Inc.",
+      "url": "https://botanicalsdesign.com/",
+      "sameAs": ["https://www.instagram.com/botanicalsdesign/"],
+      "logo": {
+        "@type": "ImageObject",
+        "@id": "https://botanicalsdesign.com/#logo",
+        "inLanguage": "en-US",
+        "url": "https://i1.wp.com/botanicalsdesign.com/wp-content/uploads/2019/12/Website-Icon.png?fit=548%2C549&ssl=1",
+        "width": 548,
+        "height": 549,
+        "caption": "Botanicals Inc."
+      },
+      "image": { "@id": "https://botanicalsdesign.com/#logo" }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://botanicalsdesign.com/#website",
+      "url": "https://botanicalsdesign.com/",
+      "name": "Botanicals Design",
+      "description": "Plantscapes, Plant Design &amp; More",
+      "publisher": { "@id": "https://botanicalsdesign.com/#organization" },
+      "potentialAction": [
+        {
+          "@type": "SearchAction",
+          "target": "https://botanicalsdesign.com/?s={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      ],
+      "inLanguage": "en-US"
+    },
+    {
+      "@type": "ImageObject",
+      "@id": "https://botanicalsdesign.com/#primaryimage",
+      "inLanguage": "en-US",
+      "url": "https://i0.wp.com/botanicalsdesign.com/wp-content/uploads/2020/03/botanicals-owners-nicole-braden-hancock-2.jpg?fit=2500%2C1634&ssl=1",
+      "width": 2500,
+      "height": 1634
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://botanicalsdesign.com/#webpage",
+      "url": "https://botanicalsdesign.com/",
+      "name": "Home | Botanicals Design",
+      "isPartOf": { "@id": "https://botanicalsdesign.com/#website" },
+      "about": { "@id": "https://botanicalsdesign.com/#organization" },
+      "primaryImageOfPage": {
+        "@id": "https://botanicalsdesign.com/#primaryimage"
+      },
+      "datePublished": "2017-08-23T01:12:02+00:00",
+      "dateModified": "2020-10-16T22:06:32+00:00",
+      "inLanguage": "en-US",
+      "potentialAction": [
+        { "@type": "ReadAction", "target": ["https://botanicalsdesign.com/"] }
+      ]
+    }
+  ]
+}

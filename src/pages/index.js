@@ -12,6 +12,10 @@ import Locations from "../components/Locations"
 import SubscribeForm from "../components/SubscribeForm"
 
 export default () => {
+  const seo = {
+    title: "Botanicals Design | Home",
+  }
+
   return (
     <PageLayout
       heroImage="home"
@@ -19,6 +23,7 @@ export default () => {
       mainHeading="Botanicals Design"
       subHeading="Explore all that we have to offer"
       pageHeading="Who we are"
+      seo={seo}
     >
       <Section sectionHeading="We create beautiful plantscapes">
         <Row>
@@ -45,8 +50,8 @@ export default () => {
             <p>
               We love everything plantscapes. We grew up at Sandia Farms, a
               greenhouse owned by our father in St George, Utah. There we
-              developed a love for plants and helping other receive the positive
-              effects of having their space plantscaped.
+              developed a love for plants and helping others receive the
+              positive effects of having their space plantscaped.
             </p>
 
             <p>

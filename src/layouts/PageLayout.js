@@ -7,12 +7,12 @@ import TopNotificationBanner from "../components/TopNotificationBanner"
 import HeroPageBanner from "../components/HeroPageBanner"
 import ContentContainer from "../components/ContentContainer"
 
-//import SEO from "../components/SEO"
+import SEO from "../components/SEO"
 
 function PageLayout(props) {
   return (
     <>
-      {/* <SEO /> */}
+      <SEO config={props.seo} />
       <TopNotificationBanner
         message={
           <p>

@@ -8,6 +8,10 @@ import Button from "../components/Button"
 import Picture from "../components/Picture"
 
 export default () => {
+  const seo = {
+    title: "Botanicals Design | Why Plantscape",
+  }
+
   return (
     <PageLayout
       heroImage="home"
@@ -15,6 +19,7 @@ export default () => {
       mainHeading="Why Plantscape?"
       subHeading="Plantscapes are the evolution of living design"
       pageHeading="A Botanicals Plantscape"
+      seo={seo}
     ></PageLayout>
   )
 }

@@ -8,6 +8,10 @@ import Button from "../components/Button"
 import Picture from "../components/Picture"
 
 export default () => {
+  const seo = {
+    title: "Botanicals Design | Services",
+  }
+
   return (
     <PageLayout
       heroImage="home"
@@ -15,6 +19,7 @@ export default () => {
       mainHeading="Services"
       subHeading="We look forward to working with you"
       pageHeading="We design, install, and maintain plantscapes"
+      seo={seo}
     ></PageLayout>
   )
 }

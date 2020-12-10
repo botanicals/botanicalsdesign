@@ -8,6 +8,9 @@ import Picture from "../../components/Picture"
 import RetailContactForm from "../../components/RetailContactForm"
 
 export default () => {
+  const seo = {
+    title: "Botanicals Design | Locations > Saint George > Contact",
+  }
   return (
     <PageLayout
       heroImage="home"
@@ -15,6 +18,7 @@ export default () => {
       mainHeading="Botanicals St George Contact"
       subHeading="Please fill out the form below with any questions you may have"
       pageHeading=""
+      seo={seo}
     >
       <Section sectionHeading="">
         <Row>

@@ -8,6 +8,10 @@ import Picture from "../components/Picture"
 import ConsultationForm from "../components/ConsultationForm"
 
 export default () => {
+  const seo = {
+    title: "Botanicals Design | Home",
+  }
+
   return (
     <PageLayout
       heroImage="home"
@@ -15,6 +19,7 @@ export default () => {
       mainHeading="Request a consultation"
       subHeading="Request a free design consultation to bring your space to life"
       pageHeading=""
+      seo={seo}
     >
       <Section sectionHeading="">
         <Row>

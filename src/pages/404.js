@@ -4,6 +4,9 @@ import PageLayout from "../layouts/PageLayout"
 import Section from "../components/Section"
 
 export default () => {
+  const seo = {
+    title: "Botanicals Design | Oops...",
+  }
   return (
     <PageLayout
       mainHeading="Page not found"
@@ -11,6 +14,7 @@ export default () => {
       pageHeading="Sorry..."
       heroImage="home"
       ext="jpg"
+      seo={seo}
     >
       <Section sectionHeading="We couldn't find the page you are looking for">
         <p>

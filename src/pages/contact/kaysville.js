@@ -8,6 +8,9 @@ import Column from "../../components/Column"
 import Picture from "../../components/Picture"
 
 export default () => {
+  const seo = {
+    title: "Botanicals Design | Locations > Kaysville > Contact",
+  }
   return (
     <PageLayout
       heroImage="kaysville"
@@ -15,6 +18,7 @@ export default () => {
       mainHeading="Botanicals Kaysville Contact"
       subHeading="Please fill out the form below with any questions you may have"
       pageHeading=""
+      seo={seo}
     >
       <Section sectionHeading="">
         <Row>

@@ -14,12 +14,275 @@ export default () => {
 
   return (
     <PageLayout
-      heroImage="home"
+      heroImage="prospective-clients"
       ext="jpg"
       mainHeading="Prospective Clients"
       subHeading="We love helping our clients achieve their goals"
       pageHeading="Information for our future clients"
       seo={seo}
-    ></PageLayout>
+    >
+      <Section sectionHeading="We are looking forward to working with you">
+        <Row>
+          <Column width={50}>
+            <p>
+              Whether you are a landscaper, architectural firm, interior
+              designer, or individual,{" "}
+              <a href="https://botanicalsdesign.com/services/">
+                we offer our services{" "}
+              </a>
+              and will happily work to be sure we can fulfill your needs. We
+              have years of experience and know how to take the burden off your
+              shoulders and help you achieve your goals.
+            </p>
+
+            <p>
+              At this time, our services are limited to Southern Utah, but we
+              are working to the trade in Northern Utah for design
+              professionals.
+            </p>
+            <h3 class="heading heading__h3 heading__h3--green">
+              We ensure our clients achieve their goals
+            </h3>
+
+            <p>
+              We are currently working hard to bring you information that you
+              can learn from our website and utilize in making your plantscape
+              decisions. Please come back to this page often to see new
+              information and updates.
+            </p>
+          </Column>
+          <Column width={50}>
+            <Picture
+              column={50}
+              page="prospective-clients"
+              breakpoint="default"
+              imageName="office-space-plantscape-with-bromeliads-2"
+              ext="jpg"
+              alt="botanicals plantscape in office building"
+              caption=""
+            />
+          </Column>
+        </Row>
+      </Section>
+
+      <Section sectionHeading="Residential Spaces">
+        <Row>
+          <Column width={50}>
+            <p>
+              A sense of calm and control is something everybody wants in their
+              home. We have found a way to achieve this: Plantscapes!
+            </p>
+
+            <p>
+              If you want to see what we design and install for homes, please{" "}
+              <a href="https://botanicalsdesign.com/portfolios/interior-portfolio/">
+                look through our interior portfolio gallery
+              </a>
+              . We don&#8217;t limit ourselves to interiors, however, so please{" "}
+              <a href="https://botanicalsdesign.com/portfolios/exterior-portfolio/">
+                see our exterior portfolio
+              </a>{" "}
+              as well to get an idea of our work.
+            </p>
+            <Button href="/request-consultation">
+              Request a free consultation
+            </Button>
+          </Column>
+          <Column width={50}>
+            <Picture
+              column={50}
+              page="prospective-clients"
+              breakpoint="default"
+              imageName="couple-on-patio-by-pottery-plantscape"
+              ext="jpg"
+              alt="couple talking on a plantscaped patio"
+              caption=""
+            />
+          </Column>
+        </Row>
+      </Section>
+
+      <Section sectionHeading="Commercial Spaces">
+        <Row>
+          <Column width={50}>
+            <p>
+              When we make a Botanicals plantscape, we ensure quality and
+              timeliness. We understand that a lot goes into building,
+              designing, and maintaining commercial spaces.
+            </p>
+
+            <p>
+              This is why we seek to take a burden off your shoulders and help
+              you achieve your goals. After{" "}
+              <a href="https://botanicalsdesign.com/services/design/">
+                designing and installing
+              </a>{" "}
+              the plantscapes, be sure to sign up for our{" "}
+              <a href="https://botanicalsdesign.com/services/maintenance/">
+                maintenance services
+              </a>{" "}
+              to keep your plantscapes beautiful.
+            </p>
+
+            <Button href="/request-consultation">
+              Request a free consultation
+            </Button>
+          </Column>
+          <Column width={50}>
+            <Picture
+              column={50}
+              page="prospective-clients"
+              breakpoint="default"
+              imageName="plantscape-design-custom-bronze-container-1"
+              ext="jpg"
+              alt="interior plantscape with custom containers at a subaru dealership"
+              caption=""
+            />
+          </Column>
+        </Row>
+      </Section>
+
+      <Section sectionHeading="Design Professionals">
+        <Row>
+          <Column width={50}>
+            <h3 class="heading heading__h3 heading__h3--green" id="architects">
+              Architects
+            </h3>
+            <p>
+              We know that life can get too busy sometimes, and we are here to
+              help. The interior plantscapes are sometimes a detail that cause
+              stress and are a race against a timeline. We want to take that
+              stress from you.
+            </p>
+
+            <p>
+              As you can see in the picture to the right, we design beautiful
+              plantscapes for spaces, and have worked on health clinics,
+              airports, and hospitals, such as Intermountain Health Care
+              locations, and the St George Airport. Please{" "}
+              <a href="https://botanicalsdesign.com/portfolios/">
+                look through our portfolios
+              </a>{" "}
+              to see our work.
+            </p>
+
+            <p>
+              We will help you get your designs done and beautified with
+              plantscapes, pottery, and custom containers. And remember: we
+              offer top-of-the-line maintenance services, taking all the stress
+              out, and allowing you to enjoy the plantscapes yourself.
+            </p>
+
+            <Button href="/request-consultation">
+              Request a free consultation
+            </Button>
+          </Column>
+          <Column width={50}>
+            <Picture
+              column={50}
+              page="prospective-clients"
+              breakpoint="default"
+              imageName="custom-container-plantscape-design-genomics1"
+              ext="jpg"
+              alt="custom container plantscape in ihc genomics"
+              caption=""
+            />
+          </Column>
+        </Row>
+
+        <Row>
+          <Column width={50}>
+            <h3 class="heading heading__h3 heading__h3--green" id="landscapers">
+              Landscapers
+            </h3>
+            <p>
+              Botanicals loves landscapers! With the addition of{" "}
+              <a href="https://botanicalsdesign.com/locations/">
+                our retail stores
+              </a>{" "}
+              in{" "}
+              <a href="https://botanicalsdesign.com/locations/sandy/">Sandy</a>{" "}
+              and{" "}
+              <a href="https://botanicalsdesign.com/locations/saint-george/">
+                St George
+              </a>
+              , Utah we have been able to better serve landscaping businesses.{" "}
+            </p>
+
+            <p>
+              We are currently working to build a Landscapers Program to
+              implement at both of our stores. Please visit or contact our store
+              closest to you to learn more information, and be sure to check
+              back regularly for updates on the Botanicals Landscaper Program.
+            </p>
+
+            <Button href="#">Northern Utah</Button>
+            <Button href="#">Southern Utah</Button>
+          </Column>
+          <Column width={50}>
+            <Picture
+              column={50}
+              page="prospective-clients"
+              breakpoint="default"
+              imageName="outdoor-plantscape-ceramic-pottery"
+              ext="jpg"
+              alt="an outdoor botanicals plantscape"
+              caption=""
+            />
+          </Column>
+        </Row>
+
+        <Row>
+          <Column width={50}>
+            <h3
+              class="heading heading__h3 heading__h3--green"
+              id="interior-designers"
+            >
+              Interior Designers
+            </h3>
+            <p>
+              Working with Interior Designers to create beautiful interiors is a
+              Botancials specialty.
+            </p>
+
+            <p>
+              Whether we can help you distiguish your services or liven up (pun
+              intended) your spaces with{" "}
+              <a href="https://botanicalsdesign.com/why-plantscape/">
+                plantscapes
+              </a>
+              , we are here to help you achieve those goals.
+            </p>
+
+            <p>
+              Please{" "}
+              <a href="https://botanicalsdesign.com/request-consultation/">
+                contact us
+              </a>{" "}
+              if you have any questions, and be sure to check out our{" "}
+              <a href="https://botanicalsdesign.com/portfolios/interior-portfolio/">
+                interior portfolio{" "}
+              </a>
+              to see the work we can accomplish.
+            </p>
+
+            <Button href="/request-consultation">
+              Request a free consultation
+            </Button>
+          </Column>
+          <Column width={50}>
+            <Picture
+              column={50}
+              page="prospective-clients"
+              breakpoint="default"
+              imageName="plantscapes-interior-design-fiberstone-pots-1"
+              ext="jpg"
+              alt="an interior botanicals plantscape"
+              caption=""
+            />
+          </Column>
+        </Row>
+      </Section>
+    </PageLayout>
   )
 }

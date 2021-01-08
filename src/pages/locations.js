@@ -16,7 +16,7 @@ export default () => {
   }
   return (
     <PageLayout
-      heroImage="home"
+      heroImage="locations"
       ext="jpg"
       mainHeading="Our retail locations"
       subHeading="Serving the wasatch front and southern utah"

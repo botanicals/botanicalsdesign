@@ -2,6 +2,8 @@ import React from "react"
 
 import PageLayout from "../layouts/PageLayout"
 import Section from "../components/Section"
+import Row from "../components/Row"
+import Column from "../components/Column"
 
 export default () => {
   const seo = {
@@ -17,12 +19,16 @@ export default () => {
       seo={seo}
     >
       <Section sectionHeading="We couldn't find the page you are looking for">
-        <p>
-          We are sorry, the page you are looking for could not be located. This
-          may be due to a broken link, expired bookmark, or mistyped URL. Please
-          try again using our menu above. We hope you find what you are looking
-          for!
-        </p>
+        <Row>
+          <Column width={100}>
+            <p>
+              We are sorry, the page you are looking for could not be located.
+              This may be due to a broken link, expired bookmark, or mistyped
+              URL. Please try again using our menu above. We hope you find what
+              you are looking for!
+            </p>
+          </Column>
+        </Row>
       </Section>
     </PageLayout>
   )

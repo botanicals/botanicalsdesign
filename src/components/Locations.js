@@ -34,7 +34,6 @@ function Locations() {
       </Row>
       <Row>
         <Column width={33}>
-          <h3 class="heading heading__h3 heading__h3--red">Kaysville, Utah</h3>
           <Picture
             column={33}
             page="locations_comp"
@@ -43,9 +42,9 @@ function Locations() {
             alt="Botanicals Kaysville retail location"
             caption=""
           />
+          <Button href="/locations/kaysville">Botanicals Kaysville</Button>
         </Column>
         <Column width={33}>
-          <h3 class="heading heading__h3 heading__h3--red">Sandy, Utah</h3>
           <Picture
             column={33}
             page="locations_comp"
@@ -54,9 +53,9 @@ function Locations() {
             alt="Botanicals Sandy retail location"
             caption=""
           />
+          <Button href="/locations/sandy">Botanicals Sandy</Button>
         </Column>
         <Column width={33}>
-          <h3 class="heading heading__h3 heading__h3--red">St George, Utah</h3>
           <Picture
             column={33}
             page="locations_comp"
@@ -65,13 +64,7 @@ function Locations() {
             alt="Botanicals St George retail location"
             caption=""
           />
-        </Column>
-      </Row>
-      <Row>
-        <Column width={100}>
-          <Button inverse href="/locations">
-            Learn More about botanicals retail locations
-          </Button>
+          <Button href="/locations/saint-george">Botanicals St George</Button>
         </Column>
       </Row>
     </>

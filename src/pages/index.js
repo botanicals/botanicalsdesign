@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "gatsby"
 
 import "../styles/main.scss"
 
@@ -31,13 +32,15 @@ export default () => {
             <p>
               Botanicals is a family-owned business operating out of St George,
               Utah. We offer custom plantscape{" "}
-              <a href="/services/design/">designs and installations</a>, as well
-              as{" "}
-              <a href="/services/maintenance/">plant maintenance accounts </a>
+              <Link to="/services/design/">designs and installations</Link>, as
+              well as{" "}
+              <Link to="/services/maintenance/">
+                plant maintenance accounts{" "}
+              </Link>
               to care for your plants.{" "}
-              <a href="/request-consultation/">
+              <Link to="/request-consultation/">
                 Request a free consultation today
-              </a>{" "}
+              </Link>{" "}
               to start designing your commercial or residential spaces.
             </p>
 
@@ -57,17 +60,12 @@ export default () => {
             <p>
               In the last few years, we have also expanded our business to own
               three retail locations where we sell ceramic pottery, metal art,
-              yard decor, and more. We have one{" "}
-              <a href="/locations/saint-george/">location in St George, Utah</a>
-              ,{" "}
-              <a href="/locations/sandy/">
-                another further north in Sandy, Utah
-              </a>
-              , and{" "}
-              <a href="/locations/kaysville/">
-                another even further north in Kaysville, Utah
-              </a>
-              .
+              yard decor, and more. We have one location in{" "}
+              <Link to="/locations/saint-george/">St George, Utah</Link>
+              ,another further north in{" "}
+              <Link to="/locations/sandy/">Sandy, Utah</Link>, and another even
+              further north in{" "}
+              <Link to="/locations/kaysville/">Kaysville, Utah</Link>.
             </p>
             <Button href="/request-consultation">
               Request a free consultation today
@@ -94,9 +92,10 @@ export default () => {
               quality and peace back into life. Whether you are looking to liven
               up your home, workspace, or yard, we have the perfect
               life-injecting solutions you are needing. Please{" "}
-              <a href="/portfolios/">visit our portfolio</a> to see examples of
-              our most recent work.
+              <Link to="/portfolio">visit our portfolio</Link> to see examples
+              of our most recent work.
             </p>
+            <Button href="/portfolio">Visit our portfolio</Button>
           </Column>
         </Row>
         <Row>
@@ -131,11 +130,6 @@ export default () => {
             />
           </Column>
         </Row>
-        <Row>
-          <Column width={100}>
-            <Button href="/portfolio">Visit our portfolio</Button>
-          </Column>
-        </Row>
       </Section>
       <Section sectionHeading="We love our clients">
         <Row>
@@ -143,12 +137,14 @@ export default () => {
             <p>
               Being a family business, we strive for one-on-one, personable
               contact with our clients. We will work with you to customize
-              plantscapes and decor to fit all of your needs.{" "}
+              plantscapes and decor to fit all of your needs.
             </p>
 
             <p>
-              <a href="/request-consultation/">Request a free consultation</a>,
-              and we will work with you through the entire process of getting
+              <Link to="/request-consultation/">
+                Request a free consultation
+              </Link>
+              , and we will work with you through the entire process of getting
               your plantscapes planned, designed, and installed, relieving you
               from the worry of hitting your deadline. At this time, our
               services are in Southern Utah only, but we are also working to the
@@ -158,11 +154,12 @@ export default () => {
             <p>
               We design for both commercial and residential spaces, indoor and
               outdoor. We often work closely with Architects, Interior
-              Designers, and Landscapers.{" "}
-              <a href="/prospective-clients/">
-                Learn more about how we work with our clientele&#8230;
-              </a>
+              Designers, and Landscapers.
             </p>
+
+            <Button href="prospective-clients">
+              Learn how we work with our clientele&#8230;
+            </Button>
           </Column>
           <Column width={50}>
             <Picture
@@ -183,13 +180,15 @@ export default () => {
             <p>
               After installing your custom designed plantscape, we don&#8217;t
               leave you to care for it all by yourself. We offer our{" "}
-              <a href="/services/maintenance/">plant maintenance services</a> to
-              all of our clients.{" "}
+              <Link to="/services/maintenance/">
+                plant maintenance services
+              </Link>{" "}
+              to all of our clients.
             </p>
 
-            <h3 class="heading heading__h3 heading__h3--green">
+            <h3 class="heading heading__h3 heading__h3--green heading__quote">
               Our expertly trained service technicians will ensure that your
-              plantscapes stay alive, healthy, and beautiful.{" "}
+              plantscapes stay alive, healthy, and beautiful.
             </h3>
 
             <Button href="/services/maintenance">
@@ -228,15 +227,15 @@ export default () => {
               proven that plantscapes decrease stress, promote health, increase
               productivity. Plants purify the air around them and create an
               atmosphere of serenity. This is
-              <a href="/why-plantscape/">
+              <Link to="/why-plantscape/">
                 {" "}
                 why we want our plantscapes everywhere
-              </a>
+              </Link>
               . We are a family of plant-lovers and we always look forward to
               helping others discover what plantscapes can do for them.
             </p>
 
-            <h3 class="heading heading__h3 heading__h3--green">
+            <h3 class="heading heading__h3 heading__h3--green heading__quote">
               Want to learn more about Plantscapes? We have a blog!
             </h3>
 
@@ -258,10 +257,10 @@ export default () => {
               meetings, and more. Sign up for our retail locations newsletters
               to stay updated on what we have going on.
             </p>
-            <h3 className="heading heading__h3 heading__h3--green">
+            <h3 className="heading heading__h3 heading__h3--green heading__quote">
               Sign up for our Newsletter to stay updated on our events,
               shipments, and more.
-            </h3>{" "}
+            </h3>
           </Column>
           <Column width={50}>
             <SubscribeForm />

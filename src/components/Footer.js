@@ -220,47 +220,46 @@ function Footer() {
               >
                 <li>Locations</li>
               </a>
-              <a
-                href="/blog"
-                className="navigation__links navigation__links--footer"
-              >
-                <li>Blog</li>
-              </a>
-              <a
-                href="/about"
-                className="navigation__links navigation__links--footer"
-              >
-                <li>About</li>
-              </a>
             </ul>
             <h4 className="heading heading__h6 heading__h6--green">
               Learn More
             </h4>
-            <ul className="navigation__list">
-              <a
-                href="/announcements"
-                className="navigation__links navigation__links--footer"
-              >
-                <li>Announcements</li>
-              </a>
-              <a
-                href="/news-posts"
-                className="navigation__links navigation__links--footer"
-              >
-                <li>Botanicals News</li>
-              </a>
-              <a
-                href="/events"
-                className="navigation__links navigation__links--footer"
-              >
-                <li>Botanicals Events</li>
-              </a>
-              <a
-                href="/jobs"
-                className="navigation__links navigation__links--footer"
-              >
-                <li>Careers</li>
-              </a>
+            <ul className="navigation__list navigation__list--footer">
+              <li>
+                <a
+                  href="/blog"
+                  className="navigation__links navigation__links--footer"
+                >
+                  Blog
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="/about"
+                  className="navigation__links navigation__links--footer"
+                >
+                  About
+                </a>
+              </li>
+
+              {/* <li>
+                <a
+                  href="/events"
+                  className="navigation__links navigation__links--footer"
+                >
+                  Botanicals Events
+                </a>
+              </li> */}
+
+              <li>
+                <a
+                  href="/jobs"
+                  className="navigation__links navigation__links--footer"
+                >
+                  Job Openings
+                </a>
+              </li>
             </ul>
           </Column>
           <Column width={33}>

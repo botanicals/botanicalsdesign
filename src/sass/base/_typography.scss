@@ -49,10 +49,12 @@ p {
 
 a {
   text-decoration: none;
-  color: $color-primary-red;
+  color: lighten($color-primary-red, 10%);
+  font-weight: 300;
+
   &:hover {
     text-decoration: underline;
-    color: darken($color-primary-red, 5%);
+    color: lighten($color-primary-red, 5%);
   }
 }
 

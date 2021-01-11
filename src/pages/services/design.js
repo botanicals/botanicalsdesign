@@ -52,22 +52,22 @@ export default () => {
       <Section sectionHeading="The Botanicals Design Process">
         <Row>
           <Column width={25}>
-            <div className="background-color-orange">
+            <div className="background-color-orange centered">
               <img src="/assets/icons/design/discovery.png" alt="discovery" />
             </div>
           </Column>
           <Column width={25}>
-            <div className="background-color-orange-green">
+            <div className="background-color-orange-green centered">
               <img src="/assets/icons/design/design.png" alt="design" />
             </div>
           </Column>
           <Column width={25}>
-            <div className="background-color-green-orange">
+            <div className="background-color-green-orange centered">
               <img src="/assets/icons/design/install.png" alt="install" />
             </div>
           </Column>
           <Column width={25}>
-            <div className="background-color-green">
+            <div className="background-color-green centered">
               {" "}
               <img src="/assets/icons/design/maintain.png" alt="maintain" />
             </div>
@@ -85,10 +85,13 @@ export default () => {
             <div className="background-color-orange">
               <Row>
                 <Column width={33}>
-                  <img
-                    src="/assets/icons/design/objective.png"
-                    alt="objective"
-                  />
+                  <div className="process-icon-container">
+                    <img
+                      src="/assets/icons/design/objective.png"
+                      alt="objective"
+                      className="process-icon"
+                    />
+                  </div>
                 </Column>
                 <Column width={66}>
                   <h3 class="heading--white">Objective Review</h3>
@@ -101,11 +104,16 @@ export default () => {
               </Row>
               <Row>
                 <Column width={33}>
-                  <img src="/assets/icons/design/compass.png" alt="compass" />
+                  <div className="process-icon-container">
+                    <img
+                      src="/assets/icons/design/compass.png"
+                      alt="compass"
+                      className="process-icon"
+                    />
+                  </div>
                 </Column>
                 <Column width={66}>
                   <h3 class="heading--white">Spatial Analysis</h3>
-
                   <p class="paragraph--white">
                     Each space we enhance takes into consideration the
                     environmental aspects of light, traffic patterns, air flow,
@@ -128,7 +136,13 @@ export default () => {
             <div className="background-color-orange-green">
               <Row>
                 <Column width={33}>
-                  <img src="/assets/icons/design/palette.png" alt="palette" />
+                  <div className="process-icon-container">
+                    <img
+                      src="/assets/icons/design/palette.png"
+                      alt="palette"
+                      className="process-icon"
+                    />
+                  </div>
                 </Column>
                 <Column width={66}>
                   <h3 class="heading--white">Design Concepting</h3>
@@ -140,7 +154,13 @@ export default () => {
               </Row>
               <Row>
                 <Column width={33}>
-                  <img src="/assets/icons/design/thumb.png" alt="thumb" />
+                  <div className="process-icon-container">
+                    <img
+                      src="/assets/icons/design/thumb.png"
+                      alt="thumb"
+                      className="process-icon"
+                    />
+                  </div>
                 </Column>
                 <Column width={66}>
                   <h3 class="heading--white">Plan Review</h3>
@@ -152,7 +172,13 @@ export default () => {
               </Row>
               <Row>
                 <Column width={33}>
-                  <img src="/assets/icons/design/dollar.png" alt="dollar" />
+                  <div className="process-icon-container">
+                    <img
+                      src="/assets/icons/design/dollar.png"
+                      alt="dollar"
+                      className="process-icon"
+                    />
+                  </div>
                 </Column>
                 <Column width={66}>
                   <h3 class="heading--white">Budget</h3>
@@ -177,7 +203,13 @@ export default () => {
             <div className="background-color-green-orange">
               <Row>
                 <Column width={33}>
-                  <img src="/assets/icons/design/calendar.png" alt="calendar" />
+                  <div className="process-icon-container">
+                    <img
+                      src="/assets/icons/design/calendar.png"
+                      alt="calendar"
+                      className="process-icon"
+                    />
+                  </div>
                 </Column>
                 <Column width={66}>
                   <h3 class="heading--white">Scheduling</h3>
@@ -189,7 +221,13 @@ export default () => {
               </Row>
               <Row>
                 <Column width={33}>
-                  <img src="/assets/icons/design/thumb.png" alt="thumb" />
+                  <div className="process-icon-container">
+                    <img
+                      src="/assets/icons/design/thumb.png"
+                      alt="thumb"
+                      className="process-icon"
+                    />
+                  </div>
                 </Column>
                 <Column width={66}>
                   <h3 class="heading--white">Install</h3>
@@ -202,10 +240,13 @@ export default () => {
 
               <Row>
                 <Column width={33}>
-                  <img
-                    src="/assets/icons/design/plant-pot.png"
-                    alt="plant-pot"
-                  />
+                  <div className="process-icon-container">
+                    <img
+                      src="/assets/icons/design/plant-pot.png"
+                      alt="plant-pot"
+                      className="process-icon"
+                    />
+                  </div>
                 </Column>
                 <Column width={66}>
                   <h3 class="heading--white">Clean Up</h3>
@@ -231,7 +272,13 @@ export default () => {
             <div className="background-color-green">
               <Row>
                 <Column width={33}>
-                  <img src="/assets/icons/design/drop.png" alt="drop" />
+                  <div className="process-icon-container">
+                    <img
+                      src="/assets/icons/design/drop.png"
+                      alt="drop"
+                      className="process-icon"
+                    />
+                  </div>
                 </Column>
                 <Column width={66}>
                   <h3 class="heading--white">Plant Care</h3>
@@ -244,7 +291,13 @@ export default () => {
               </Row>
               <Row>
                 <Column width={33}>
-                  <img src="/assets/icons/design/plant.png" alt="plant" />
+                  <div className="process-icon-container">
+                    <img
+                      src="/assets/icons/design/plant.png"
+                      alt="plant"
+                      className="process-icon"
+                    />
+                  </div>
                 </Column>
                 <Column width={66}>
                   <h3 class="heading--white">Appearance</h3>
@@ -257,10 +310,13 @@ export default () => {
 
               <Row>
                 <Column width={33}>
-                  <img
-                    src="/assets/icons/design/plant-pot.png"
-                    alt="plant-pot"
-                  />
+                  <div className="process-icon-container">
+                    <img
+                      src="/assets/icons/design/plant-pot.png"
+                      alt="plant-pot"
+                      className="process-icon"
+                    />
+                  </div>
                 </Column>
 
                 <Column width={66}>
@@ -276,7 +332,7 @@ export default () => {
           </Column>
         </Row>
 
-        <div>
+        <div style={{ fontSize: "10px", textTransform: "uppercase" }}>
           Icons made by{" "}
           <a
             title="SimpleIcon"

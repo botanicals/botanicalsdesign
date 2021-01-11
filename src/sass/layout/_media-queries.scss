@@ -13,6 +13,13 @@
   &.header__logo {
     top: $half-height-of-header;
   }
+
+  // centering the information in the design and maintenance
+  // processes pages as the columns fall to their own lines
+  .heading--white,
+  .paragraph--white {
+    text-align: center;
+  }
 }
 
 @media (max-width: 500px) {
@@ -51,13 +58,6 @@
       top: 50%;
       display: block;
     }
-  }
-
-  // centering the information in the design and maintenance
-  // processes pages as the columns fall to their own lines
-  .heading--white,
-  .paragraph--white {
-    text-align: center;
   }
 
   // adjusting the h1 font size

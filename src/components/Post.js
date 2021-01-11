@@ -6,12 +6,12 @@ const Post = props => (
     <img src={props.image} alt="" />
     <div className="blog__details">
       <h2>{props.title}</h2>
-      <p>
-        by {props.author} | {props.date}
+      <p className="blog__metadata">
+        {props.author} | {props.date}
       </p>
       <p>{props.excerpt}</p>
       <Link className="blog__read-more" href={props.readMore}>
-        Read More &rarr;
+        Read More &#8811;
       </Link>
     </div>
   </div>

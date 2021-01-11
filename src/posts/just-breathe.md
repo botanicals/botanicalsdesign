@@ -1,6 +1,7 @@
 ---
 title: "Just Breathe..."
 date: "September 18, 2017"
+author: "Nicole Hancock"
 keywords: ""
 image: "/posts/2017/just-breathe-1.jpg"
 excerpt: "The average person, at rest, breathes in 11,000 liters, (388 cubic feet) of air each day. Those who exercise consume even more ..."

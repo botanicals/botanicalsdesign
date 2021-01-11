@@ -1,14 +1,15 @@
 import React from "react"
+import { Link } from "gatsby"
 
 const Button = props => {
   if (props.href) {
     return (
-      <button
+      <Link
         className={`button ${props.inverse && "button--inverse"}`}
-        href={props.href}
+        to={props.href}
       >
         {props.children}
-      </button>
+      </Link>
     )
   }
   return "must include an href or to prop"

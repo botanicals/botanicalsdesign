@@ -15,7 +15,7 @@
   transition: all 0.2s ease-in-out;
 
   &:hover {
-    transform: translateX(30px) scale(1.05);
+    //transform: translateX(30px) scale(1.05);
     //box-shadow: 0 0 10px 3px lighten($color-light-gray, 10%);
     color: lighten($color-primary-red, 10%);
     text-decoration: none;

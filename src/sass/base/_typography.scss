@@ -64,6 +64,37 @@ a {
   letter-spacing: 0.15em;
   padding: 1rem 0;
 
+  &__quote {
+    margin: 3rem 0;
+    line-height: 1.1;
+    letter-spacing: 0;
+    background-color: rgb(243, 241, 241);
+    padding: 3rem 1.5rem;
+    position: relative;
+    text-align: center;
+
+    // &::after {
+    //   content: "\201D";
+    //   font-family: serif, monospace;
+    //   position: absolute;
+    //   bottom: -2rem;
+    //   right: 0;
+    //   //transform: rotate(10deg);
+    //   font-size: 15rem;
+    //   line-height: 0;
+    // }
+
+    // &::before {
+    //   content: "\201C";
+    //   font-family: serif, Courier, monospace;
+    //   //position: absolute;
+    //   top: 0;
+    //   left: 0;
+    //   font-size: 4rem;
+    //   line-height: 0;
+    // }
+  }
+
   &__h1 {
     font-size: 6rem;
     color: $color-primary-red;

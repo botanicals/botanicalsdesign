@@ -20,14 +20,7 @@ const PostLayout = ({ data }) => {
   return (
     <>
       <SEO config={seo} />
-      <TopNotificationBanner
-        message={
-          <p>
-            Botanicals has recently opened a new retail location in Kaysville,
-            Utah! <a href="#">Visit the new page to learn more.</a>
-          </p>
-        }
-      />
+      <TopNotificationBanner />
       <Header />
       <HeroPageBanner
         heroImage="blog"

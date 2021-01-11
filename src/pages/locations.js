@@ -4,8 +4,6 @@ import PageLayout from "../layouts/PageLayout"
 import Section from "../components/Section"
 import Row from "../components/Row"
 import Column from "../components/Column"
-import Button from "../components/Button"
-import Picture from "../components/Picture"
 
 import SubscribeForm from "../components/SubscribeForm"
 import Locations from "../components/Locations"

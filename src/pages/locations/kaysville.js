@@ -1,5 +1,4 @@
 import React from "react"
-import { Link } from "gatsby"
 
 import PageLayout from "../../layouts/PageLayout"
 import Section from "../../components/Section"
@@ -63,11 +62,10 @@ export default () => {
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3009.7609484394766!2d-111.95278308428071!3d41.03048562600614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87530201e0667405%3A0xe7e80dcec7ce65e3!2sTri%20City%20Nursery!5e0!3m2!1sen!2sus!4v1600906958970!5m2!1sen!2sus"
               width="100%"
-              height="500px"
+              height="100%"
               frameborder="0"
               allowfullscreen=""
-              aria-hidden="false"
-              tabindex="0"
+              title="kaysville-map"
             ></iframe>
           </Column>
           <Column width={50}>

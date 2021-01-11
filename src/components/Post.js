@@ -1,16 +1,18 @@
 import React from "react"
-
-import Button from "./Button"
+import { Link } from "gatsby"
 
 const Post = props => (
   <div className="blog__card">
-    <img src={props.image} />
+    <img src={props.image} alt="" />
     <div className="blog__details">
       <h2>{props.title}</h2>
+      <p>
+        by {props.author} | {props.date}
+      </p>
       <p>{props.excerpt}</p>
-      <a className="blog__read-more" href={props.readMore}>
+      <Link className="blog__read-more" href={props.readMore}>
         Read More &rarr;
-      </a>
+      </Link>
     </div>
   </div>
 )

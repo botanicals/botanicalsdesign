@@ -2,11 +2,6 @@ import React from "react"
 import { graphql } from "gatsby"
 
 import PageLayout from "../layouts/PageLayout"
-import Section from "../components/Section"
-import Row from "../components/Row"
-import Column from "../components/Column"
-import Button from "../components/Button"
-import Picture from "../components/Picture"
 
 import Post from "../components/Post"
 
@@ -32,6 +27,8 @@ export default ({ data }) => {
             title={node.frontmatter.title}
             excerpt={node.frontmatter.excerpt}
             readMore={node.fields.slug}
+            date={node.frontmatter.date}
+            author={node.frontmatter.author}
           />
         ))}
       </div>
@@ -49,6 +46,7 @@ export const query = graphql`
           keywords
           image
           excerpt
+          author
         }
         excerpt
         html

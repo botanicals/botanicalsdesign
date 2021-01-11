@@ -61,6 +61,7 @@ export default () => {
               allowfullscreen=""
               height="100%"
               width="100%"
+              title="st-george-map"
             ></iframe>
           </Column>
           <Column width={50}>

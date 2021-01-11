@@ -65,17 +65,17 @@ function Navigation() {
           </ul>
         </li>
         <li className="parent-nav">
-          <Link to="/portfolios" className="navigation__links">
+          <Link to="/portfolio" className="navigation__links">
             Portfolios &#9662;
           </Link>
           <ul className="navigation__list navigation__list--secondary">
             <li>
-              <Link to="/portfolios/interior" className="navigation__links">
+              <Link to="/portfolio/interior" className="navigation__links">
                 Interior
               </Link>
             </li>
             <li>
-              <Link to="/portfolios/exterior" className="navigation__links">
+              <Link to="/portfolio/exterior" className="navigation__links">
                 Exterior
               </Link>
             </li>

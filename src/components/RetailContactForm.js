@@ -9,7 +9,7 @@ function RetailContactForm(props) {
 
   function formSubmit(e) {
     e.preventDefault()
-    const location = props.location
+    //const location = props.location
   }
 
   function subjectChange(e) {

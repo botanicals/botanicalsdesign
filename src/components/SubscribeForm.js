@@ -1,7 +1,7 @@
 import { Link } from "gatsby"
 import React, { useState } from "react"
 
-import Spinner from "./Spinner"
+//import Spinner from "./Spinner"
 
 function SubscribeForm(props) {
   const [formSending, setFormSending] = useState(false)
@@ -14,6 +14,7 @@ function SubscribeForm(props) {
   function formSubmit(e) {
     e.preventDefault()
     setFormSending(true)
+    console.log(formSending)
     alert(name + email)
     console.log(shipments)
     console.log(updates)

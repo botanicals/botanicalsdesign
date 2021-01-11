@@ -220,6 +220,7 @@ export default () => {
               height="315"
               src="https://www.youtube.com/embed/DEPFsLoXXJY"
               allowfullscreen
+              title="about-botanicals-video"
             ></iframe>
           </Column>
         </Row>

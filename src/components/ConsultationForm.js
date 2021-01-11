@@ -1,18 +1,14 @@
 import React, { useState } from "react"
 
-function ConsultationForm(props) {
+function ConsultationForm() {
   const [name, setName] = useState()
   const [phone, setPhone] = useState()
   const [email, setEmail] = useState()
   const [subject, setSubject] = useState()
   const [message, setMessage] = useState()
 
-  const [shipments, setShipments] = useState(false)
-  const [updates, setUpdates] = useState(false)
-
   function formSubmit(e) {
     e.preventDefault()
-    const location = props.location
   }
 
   function subjectChange(e) {

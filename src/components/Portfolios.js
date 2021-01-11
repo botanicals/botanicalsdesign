@@ -21,7 +21,7 @@ function Portfolios() {
             fantastic but serves to filter, humidify, and purify the air.
           </p>
 
-          <Button href="/portfolios/interior-portfolio">
+          <Button href="/portfolio/interior-portfolio">
             View Interior Portfolio
           </Button>
         </Column>
@@ -72,7 +72,7 @@ function Portfolios() {
             customized fire features, and décor items that help pull everything
             together and reveal your own flair.
           </p>
-          <Button href="/portfolios/exterior-portfolio">
+          <Button href="/portfolio/exterior-portfolio">
             View Exterior Portfolio
           </Button>
         </Column>

@@ -80,8 +80,9 @@ export default () => {
               <img
                 src="/assets/icons/maintenance/trained.png"
                 alt="trained technicians"
+                className="maintenance-process-icon"
               />
-              <h1 class="has-text-align-center heading heading__h1 maintenance-process-heading">
+              <h1 class="heading heading__h1 maintenance-process-heading">
                 Professionally Trained Technicians
               </h1>
             </div>
@@ -90,7 +91,13 @@ export default () => {
             <div className="background-color-orange">
               <Row>
                 <Column width={33}>
-                  <img src="/assets/icons/maintenance/book.png" alt="book" />
+                  <div className="process-icon-container">
+                    <img
+                      src="/assets/icons/maintenance/book.png"
+                      alt="book"
+                      className="process-icon"
+                    />
+                  </div>
                 </Column>
                 <Column width={66}>
                   <h3 class="heading--white">Rigorous Training</h3>
@@ -104,10 +111,13 @@ export default () => {
               </Row>
               <Row>
                 <Column width={33}>
-                  <img
-                    src="/assets/icons/maintenance/bestpractice.png"
-                    alt="graph"
-                  />
+                  <div className="process-icon-container">
+                    <img
+                      src="/assets/icons/maintenance/bestpractice.png"
+                      alt="graph"
+                      className="process-icon"
+                    />
+                  </div>
                 </Column>
                 <Column width={66}>
                   <h3 class="heading--white">Progressive Practices</h3>
@@ -131,8 +141,9 @@ export default () => {
               <img
                 src="/assets/icons/maintenance/trained.png"
                 alt="quality control"
+                className="maintenance-process-icon"
               />
-              <h1 class="has-text-align-center heading heading__h1 maintenance-process-heading">
+              <h1 class="heading heading__h1 maintenance-process-heading">
                 Quality Control
               </h1>
             </div>
@@ -141,10 +152,13 @@ export default () => {
             <div className="background-color-green-orange">
               <Row>
                 <Column width={33}>
-                  <img
-                    src="/assets/icons/maintenance/inspection.png"
-                    alt="inspection"
-                  />
+                  <div className="process-icon-container">
+                    <img
+                      src="/assets/icons/maintenance/inspection.png"
+                      alt="inspection"
+                      className="process-icon"
+                    />
+                  </div>
                 </Column>
                 <Column width={66}>
                   <h3 class="heading--white">52-Point Inspection</h3>
@@ -160,10 +174,13 @@ export default () => {
               </Row>
               <Row>
                 <Column width={33}>
-                  <img
-                    src="/assets/icons/maintenance/calendar.png"
-                    alt="calendar"
-                  />
+                  <div className="process-icon-container">
+                    <img
+                      src="/assets/icons/maintenance/calendar.png"
+                      alt="calendar"
+                      className="process-icon"
+                    />
+                  </div>
                 </Column>
                 <Column width={66}>
                   <h3 class="heading--white">Regular Inspections</h3>
@@ -186,8 +203,9 @@ export default () => {
               <img
                 src="/assets/icons/maintenance/replacement.png"
                 alt="plant replacement"
+                className="maintenance-process-icon"
               />
-              <h1 class="has-text-align-center heading heading__h1 maintenance-process-heading">
+              <h1 class="heading heading__h1 maintenance-process-heading">
                 Plant Replacement
               </h1>
             </div>
@@ -196,10 +214,13 @@ export default () => {
             <div className="background-color-green">
               <Row>
                 <Column width={33}>
-                  <img
-                    src="/assets/icons/maintenance/plant-pot.png"
-                    alt="plant-pot"
-                  />
+                  <div className="process-icon-container">
+                    <img
+                      src="/assets/icons/maintenance/plant-pot.png"
+                      alt="plant-pot"
+                      className="process-icon"
+                    />
+                  </div>
                 </Column>
                 <Column width={66}>
                   <h3 class="heading--white">The Botanicals Guarantee</h3>

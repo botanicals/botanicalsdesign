@@ -18,27 +18,6 @@
   padding: 2rem 1rem;
 }
 
-.centered {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 3rem 1rem;
-}
-
-.process-icon-container {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.process-icon {
-  margin: 1rem;
-  width: 100px;
-  max-height: 100px;
-}
-
 .discovery-div {
   background-image: url("/assets/discovery.jpg");
   background-size: cover;
@@ -79,16 +58,31 @@
 .technician-div {
   background-image: url("/assets/trainedtechnicians.jpg");
   background-size: cover;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .quality-div {
   background-image: url("/assets/qualitycontrol.jpg");
   background-size: cover;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .replacement-div {
   background-image: url("/assets/plantreplacement.jpg");
   background-size: cover;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .heading--white {
@@ -106,4 +100,31 @@
 
 .maintenance-process-heading {
   color: white !important;
+  text-align: center;
+}
+
+.centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 1rem;
+}
+
+.process-icon-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.process-icon {
+  margin: 1rem;
+  width: 100px;
+  max-height: 100px;
+}
+
+.maintenance-process-icon {
+  width: 90px;
+  margin: 2rem;
 }

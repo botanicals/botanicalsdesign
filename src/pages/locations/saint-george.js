@@ -7,18 +7,118 @@ import Column from "../../components/Column"
 import Button from "../../components/Button"
 import Picture from "../../components/Picture"
 
+import SubscribeForm from "../../components/SubscribeForm"
+
 export default () => {
   const seo = {
     title: "Botanicals Design | Locations > Saint George",
   }
   return (
     <PageLayout
-      heroImage="home"
+      heroImage="st-george"
       ext="jpg"
       mainHeading="Botanicals St George"
       subHeading="Our southen-most destination for garden art and pottery"
       pageHeading="About us"
       seo={seo}
-    ></PageLayout>
+    >
+      <Section sectionHeading="We sell pottery and decor">
+        <Row>
+          <Column width={50}>
+            <p>
+              Here at Botanicals St George we have a large selection of pottery,
+              planters, metal art, yard decor, and more. We are always ready to
+              help you find what you need. Come visit us for advice in the
+              design your own indoor or outdoor plantscapes, and to find the
+              right decor for your space.
+            </p>
+
+            <h3 class="heading heading__h3 heading__h3--green">
+              Questions? Reach out to us.
+            </h3>
+            <Button href="/contact/saint-george">435.656.2151</Button>
+            <Button href="/contact/saint-george">Email us</Button>
+          </Column>
+
+          <Column width={50}>
+            <Picture
+              column={50}
+              page="st-george"
+              breakpoint="default"
+              imageName="botanicals-st-george"
+              ext="jpg"
+              alt="our retail location in st george, utah"
+              caption=""
+            />
+          </Column>
+        </Row>
+
+        <Row>
+          <Column width={50}>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3181.4472715424126!2d-113.59922778474316!3d37.1182726798842!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80ca5a136a4a7863%3A0x14c048224067b8a8!2sBotanicals!5e0!3m2!1sen!2sus!4v1584996374805!5m2!1sen!2sus"
+              frameborder="0"
+              allowfullscreen=""
+              height="100%"
+              width="100%"
+            ></iframe>
+          </Column>
+          <Column width={50}>
+            <h3 class="heading heading__h3 heading__h3--green">
+              Visit us Today
+            </h3>
+
+            <p>592 N Bluff Street</p>
+
+            <p>Saint George, Utah 84770</p>
+
+            <h3 class="heading heading__h3 heading__h3--green">Summer Hours</h3>
+
+            <h5 class="heading heading__h5 heading__h5--red">
+              <strong>March 8th &#8211; October 31st</strong>
+            </h5>
+
+            <p>Monday-Saturday 9:30AM &#8211; 6:00PM</p>
+
+            <h3 class="heading heading__h3 heading__h3--green">Winter Hours</h3>
+
+            <h5 class="heading heading__h5 heading__h5--red">
+              <strong>November 1st &#8211; March 7th</strong>
+            </h5>
+
+            <p>Monday-Saturday 9:30AM &#8211; 5:00PM</p>
+          </Column>
+        </Row>
+      </Section>
+
+      <Section sectionHeading="">
+        <Row>
+          <Column width={50}>
+            <h2 className="heading heading__h2">More than just pots&#8230;</h2>
+            <p>
+              We offer more than just pottery and decor at our retail locations.
+              We are constantly evolving and growing at our stores. We are
+              starting to implement more events, such as plantings, bonsai club
+              meetings, and more. Sign up for our retail locations newsletters
+              to stay updated on what we have going on.
+            </p>
+            <h3 className="heading heading__h3 heading__h3--green">
+              Sign up for our email list and{" "}
+              <a
+                href="https://www.facebook.com/BotanicalsStGeorge/"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
+                follow us on Facebook
+              </a>{" "}
+              to stay updated on our events, shipments, and more.
+            </h3>
+          </Column>
+          <Column width={50}>
+            <SubscribeForm />
+          </Column>
+        </Row>
+      </Section>
+    </PageLayout>
   )
 }

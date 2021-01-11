@@ -13,12 +13,292 @@ export default () => {
   }
   return (
     <PageLayout
-      heroImage="home"
+      heroImage="design"
       ext="jpg"
       mainHeading="Our Design Process"
       subHeading="Change your space, change your life"
       pageHeading="From concept to reality"
       seo={seo}
-    ></PageLayout>
+    >
+      <Section sectionHeading="Learn Our Design Process">
+        <Row>
+          <Column width={50}>
+            <p>
+              When you decide you are ready for a Botanicals design consultation
+              a member of our team will come to your location and meet with you
+              to collaborate in the creation of your plantscape. Whether indoors
+              or out we get into the details of space usage, lighting, traffic
+              flow, and décor to seamlessly integrate a plan for the addition of
+              plants and containers to enhance your space.
+            </p>
+            <Button href="/request-consultation">
+              Request a Free Consultation Today
+            </Button>
+          </Column>
+          <Column width={50}>
+            <Picture
+              column={50}
+              page="design"
+              breakpoint="default"
+              imageName="botanicals-free-design-consultation"
+              ext="jpg"
+              alt="a design consultation in progress"
+              caption=""
+            />
+          </Column>
+        </Row>
+      </Section>
+
+      <Section sectionHeading="The Botanicals Design Process">
+        <Row>
+          <Column width={25}>
+            <div className="background-color-orange">
+              <img src="/assets/icons/design/discovery.png" alt="discovery" />
+            </div>
+          </Column>
+          <Column width={25}>
+            <div className="background-color-orange-green">
+              <img src="/assets/icons/design/design.png" alt="design" />
+            </div>
+          </Column>
+          <Column width={25}>
+            <div className="background-color-green-orange">
+              <img src="/assets/icons/design/install.png" alt="install" />
+            </div>
+          </Column>
+          <Column width={25}>
+            <div className="background-color-green">
+              {" "}
+              <img src="/assets/icons/design/maintain.png" alt="maintain" />
+            </div>
+          </Column>
+        </Row>
+
+        {/* DISCOVERY */}
+        <Row>
+          <Column width={50}>
+            <div className="discovery-div">
+              <img src="/assets/icons/design/discovery.png" alt="discovery" />
+            </div>
+          </Column>
+          <Column width={50}>
+            <div className="background-color-orange">
+              <Row>
+                <Column width={33}>
+                  <img
+                    src="/assets/icons/design/objective.png"
+                    alt="objective"
+                  />
+                </Column>
+                <Column width={66}>
+                  <h3 class="heading--white">Objective Review</h3>
+                  <p class="paragraph--white">
+                    Our initial consultation is always free and allows us the
+                    opportunity to understand the scope of the project and needs
+                    of our client.
+                  </p>
+                </Column>
+              </Row>
+              <Row>
+                <Column width={33}>
+                  <img src="/assets/icons/design/compass.png" alt="compass" />
+                </Column>
+                <Column width={66}>
+                  <h3 class="heading--white">Spatial Analysis</h3>
+
+                  <p class="paragraph--white">
+                    Each space we enhance takes into consideration the
+                    environmental aspects of light, traffic patterns, air flow,
+                    and the scale, patterns, textures of the overall ambience.
+                  </p>
+                </Column>
+              </Row>
+            </div>
+          </Column>
+        </Row>
+
+        {/* DESIGN */}
+        <Row>
+          <Column width={50}>
+            <div className="design-div">
+              <img src="/assets/icons/design/design.png" alt="design" />
+            </div>
+          </Column>
+          <Column width={50}>
+            <div className="background-color-orange-green">
+              <Row>
+                <Column width={33}>
+                  <img src="/assets/icons/design/palette.png" alt="palette" />
+                </Column>
+                <Column width={66}>
+                  <h3 class="heading--white">Design Concepting</h3>
+                  <p class="paragraph--white">
+                    We make recommendations and show you the containers and
+                    plant choices best suited to your needs and goals.
+                  </p>
+                </Column>
+              </Row>
+              <Row>
+                <Column width={33}>
+                  <img src="/assets/icons/design/thumb.png" alt="thumb" />
+                </Column>
+                <Column width={66}>
+                  <h3 class="heading--white">Plan Review</h3>
+                  <p class="paragraph--white">
+                    We collaborate with you to solidify the direction of the
+                    process and make any changes necessary.
+                  </p>
+                </Column>
+              </Row>
+              <Row>
+                <Column width={33}>
+                  <img src="/assets/icons/design/dollar.png" alt="dollar" />
+                </Column>
+                <Column width={66}>
+                  <h3 class="heading--white">Budget</h3>
+                  <p class="paragraph--white">
+                    We carefully walk you through the budget and make sure all
+                    your questions are answered.
+                  </p>
+                </Column>
+              </Row>
+            </div>
+          </Column>
+        </Row>
+
+        {/* INSTALL */}
+        <Row>
+          <Column width={50}>
+            <div className="install-div">
+              <img src="/assets/icons/design/install.png" alt="install" />
+            </div>
+          </Column>
+          <Column width={50}>
+            <div className="background-color-green-orange">
+              <Row>
+                <Column width={33}>
+                  <img src="/assets/icons/design/calendar.png" alt="calendar" />
+                </Column>
+                <Column width={66}>
+                  <h3 class="heading--white">Scheduling</h3>
+                  <p class="paragraph--white">
+                    We schedule our installations to be efficient and as
+                    unobtrusive as possible to your work flow or home life.
+                  </p>
+                </Column>
+              </Row>
+              <Row>
+                <Column width={33}>
+                  <img src="/assets/icons/design/thumb.png" alt="thumb" />
+                </Column>
+                <Column width={66}>
+                  <h3 class="heading--white">Install</h3>
+                  <p class="paragraph--white">
+                    On your installation day our experts transport and place
+                    your new plantscape.
+                  </p>
+                </Column>
+              </Row>
+
+              <Row>
+                <Column width={33}>
+                  <img
+                    src="/assets/icons/design/plant-pot.png"
+                    alt="plant-pot"
+                  />
+                </Column>
+                <Column width={66}>
+                  <h3 class="heading--white">Clean Up</h3>
+                  <p class="paragraph--white">
+                    We at Botanicals are plant geeks and neat freaks! We love
+                    working in the dirt, but your place will be spic and span
+                    when we leave.
+                  </p>
+                </Column>
+              </Row>
+            </div>
+          </Column>
+        </Row>
+
+        {/* MAINTAIN */}
+        <Row>
+          <Column width={50}>
+            <div className="maintain-div">
+              <img src="/assets/icons/design/maintain.png" alt="maintain" />
+            </div>
+          </Column>
+          <Column width={50}>
+            <div className="background-color-green">
+              <Row>
+                <Column width={33}>
+                  <img src="/assets/icons/design/drop.png" alt="drop" />
+                </Column>
+                <Column width={66}>
+                  <h3 class="heading--white">Plant Care</h3>
+                  <p class="paragraph--white">
+                    Our technicians carefully maintain soil moisture and
+                    content, pest control, cleanliness, humidification, and
+                    proper fertilization to keep your plantscape thriving.
+                  </p>
+                </Column>
+              </Row>
+              <Row>
+                <Column width={33}>
+                  <img src="/assets/icons/design/plant.png" alt="plant" />
+                </Column>
+                <Column width={66}>
+                  <h3 class="heading--white">Appearance</h3>
+                  <p class="paragraph--white">
+                    We ensure the life and beauty of your plantscape with our
+                    52-point inspection at regular intervals.
+                  </p>
+                </Column>
+              </Row>
+
+              <Row>
+                <Column width={33}>
+                  <img
+                    src="/assets/icons/design/plant-pot.png"
+                    alt="plant-pot"
+                  />
+                </Column>
+
+                <Column width={66}>
+                  <h3 class="heading--white">Replacement</h3>
+                  <p class="paragraph--white">
+                    Should a plant decline in health or appearance our
+                    full-guarantee service agreement covers a speedy replacement
+                    at no additional charge to you.
+                  </p>
+                </Column>
+              </Row>
+            </div>
+          </Column>
+        </Row>
+
+        <div>
+          Icons made by{" "}
+          <a
+            title="SimpleIcon"
+            href="https://www.flaticon.com/authors/simpleicon"
+          >
+            SimpleIcon
+          </a>{" "}
+          from{" "}
+          <a title="Flaticon" href="https://www.flaticon.com/">
+            www.flaticon.com
+          </a>{" "}
+          and is licensed by{" "}
+          <a
+            title="Creative Commons BY 3.0"
+            href="http://creativecommons.org/licenses/by/3.0/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            CC 3.0 BY
+          </a>
+        </div>
+      </Section>
+    </PageLayout>
   )
 }

@@ -1,35 +1,17 @@
+import React from "react"
 import { Link } from "gatsby"
-import React, { useState } from "react"
-
-//import Spinner from "./Spinner"
 
 function SubscribeForm(props) {
-  const [formSending, setFormSending] = useState(false)
-
-  const [name, setName] = useState()
-  const [email, setEmail] = useState()
-  const [shipments, setShipments] = useState(true)
-  const [updates, setUpdates] = useState(true)
-
-  function formSubmit(e) {
-    e.preventDefault()
-    setFormSending(true)
-    console.log(formSending)
-    alert(name + email)
-    console.log(shipments)
-    console.log(updates)
-  }
-
-  function nameChange(e) {
-    setName(e.target.value)
-  }
-
-  function emailChange(e) {
-    setEmail(e.target.value)
-  }
-
   return (
-    <form onSubmit={formSubmit} className={props.className}>
+    <form
+      method="post"
+      netlify-honeypot="bot-field"
+      data-netlify="true"
+      name="subscribe"
+      className={props.className}
+    >
+      <input type="hidden" name="bot-field" />
+      <input type="hidden" name="form-name" value="subscribe" />
       {props.className && (
         <div className="img-container">
           <Link to="/">
@@ -46,47 +28,21 @@ function SubscribeForm(props) {
         </h3>
         <label className="top">
           Name
-          <input
-            onChange={nameChange}
-            type="text"
-            name="name"
-            value={name}
-            required
-          />
+          <input type="text" name="name" required />
         </label>
         <label className="top">
           Email
-          <input
-            onChange={emailChange}
-            type="email"
-            name="email"
-            value={email}
-            required
-          />
+          <input type="email" name="email" required />
         </label>
 
         <div>I want to recieve emails with</div>
         <label className="sbs">
-          <input
-            onChange={() =>
-              shipments ? setShipments(false) : setShipments(true)
-            }
-            type="checkbox"
-            name="shipments"
-            value={updates}
-            checked={shipments}
-          />{" "}
-          Shipment Notifications
+          <input type="checkbox" name="shipments" value="shipments" /> Shipment
+          Notifications
         </label>
         <label className="sbs">
-          <input
-            onChange={() => (updates ? setUpdates(false) : setUpdates(true))}
-            type="checkbox"
-            name="updates"
-            value={updates}
-            checked={updates}
-          />{" "}
-          Updates &amp; News
+          <input type="checkbox" name="updates" value="updates" /> Updates &amp;
+          News
         </label>
 
         <input className="submit" type="submit" value="Sign Me Up" />

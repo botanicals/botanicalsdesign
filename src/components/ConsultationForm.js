@@ -58,7 +58,7 @@ function ConsultationForm() {
           Architect
         </label>
         <label class="sbs">
-          <input type="checknox" name="working-with" value="interiordesigner" />{" "}
+          <input type="checkbox" name="working-with" value="interiordesigner" />{" "}
           Interior Designer
         </label>
         <label class="sbs">

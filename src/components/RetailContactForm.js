@@ -1,64 +1,31 @@
-import React, { useState } from "react"
+import React from "react"
 
 function RetailContactForm(props) {
-  const [name, setName] = useState()
-  const [phone, setPhone] = useState()
-  const [email, setEmail] = useState()
-  const [subject, setSubject] = useState()
-  const [message, setMessage] = useState()
-
-  function formSubmit(e) {
-    e.preventDefault()
-    //const location = props.location
-  }
-
-  function subjectChange(e) {
-    setSubject(e.target.value)
-  }
-
-  function messageChange(e) {
-    setMessage(e.target.value)
-  }
-
-  function nameChange(e) {
-    setName(e.target.value)
-  }
-
-  function phoneChange(e) {
-    setPhone(e.target.value)
-  }
-
-  function emailChange(e) {
-    setEmail(e.target.value)
-  }
+  const location = props.location
 
   return (
-    <form onSubmit={formSubmit} class="retail-contact">
+    <form
+      method="post"
+      netlify-honeypot="bot-field"
+      data-netlify="true"
+      name={`${location}_contact`}
+      className="retail-contact"
+    >
+      <input type="hidden" name="bot-field" />
+      <input type="hidden" name="form-name" value={`${location}_contact`} />
       <fieldset>
         <legend>Sender Info</legend>
         <label className="top">
           Name*
-          <input
-            onChange={nameChange}
-            type="text"
-            name="name"
-            value={name}
-            required
-          />
+          <input type="text" name="name" required />
         </label>
         <label className="top">
           Phone
-          <input onChange={phoneChange} type="tel" name="phone" value={phone} />
+          <input type="tel" name="phone" />
         </label>
         <label className="top">
           Email*
-          <input
-            onChange={emailChange}
-            type="email"
-            name="email"
-            value={email}
-            required
-          />
+          <input type="email" name="email" required />
         </label>
       </fieldset>
       <fieldset>
@@ -66,23 +33,11 @@ function RetailContactForm(props) {
 
         <label className="top">
           Subject*
-          <input
-            onChange={subjectChange}
-            type="text"
-            name="subject"
-            value={subject}
-            required
-          />
+          <input type="text" name="subject" required />
         </label>
         <label className="top">
           Message*
-          <textarea
-            onChange={messageChange}
-            name="message"
-            value={message}
-            required
-            rows="8"
-          />
+          <textarea name="message" required rows="8" />
         </label>
 
         <input

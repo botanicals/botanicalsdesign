@@ -4,6 +4,7 @@ function ConsultationForm() {
   return (
     <form
       method="post"
+      action="/thanks"
       netlify-honeypot="bot-field"
       data-netlify="true"
       name="consultation_request"
@@ -54,16 +55,17 @@ function ConsultationForm() {
 
         <div>I am already working with:</div>
         <label class="sbs">
-          <input type="checkbox" name="architect" /> Architect
+          <input type="checkbox" name="architect" value="yes" /> Architect
         </label>
         <label class="sbs">
-          <input type="checkbox" name="interior-designer" /> Interior Designer
+          <input type="checkbox" name="interior-designer" value="yes" />{" "}
+          Interior Designer
         </label>
         <label class="sbs">
-          <input type="checkbox" name="landscaper" /> Landscaper
+          <input type="checkbox" name="landscaper" value="yes" /> Landscaper
         </label>
         <label class="sbs">
-          <input type="checkbox" name="none" /> None
+          <input type="checkbox" name="none" value="yes" /> None
         </label>
 
         <label className="top">

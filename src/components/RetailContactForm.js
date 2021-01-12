@@ -6,6 +6,7 @@ function RetailContactForm(props) {
   return (
     <form
       method="post"
+      action="/thanks"
       netlify-honeypot="bot-field"
       data-netlify="true"
       name={`${location}_contact`}

@@ -3,11 +3,14 @@ import React from "react"
 function ConsultationForm() {
   return (
     <form
-      netlify
-      method="POST"
+      method="post"
+      netlify-honeypot="bot-field"
+      data-netlify="true"
       name="consultation_request"
-      class="retail-contact"
+      className="retail-contact"
     >
+      <input type="hidden" name="bot-field" />
+      <input type="hidden" name="form-name" value="consultation_request" />
       <fieldset>
         <legend>Return Contact Info</legend>
         <label className="top">
@@ -51,18 +54,19 @@ function ConsultationForm() {
 
         <div>I am already working with:</div>
         <label class="sbs">
-          <input type="check" name="working-with" value="architect" /> Architect
+          <input type="checkbox" name="working-with" value="architect" />{" "}
+          Architect
         </label>
         <label class="sbs">
-          <input type="check" name="working-with" value="interiordesigner" />{" "}
+          <input type="checknox" name="working-with" value="interiordesigner" />{" "}
           Interior Designer
         </label>
         <label class="sbs">
-          <input type="check" name="working-with" value="landscaper" />{" "}
+          <input type="checkbox" name="working-with" value="landscaper" />{" "}
           Landscaper
         </label>
         <label class="sbs">
-          <input type="check" name="working-with" value="none" /> None
+          <input type="checkbox" name="working-with" value="none" /> None
         </label>
 
         <label className="top">

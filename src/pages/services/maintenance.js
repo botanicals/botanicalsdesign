@@ -34,7 +34,7 @@ export default () => {
               rotating blooming plants for the focal points in your space.
             </p>
 
-            <h2 class="heading heading__h2 heading__h2--green">
+            <h2 class="heading heading__h2 heading__h2--green heading__quote">
               Continue the life and beauty of your investment
             </h2>
 
@@ -240,11 +240,18 @@ export default () => {
           <a
             title="SimpleIcon"
             href="https://www.flaticon.com/authors/simpleicon"
+            rel="noopener noreferrer"
+            target="_blank"
           >
             SimpleIcon
           </a>{" "}
           from{" "}
-          <a title="Flaticon" href="https://www.flaticon.com/">
+          <a
+            title="Flaticon"
+            href="https://www.flaticon.com/"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
             www.flaticon.com
           </a>{" "}
           and is licensed by{" "}

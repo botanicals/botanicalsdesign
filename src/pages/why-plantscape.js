@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "gatsby"
 
 import PageLayout from "../layouts/PageLayout"
 import Section from "../components/Section"
@@ -40,7 +41,7 @@ export default () => {
               have in our lives, and we love creating plantscapes for our
               clients that maximize that positivity.
             </p>
-            <h3 class="heading heading__h3 heading__h3--green">
+            <h3 class="heading heading__h3 heading__h3--green heading__quote">
               Want to Learn More? Visit our Blog.
             </h3>
             <Button href="/blog">Visit our blog</Button>
@@ -83,7 +84,7 @@ export default () => {
               physiological effects of enjoyment, reprieve, and peace, plants
               add vitality and balance to our lives.
             </p>
-            <h3 class="heading heading__h3 heading__h3--green">
+            <h3 class="heading heading__h3 heading__h3--green heading__quote">
               Human existence is based upon intimate interactions with plant
               life.
             </h3>
@@ -91,16 +92,12 @@ export default () => {
               We love participating in the creation of indoor and outdoor
               container gardening. You can come to us for expert advise on
               do-it-yourself projects or rely upon our team for everything from{" "}
-              <a href="https://botanicalsdesign.com/design/">design services</a>
-              ,{" "}
-              <a href="https://botanicalsdesign.com/design/">
-                customized plantings
-              </a>
-              , <a href="https://botanicalsdesign.com/design/">installation</a>,
-              and{" "}
-              <a href="https://botanicalsdesign.com/maintenance/">
+              <Link to="/services/design">design services</Link>,{" "}
+              <Link to="/services/design">customized plantings</Link>,{" "}
+              <Link to="/services/design">installation</Link>, and{" "}
+              <Link to="https://botanicalsdesign.com/maintenance/">
                 ongoing maintenance
-              </a>
+              </Link>
               . Our aim is to bring our clients beauty and respite through the
               natural elements we incorporate in all our plantscapes.
             </p>

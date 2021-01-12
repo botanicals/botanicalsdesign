@@ -35,10 +35,10 @@ export default () => {
               meetings, and more. Sign up for our retail locations newsletters
               to stay updated on what we have going on.
             </p>
-            <h3 className="heading heading__h3 heading__h3--green">
+            <h3 className="heading heading__h3 heading__h3--green heading__quote">
               Sign up for our Newsletter to stay updated on our events,
               shipments, and more.
-            </h3>{" "}
+            </h3>
           </Column>
           <Column width={50}>
             <SubscribeForm />

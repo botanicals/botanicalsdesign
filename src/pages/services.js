@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "gatsby"
 
 import PageLayout from "../layouts/PageLayout"
 import Section from "../components/Section"
@@ -33,9 +34,9 @@ export default () => {
               We design for both commercial and residential spaces, indoor and
               outdoor. We often work closely with Architects, Interior
               Designers, and Landscapers.
-              <a href="https://botanicalsdesign.com/prospective-clients/">
+              <Link to="/prospective-clients">
                 Learn more about how we work with our clientele&#8230;
-              </a>
+              </Link>
             </p>
             <Button href="/services/design">Learn our design process</Button>
           </Column>

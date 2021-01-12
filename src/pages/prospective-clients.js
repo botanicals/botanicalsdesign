@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "gatsby"
 
 import PageLayout from "../layouts/PageLayout"
 import Section from "../components/Section"
@@ -27,9 +28,7 @@ export default () => {
             <p>
               Whether you are a landscaper, architectural firm, interior
               designer, or individual,{" "}
-              <a href="https://botanicalsdesign.com/services/">
-                we offer our services{" "}
-              </a>
+              <Link to="/services">we offer our services </Link>
               and will happily work to be sure we can fulfill your needs. We
               have years of experience and know how to take the burden off your
               shoulders and help you achieve your goals.
@@ -40,7 +39,7 @@ export default () => {
               are working to the trade in Northern Utah for design
               professionals.
             </p>
-            <h3 class="heading heading__h3 heading__h3--green">
+            <h3 class="heading heading__h3 heading__h3--green heading__quote">
               We ensure our clients achieve their goals
             </h3>
 
@@ -75,13 +74,13 @@ export default () => {
 
             <p>
               If you want to see what we design and install for homes, please{" "}
-              <a href="https://botanicalsdesign.com/portfolios/interior-portfolio/">
+              <Link to="/portfolio/interior-portfolio">
                 look through our interior portfolio gallery
-              </a>
+              </Link>
               . We don&#8217;t limit ourselves to interiors, however, so please{" "}
-              <a href="https://botanicalsdesign.com/portfolios/exterior-portfolio/">
+              <Link to="/portfolio/exterior-portfolio">
                 see our exterior portfolio
-              </a>{" "}
+              </Link>{" "}
               as well to get an idea of our work.
             </p>
             <Button href="/request-consultation">
@@ -114,14 +113,10 @@ export default () => {
             <p>
               This is why we seek to take a burden off your shoulders and help
               you achieve your goals. After{" "}
-              <a href="https://botanicalsdesign.com/services/design/">
-                designing and installing
-              </a>{" "}
-              the plantscapes, be sure to sign up for our{" "}
-              <a href="https://botanicalsdesign.com/services/maintenance/">
-                maintenance services
-              </a>{" "}
-              to keep your plantscapes beautiful.
+              <Link to="/services/design">designing and installing</Link> the
+              plantscapes, be sure to sign up for our{" "}
+              <Link to="/services/maintenance">maintenance services</Link> to
+              keep your plantscapes beautiful.
             </p>
 
             <Button href="/request-consultation">
@@ -160,10 +155,8 @@ export default () => {
               plantscapes for spaces, and have worked on health clinics,
               airports, and hospitals, such as Intermountain Health Care
               locations, and the St George Airport. Please{" "}
-              <a href="https://botanicalsdesign.com/portfolios/">
-                look through our portfolios
-              </a>{" "}
-              to see our work.
+              <Link to="/portfolio">look through our portfolios</Link> to see
+              our work.
             </p>
 
             <p>
@@ -197,27 +190,21 @@ export default () => {
             </h3>
             <p>
               Botanicals loves landscapers! With the addition of{" "}
-              <a href="https://botanicalsdesign.com/locations/">
-                our retail stores
-              </a>{" "}
-              in{" "}
-              <a href="https://botanicalsdesign.com/locations/sandy/">Sandy</a>{" "}
-              and{" "}
-              <a href="https://botanicalsdesign.com/locations/saint-george/">
-                St George
-              </a>
-              , Utah we have been able to better serve landscaping businesses.{" "}
+              <Link to="/locations">our retail stores</Link> in{" "}
+              <Link to="/locations/sandy">Sandy</Link> and{" "}
+              <Link to="/locations/saint-george">St George</Link>, Utah we have
+              been able to better serve landscaping businesses.{" "}
             </p>
 
             <p>
               We are currently working to build a Landscapers Program to
-              implement at both of our stores. Please visit or contact our store
-              closest to you to learn more information, and be sure to check
-              back regularly for updates on the Botanicals Landscaper Program.
+              implement at our stores. Please visit or contact our store closest
+              to you to learn more information, and be sure to check back
+              regularly for updates on the Botanicals Landscaper Program.
             </p>
 
-            <Button href="#">Northern Utah</Button>
-            <Button href="#">Southern Utah</Button>
+            <Button href="/contact/sandy">Northern Utah</Button>
+            <Button href="/contact/saint-george">Southern Utah</Button>
           </Column>
           <Column width={50}>
             <Picture
@@ -248,21 +235,16 @@ export default () => {
             <p>
               Whether we can help you distiguish your services or liven up (pun
               intended) your spaces with{" "}
-              <a href="https://botanicalsdesign.com/why-plantscape/">
-                plantscapes
-              </a>
-              , we are here to help you achieve those goals.
+              <Link to="/why-plantscape">plantscapes</Link>, we are here to help
+              you achieve those goals.
             </p>
 
             <p>
-              Please{" "}
-              <a href="https://botanicalsdesign.com/request-consultation/">
-                contact us
-              </a>{" "}
-              if you have any questions, and be sure to check out our{" "}
-              <a href="https://botanicalsdesign.com/portfolios/interior-portfolio/">
+              Please <Link to="/request-consultation">contact us</Link> if you
+              have any questions, and be sure to check out our{" "}
+              <Link to="/portfolio/interior-portfolio">
                 interior portfolio{" "}
-              </a>
+              </Link>
               to see the work we can accomplish.
             </p>
 

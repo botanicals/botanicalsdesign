@@ -337,11 +337,18 @@ export default () => {
           <a
             title="SimpleIcon"
             href="https://www.flaticon.com/authors/simpleicon"
+            rel="noopener noreferrer"
+            target="_blank"
           >
             SimpleIcon
           </a>{" "}
           from{" "}
-          <a title="Flaticon" href="https://www.flaticon.com/">
+          <a
+            title="Flaticon"
+            href="https://www.flaticon.com/"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
             www.flaticon.com
           </a>{" "}
           and is licensed by{" "}

@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "gatsby"
 
 import PageLayout from "../layouts/PageLayout"
 import Section from "../components/Section"
@@ -38,7 +39,7 @@ export default () => {
               be seen, but can be felt. Simply put, plants make us happier and
               healthier.
             </p>
-            <h3 class="heading heading__h3 heading__h3--green">
+            <h3 class="heading heading__h3 heading__h3--green heading__quote">
               Nature is transcendent
             </h3>
           </Column>
@@ -62,17 +63,15 @@ export default () => {
           <Column width={50}>
             <p>
               We offer custom plantscape&nbsp;
-              <a href="https://botanicalsdesign.com/services/design/">
-                designs and installations
-              </a>
-              , as well as&nbsp;
-              <a href="https://botanicalsdesign.com/services/maintenance/">
+              <Link to="/services/design">designs and installations</Link>, as
+              well as&nbsp;
+              <Link to="/services/maintenance">
                 plant maintenance accounts&nbsp;
-              </a>
+              </Link>
               to care for your plants.&nbsp;
-              <a href="https://botanicalsdesign.com/request-consultation/">
+              <Link to="/request-consultation">
                 Request a free consultation today
-              </a>
+              </Link>
               &nbsp;to start designing your commercial or residential spaces.
             </p>
 
@@ -87,17 +86,17 @@ export default () => {
               In the last few years, we have also expanded our business to own
               three retail locations where we sell ceramic pottery, metal art,
               yard decor, and more. We have one{" "}
-              <a href="https://botanicalsdesign.com/locations/saint-george/">
+              <Link to="/locations/saint-george">
                 location in St George, Utah
-              </a>
+              </Link>
               ,{" "}
-              <a href="https://botanicalsdesign.com/locations/sandy/">
+              <Link to="/locations/sandy">
                 another further north in Sandy, Utah
-              </a>
+              </Link>
               , and{" "}
-              <a href="https://botanicalsdesign.com/locations/kaysville/">
+              <Link to="/locations/kaysville">
                 another even further north in Kaysville, Utah.
-              </a>
+              </Link>
             </p>
 
             <Button href="/request-consultation">
@@ -160,9 +159,9 @@ export default () => {
               St. George and Sandy, Utah we have a greater opportunity to better
               serve our clients and bring more of our services to the public at
               large.{" "}
-              <a href="https://botanicalsdesign.com/locations/">
+              <Link to="/locations">
                 You can learn more about our retail locations here.
-              </a>
+              </Link>
             </p>
           </Column>
         </Row>

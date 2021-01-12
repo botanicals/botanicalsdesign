@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "gatsby"
 
 import Row from "../components/Row"
 import Column from "../components/Column"
@@ -9,7 +10,7 @@ function Footer() {
     <footer className="footer">
       <Section>
         <Row>
-          <Column centered width={100}>
+          <Column width={100}>
             <img
               src="/assets/logos/botanicals-logo.png"
               className="footer__logo"
@@ -18,19 +19,19 @@ function Footer() {
           </Column>
         </Row>
         <Row>
-          <Column width={33}>
+          <Column width={50}>
             <h3 className="heading heading__h5 heading__h5--green">
               Visit Us at our Stores
             </h3>
             <li className="navigation__list">
-              <a
-                href="/kaysville"
+              <Link
+                to="/locations/kaysville"
                 className="navigation__links navigation__links--footer"
               >
                 <h4 className="heading heading__h6 heading__h6--green u-hover-link">
                   Botanicals Kaysville
                 </h4>
-              </a>
+              </Link>
             </li>
             <p className="u-default-font-size">
               395 South Deseret Drive
@@ -44,12 +45,12 @@ function Footer() {
                 801.567.1255
               </a>
             </p>
-            <a
-              href="/kaysville-contact"
+            <Link
+              to="/contact/kaysville"
               className="navigation__links navigation__links--footer"
             >
               SEND A MESSAGE
-            </a>
+            </Link>
             <br />
             <a
               href="https://www.facebook.com/botanicalskaysville/"
@@ -76,14 +77,14 @@ function Footer() {
             </a>
 
             <li className="navigation__list">
-              <a
-                href="/sandy"
+              <Link
+                to="/locations/sandy"
                 className="navigation__links navigation__links--footer"
               >
                 <h4 className="heading heading__h6 heading__h6--green u-hover-link">
                   Botanicals Sandy
                 </h4>
-              </a>
+              </Link>
             </li>
             <p className="u-default-font-size">
               8610 South State Street
@@ -97,12 +98,12 @@ function Footer() {
                 801.567.1255
               </a>
             </p>
-            <a
-              href="/sandy-contact"
+            <Link
+              href="/contact/sandy"
               className="navigation__links navigation__links--footer"
             >
               SEND A MESSAGE
-            </a>
+            </Link>
             <br />
             <a
               href="https://www.facebook.com/BotanicalsSandy/"
@@ -130,14 +131,14 @@ function Footer() {
             </a>
 
             <li className="navigation__list">
-              <a
-                href="/saint-george"
+              <Link
+                href="/locations/saint-george"
                 className="navigation__links navigation__links--footer"
               >
                 <h4 className="heading heading__h6 heading__h6--green u-hover-link">
                   Botanicals St. George
                 </h4>
-              </a>
+              </Link>
             </li>
             <p className="u-default-font-size">
               592 North Bluff Street
@@ -151,12 +152,12 @@ function Footer() {
                 435.656.2151
               </a>
             </p>
-            <a
-              href="/stgeorge-contact"
+            <Link
+              href="/contact/saint-george"
               className="navigation__links navigation__links--footer"
             >
               SEND A MESSAGE
-            </a>
+            </Link>
             <br />
             <a
               href="https://www.facebook.com/botanicalsstgeorge/"
@@ -182,7 +183,7 @@ function Footer() {
               />
             </a>
           </Column>
-          <Column width={33}>
+          <Column width={50}>
             <h3 className="heading heading__h5 heading__h5--green">
               Stay up to Date
             </h3>
@@ -190,79 +191,71 @@ function Footer() {
               Explore Our Site
             </h4>
             <ul className="navigation__list">
-              <a
-                href="/why-plantscape"
+              <Link
+                to="/why-plantscape"
                 className="navigation__links navigation__links--footer"
               >
                 <li>Plantscapes</li>
-              </a>
-              <a
-                href="/services"
+              </Link>
+              <Link
+                to="/services"
                 className="navigation__links navigation__links--footer"
               >
                 <li>Services</li>
-              </a>
-              <a
-                href="/prospective-clients"
+              </Link>
+              <Link
+                to="/prospective-clients"
                 className="navigation__links navigation__links--footer"
               >
                 <li>Prospective Clients</li>
-              </a>
-              <a
-                href="/portfolios"
+              </Link>
+              <Link
+                to="/portfolios"
                 className="navigation__links navigation__links--footer"
               >
                 <li>Portfolios</li>
-              </a>
-              <a
+              </Link>
+              <Link
                 href="/locations"
                 className="navigation__links navigation__links--footer"
               >
                 <li>Locations</li>
-              </a>
+              </Link>
             </ul>
             <h4 className="heading heading__h6 heading__h6--green">
               Learn More
             </h4>
             <ul className="navigation__list navigation__list--footer">
-              <li>
-                <a
-                  href="/blog"
-                  className="navigation__links navigation__links--footer"
-                >
-                  Blog
-                </a>
-              </li>
+              <Link
+                to="/blog"
+                className="navigation__links navigation__links--footer"
+              >
+                <li>Blog </li>
+              </Link>
 
-              <li>
-                <a
-                  href="/about"
-                  className="navigation__links navigation__links--footer"
-                >
-                  About
-                </a>
-              </li>
+              <Link
+                to="/about"
+                className="navigation__links navigation__links--footer"
+              >
+                <li>About </li>
+              </Link>
 
-              {/* <li>
-                <a
-                  href="/events"
+              {/*
+                <Link
+                  to="/events"
                   className="navigation__links navigation__links--footer"
-                >
-                  Botanicals Events
-                </a>
-              </li> */}
+                > <li>
+                  Botanicals Events  </li>
+                </Link>
+             */}
 
-              <li>
-                <a
-                  href="/jobs"
-                  className="navigation__links navigation__links--footer"
-                >
-                  Job Openings
-                </a>
-              </li>
+              <Link
+                to="/jobs"
+                className="navigation__links navigation__links--footer"
+              >
+                <li>Job Openings</li>
+              </Link>
             </ul>
-          </Column>
-          <Column width={33}>
             <h3 className="heading heading__h5 heading__h5--green">
               Work with Us
             </h3>
@@ -271,53 +264,53 @@ function Footer() {
               Design Professionals
             </h4>
             <ul className="navigation__list">
-              <a
-                href="/prospective-clients#landscapers"
+              <Link
+                to="/prospective-clients#landscapers"
                 className="navigation__links navigation__links--footer"
               >
                 <li>Landscapers</li>
-              </a>
-              <a
-                href="/prospective-clients#architects"
+              </Link>
+              <Link
+                to="/prospective-clients#architects"
                 className="navigation__links navigation__links--footer"
               >
                 <li>Architects</li>
-              </a>
-              <a
-                href="/prospective-clients#interior-designers"
+              </Link>
+              <Link
+                to="/prospective-clients#interior-designers"
                 className="navigation__links navigation__links--footer"
               >
                 <li>Interior Designers</li>
-              </a>
+              </Link>
             </ul>
             <h4 className="heading heading__h6 heading__h6--green">
               Plantscape Designs
             </h4>
             <ul className="navigation__list">
-              <a
-                href="/prospective-clients#residential"
+              <Link
+                to="/prospective-clients#residential"
                 className="navigation__links navigation__links--footer"
               >
                 <li>Residential Spaces</li>
-              </a>
-              <a
-                href="/prospective-clients#commercial"
+              </Link>
+              <Link
+                to="/prospective-clients#commercial"
                 className="navigation__links navigation__links--footer"
               >
                 <li>Commercial Spaces</li>
-              </a>
+              </Link>
             </ul>
 
             <h4 className="heading heading__h6 heading__h6--green">
               Get a Free Consultation
             </h4>
             <ul className="navigation__list">
-              <a
-                href="/request-consultation"
+              <Link
+                to="/request-consultation"
                 className="navigation__links navigation__links--footer"
               >
                 <li>Request a Consultation</li>
-              </a>
+              </Link>
             </ul>
           </Column>
         </Row>
@@ -325,15 +318,15 @@ function Footer() {
         <Row>
           <Column centered width={100}>
             <span className="footer__copywrite-span">
-              &copy; 2020 BOTANICALS &bull; SITE BY{" "}
-              <a
+              &copy; 2021 BY BOTANICALS
+              {/* <a
                 href="http://talondurrant.com"
                 target="_blank"
                 className="footer__copywrite-link"
                 rel="noreferrer"
               >
                 TALON DURRANT
-              </a>
+              </a> */}
             </span>
           </Column>
         </Row>

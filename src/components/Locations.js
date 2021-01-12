@@ -11,7 +11,7 @@ function Locations() {
     <>
       <Row>
         <Column width={100}>
-          <h3 class="heading heading__h3 heading__h3--green">
+          <h3 className="heading heading__h3 heading__h3--green">
             Visit our Retail Locations
           </h3>
 

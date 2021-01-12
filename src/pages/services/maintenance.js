@@ -34,7 +34,7 @@ export default () => {
               rotating blooming plants for the focal points in your space.
             </p>
 
-            <h2 class="heading heading__h2 heading__h2--green heading__quote">
+            <h2 className="heading heading__h2 heading__h2--green heading__quote">
               Continue the life and beauty of your investment
             </h2>
 
@@ -53,7 +53,7 @@ export default () => {
               price quote.
             </p>
 
-            <Button href="request-consultation">
+            <Button href="/request-consultation">
               Request a free consultation today
             </Button>
           </Column>
@@ -82,7 +82,7 @@ export default () => {
                 alt="trained technicians"
                 className="maintenance-process-icon"
               />
-              <h1 class="heading heading__h1 maintenance-process-heading">
+              <h1 className="heading heading__h1 maintenance-process-heading">
                 Professionally Trained Technicians
               </h1>
             </div>
@@ -100,8 +100,8 @@ export default () => {
                   </div>
                 </Column>
                 <Column width={66}>
-                  <h3 class="heading--white">Rigorous Training</h3>
-                  <p class="paragraph--white">
+                  <h3 className="heading--white">Rigorous Training</h3>
+                  <p className="paragraph--white">
                     Botanicals’ technicians become experts in the care and
                     maintenance of interior plants. Our program includes
                     collegiate-level botany courses, hands-on training, and
@@ -120,9 +120,9 @@ export default () => {
                   </div>
                 </Column>
                 <Column width={66}>
-                  <h3 class="heading--white">Progressive Practices</h3>
+                  <h3 className="heading--white">Progressive Practices</h3>
 
-                  <p class="paragraph--white">
+                  <p className="paragraph--white">
                     Botanicals is continually pursuing new ways of creating
                     efficiencies and tools for our technician’s implementation.
                     We create a standard of best practices that raises the bar
@@ -143,7 +143,7 @@ export default () => {
                 alt="quality control"
                 className="maintenance-process-icon"
               />
-              <h1 class="heading heading__h1 maintenance-process-heading">
+              <h1 className="heading heading__h1 maintenance-process-heading">
                 Quality Control
               </h1>
             </div>
@@ -161,8 +161,8 @@ export default () => {
                   </div>
                 </Column>
                 <Column width={66}>
-                  <h3 class="heading--white">52-Point Inspection</h3>
-                  <p class="paragraph--white">
+                  <h3 className="heading--white">52-Point Inspection</h3>
+                  <p className="paragraph--white">
                     At Botanicals we recognize that if our plants don’t look
                     good, you don’t look good. We ensure not only the life, but
                     the beauty of your plantscape. This means a 52- point Q.C.
@@ -183,9 +183,9 @@ export default () => {
                   </div>
                 </Column>
                 <Column width={66}>
-                  <h3 class="heading--white">Regular Inspections</h3>
+                  <h3 className="heading--white">Regular Inspections</h3>
 
-                  <p class="paragraph--white">
+                  <p className="paragraph--white">
                     We perform regular inspections by our quality control
                     manager to maintain and keep up the appearance of your
                     plantscape.
@@ -205,7 +205,7 @@ export default () => {
                 alt="plant replacement"
                 className="maintenance-process-icon"
               />
-              <h1 class="heading heading__h1 maintenance-process-heading">
+              <h1 className="heading heading__h1 maintenance-process-heading">
                 Plant Replacement
               </h1>
             </div>
@@ -223,8 +223,8 @@ export default () => {
                   </div>
                 </Column>
                 <Column width={66}>
-                  <h3 class="heading--white">The Botanicals Guarantee</h3>
-                  <p class="paragraph--white">
+                  <h3 className="heading--white">The Botanicals Guarantee</h3>
+                  <p className="paragraph--white">
                     If a plant declines in health or appearance, we guarantee a
                     speedy replacement at no additional charge. Botanicals
                     ensures a hassle-free experience and your complete

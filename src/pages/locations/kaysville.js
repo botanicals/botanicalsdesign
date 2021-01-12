@@ -38,7 +38,7 @@ export default () => {
               perfect piece for your outdoor or indoor design.
             </p>
 
-            <h3 class="heading heading__h3 heading__h3--green">
+            <h3 className="heading heading__h3 heading__h3--green">
               Questions? Reach out to us.
             </h3>
             <Button href="/contact/kaysville">Email us</Button>
@@ -63,17 +63,17 @@ export default () => {
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3009.7609484394766!2d-111.95278308428071!3d41.03048562600614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87530201e0667405%3A0xe7e80dcec7ce65e3!2sTri%20City%20Nursery!5e0!3m2!1sen!2sus!4v1600906958970!5m2!1sen!2sus"
               width="100%"
               height="100%"
-              frameborder="0"
-              allowfullscreen=""
+              frameBorder="0"
+              allowFullScreen=""
               title="kaysville-map"
             ></iframe>
           </Column>
           <Column width={50}>
-            <h3 class="heading heading__h3 heading__h3--green">
+            <h3 className="heading heading__h3 heading__h3--green">
               Visit us Today
             </h3>
 
-            <h4 class="heading heading__h4 heading__h4--red">
+            <h4 className="heading heading__h4 heading__h4--red">
               We have our pottery and décor on the lot of Tri City Nursery
             </h4>
 
@@ -81,9 +81,9 @@ export default () => {
 
             <p>Kaysville, Utah 84037</p>
 
-            <h3 class="heading heading__h3 heading__h3--green">Hours</h3>
+            <h3 className="heading heading__h3 heading__h3--green">Hours</h3>
 
-            <h4 class="heading heading__h4 heading__h4--red">
+            <h4 className="heading heading__h4 heading__h4--red">
               Hours are subject to change at this time
             </h4>
 

@@ -186,7 +186,7 @@ export default () => {
               to all of our clients.
             </p>
 
-            <h3 class="heading heading__h3 heading__h3--green heading__quote">
+            <h3 className="heading heading__h3 heading__h3--green heading__quote">
               Our expertly trained service technicians will ensure that your
               plantscapes stay alive, healthy, and beautiful.
             </h3>
@@ -227,7 +227,7 @@ export default () => {
               proven that plantscapes decrease stress, promote health, increase
               productivity. Plants purify the air around them and create an
               atmosphere of serenity. This is
-              <Link to="/why-plantscape/">
+              <Link to="/why-plantscape">
                 {" "}
                 why we want our plantscapes everywhere
               </Link>
@@ -235,7 +235,7 @@ export default () => {
               helping others discover what plantscapes can do for them.
             </p>
 
-            <h3 class="heading heading__h3 heading__h3--green heading__quote">
+            <h3 className="heading heading__h3 heading__h3--green heading__quote">
               Want to learn more about Plantscapes? We have a blog!
             </h3>
 

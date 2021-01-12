@@ -39,16 +39,17 @@ export default () => {
               are working to the trade in Northern Utah for design
               professionals.
             </p>
-            <h3 class="heading heading__h3 heading__h3--green heading__quote">
+            <h3 className="heading heading__h3 heading__h3--green heading__quote">
               We ensure our clients achieve their goals
             </h3>
 
-            <p>
+            <p id="residential">
               We are currently working hard to bring you information that you
               can learn from our website and utilize in making your plantscape
               decisions. Please come back to this page often to see new
               information and updates.
             </p>
+            <Button href="/services">Learn more about our services</Button>
           </Column>
           <Column width={50}>
             <Picture
@@ -72,15 +73,13 @@ export default () => {
               home. We have found a way to achieve this: Plantscapes!
             </p>
 
-            <p>
+            <p id="commercial">
               If you want to see what we design and install for homes, please{" "}
-              <Link to="/portfolio/interior-portfolio">
+              <Link to="/portfolio/interior">
                 look through our interior portfolio gallery
               </Link>
               . We don&#8217;t limit ourselves to interiors, however, so please{" "}
-              <Link to="/portfolio/exterior-portfolio">
-                see our exterior portfolio
-              </Link>{" "}
+              <Link to="/portfolio/exterior">see our exterior portfolio</Link>{" "}
               as well to get an idea of our work.
             </p>
             <Button href="/request-consultation">
@@ -140,7 +139,10 @@ export default () => {
       <Section sectionHeading="Design Professionals">
         <Row>
           <Column width={50}>
-            <h3 class="heading heading__h3 heading__h3--green" id="architects">
+            <h3
+              className="heading heading__h3 heading__h3--green"
+              id="architects"
+            >
               Architects
             </h3>
             <p>
@@ -185,14 +187,18 @@ export default () => {
 
         <Row>
           <Column width={50}>
-            <h3 class="heading heading__h3 heading__h3--green" id="landscapers">
+            <h3
+              className="heading heading__h3 heading__h3--green"
+              id="landscapers"
+            >
               Landscapers
             </h3>
             <p>
               Botanicals loves landscapers! With the addition of{" "}
               <Link to="/locations">our retail stores</Link> in{" "}
-              <Link to="/locations/sandy">Sandy</Link> and{" "}
-              <Link to="/locations/saint-george">St George</Link>, Utah we have
+              <Link to="/locations/sandy">Sandy</Link>,{" "}
+              <Link to="/locations/saint-george">St George</Link>, and{" "}
+              <Link to="/locations/kaysville">Kaysville</Link>, Utah we have
               been able to better serve landscaping businesses.{" "}
             </p>
 
@@ -222,7 +228,7 @@ export default () => {
         <Row>
           <Column width={50}>
             <h3
-              class="heading heading__h3 heading__h3--green"
+              className="heading heading__h3 heading__h3--green"
               id="interior-designers"
             >
               Interior Designers
@@ -242,9 +248,7 @@ export default () => {
             <p>
               Please <Link to="/request-consultation">contact us</Link> if you
               have any questions, and be sure to check out our{" "}
-              <Link to="/portfolio/interior-portfolio">
-                interior portfolio{" "}
-              </Link>
+              <Link to="/portfolio/interior">interior portfolio </Link>
               to see the work we can accomplish.
             </p>
 

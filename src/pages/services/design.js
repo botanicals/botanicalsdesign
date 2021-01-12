@@ -94,8 +94,8 @@ export default () => {
                   </div>
                 </Column>
                 <Column width={66}>
-                  <h3 class="heading--white">Objective Review</h3>
-                  <p class="paragraph--white">
+                  <h3 className="heading--white">Objective Review</h3>
+                  <p className="paragraph--white">
                     Our initial consultation is always free and allows us the
                     opportunity to understand the scope of the project and needs
                     of our client.
@@ -113,8 +113,8 @@ export default () => {
                   </div>
                 </Column>
                 <Column width={66}>
-                  <h3 class="heading--white">Spatial Analysis</h3>
-                  <p class="paragraph--white">
+                  <h3 className="heading--white">Spatial Analysis</h3>
+                  <p className="paragraph--white">
                     Each space we enhance takes into consideration the
                     environmental aspects of light, traffic patterns, air flow,
                     and the scale, patterns, textures of the overall ambience.
@@ -145,8 +145,8 @@ export default () => {
                   </div>
                 </Column>
                 <Column width={66}>
-                  <h3 class="heading--white">Design Concepting</h3>
-                  <p class="paragraph--white">
+                  <h3 className="heading--white">Design Concepting</h3>
+                  <p className="paragraph--white">
                     We make recommendations and show you the containers and
                     plant choices best suited to your needs and goals.
                   </p>
@@ -163,8 +163,8 @@ export default () => {
                   </div>
                 </Column>
                 <Column width={66}>
-                  <h3 class="heading--white">Plan Review</h3>
-                  <p class="paragraph--white">
+                  <h3 className="heading--white">Plan Review</h3>
+                  <p className="paragraph--white">
                     We collaborate with you to solidify the direction of the
                     process and make any changes necessary.
                   </p>
@@ -181,8 +181,8 @@ export default () => {
                   </div>
                 </Column>
                 <Column width={66}>
-                  <h3 class="heading--white">Budget</h3>
-                  <p class="paragraph--white">
+                  <h3 className="heading--white">Budget</h3>
+                  <p className="paragraph--white">
                     We carefully walk you through the budget and make sure all
                     your questions are answered.
                   </p>
@@ -212,8 +212,8 @@ export default () => {
                   </div>
                 </Column>
                 <Column width={66}>
-                  <h3 class="heading--white">Scheduling</h3>
-                  <p class="paragraph--white">
+                  <h3 className="heading--white">Scheduling</h3>
+                  <p className="paragraph--white">
                     We schedule our installations to be efficient and as
                     unobtrusive as possible to your work flow or home life.
                   </p>
@@ -230,8 +230,8 @@ export default () => {
                   </div>
                 </Column>
                 <Column width={66}>
-                  <h3 class="heading--white">Install</h3>
-                  <p class="paragraph--white">
+                  <h3 className="heading--white">Install</h3>
+                  <p className="paragraph--white">
                     On your installation day our experts transport and place
                     your new plantscape.
                   </p>
@@ -249,8 +249,8 @@ export default () => {
                   </div>
                 </Column>
                 <Column width={66}>
-                  <h3 class="heading--white">Clean Up</h3>
-                  <p class="paragraph--white">
+                  <h3 className="heading--white">Clean Up</h3>
+                  <p className="paragraph--white">
                     We at Botanicals are plant geeks and neat freaks! We love
                     working in the dirt, but your place will be spic and span
                     when we leave.
@@ -281,8 +281,8 @@ export default () => {
                   </div>
                 </Column>
                 <Column width={66}>
-                  <h3 class="heading--white">Plant Care</h3>
-                  <p class="paragraph--white">
+                  <h3 className="heading--white">Plant Care</h3>
+                  <p className="paragraph--white">
                     Our technicians carefully maintain soil moisture and
                     content, pest control, cleanliness, humidification, and
                     proper fertilization to keep your plantscape thriving.
@@ -300,8 +300,8 @@ export default () => {
                   </div>
                 </Column>
                 <Column width={66}>
-                  <h3 class="heading--white">Appearance</h3>
-                  <p class="paragraph--white">
+                  <h3 className="heading--white">Appearance</h3>
+                  <p className="paragraph--white">
                     We ensure the life and beauty of your plantscape with our
                     52-point inspection at regular intervals.
                   </p>
@@ -320,8 +320,8 @@ export default () => {
                 </Column>
 
                 <Column width={66}>
-                  <h3 class="heading--white">Replacement</h3>
-                  <p class="paragraph--white">
+                  <h3 className="heading--white">Replacement</h3>
+                  <p className="paragraph--white">
                     Should a plant decline in health or appearance our
                     full-guarantee service agreement covers a speedy replacement
                     at no additional charge to you.

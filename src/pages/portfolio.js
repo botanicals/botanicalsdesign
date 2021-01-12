@@ -14,7 +14,7 @@ export default () => {
     <PageLayout
       heroImage="portfolios"
       ext="jpg"
-      mainHeading="Portfolios"
+      mainHeading="Portfolio"
       subHeading="Explore our portfolios to see the quality of our work"
       pageHeading="The Botanicals portfolio"
       seo={seo}

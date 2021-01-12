@@ -11,7 +11,7 @@ function Portfolios() {
     <Section sectionHeading="See our Portfolios">
       <Row>
         <Column width={100}>
-          <h3 class="heading heading__h3 heading__h3--green">Indoor</h3>
+          <h3 className="heading heading__h3 heading__h3--green">Indoor</h3>
           <p>
             Indoors we work with a broad palate of tropical plants to bring
             these powerful oxygenators inside to enhance homes and workspaces.
@@ -21,9 +21,7 @@ function Portfolios() {
             fantastic but serves to filter, humidify, and purify the air.
           </p>
 
-          <Button href="/portfolio/interior-portfolio">
-            View Interior Portfolio
-          </Button>
+          <Button href="/portfolio/interior">View Interior Portfolio</Button>
         </Column>
       </Row>
       <Row>
@@ -60,7 +58,7 @@ function Portfolios() {
       </Row>
       <Row>
         <Column width={100}>
-          <h3 class="heading heading__h3 heading__h3--green">Outdoor</h3>
+          <h3 className="heading heading__h3 heading__h3--green">Outdoor</h3>
           <p>
             Outdoors we use container gardening to create focal points to new or
             existing landscapes and patios. We use combinations of annual and
@@ -72,9 +70,7 @@ function Portfolios() {
             customized fire features, and décor items that help pull everything
             together and reveal your own flair.
           </p>
-          <Button href="/portfolio/exterior-portfolio">
-            View Exterior Portfolio
-          </Button>
+          <Button href="/portfolio/exterior">View Exterior Portfolio</Button>
         </Column>
       </Row>
       <Row>

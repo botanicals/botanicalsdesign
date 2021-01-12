@@ -29,6 +29,7 @@ export default ({ data }) => {
             readMore={node.fields.slug}
             date={node.frontmatter.date}
             author={node.frontmatter.author}
+            key={Math.floor(Math.random() * 207)}
           />
         ))}
       </div>

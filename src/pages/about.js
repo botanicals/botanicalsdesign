@@ -31,17 +31,19 @@ export default () => {
               raised working alongside our parents, grandparents, uncles and
               aunts on their family farm in Southern Utah and in the greenhouses
               and floral shop they operated in Northern Utah. There we learned
-              to love the magic of green and growing things. We learned almost
-              from infancy how to nurture them and how to use Mother Nature’s
-              templates as a guide for using them as elements of design. We love
-              bringing the natural world into the work and living spaces of our
-              clients. It is absolutely transformative in a way that cannot only
-              be seen, but can be felt. Simply put, plants make us happier and
-              healthier.
+              to love the magic of green and growing things.
             </p>
-            <h3 class="heading heading__h3 heading__h3--green heading__quote">
+            <h3 className="heading heading__h3 heading__h3--green heading__quote">
               Nature is transcendent
             </h3>
+            <p>
+              We learned almost from infancy how to nurture them and how to use
+              Mother Nature’s templates as a guide for using them as elements of
+              design.We love bringing the natural world into the work and living
+              spaces of our clients. It is absolutely transformative in a way
+              that cannot only be seen, but can be felt. Simply put, plants make
+              us happier and healthier.
+            </p>
           </Column>
           <Column width={50}>
             <Picture
@@ -122,7 +124,7 @@ export default () => {
       <Section sectionHeading="Botanicals is operated by siblings">
         <Row>
           <Column width={33}>
-            <h3 class="heading heading__h3 heading__h3--green">
+            <h3 className="heading heading__h3 heading__h3--green">
               Nicole Hancock
             </h3>
             <Picture
@@ -135,7 +137,7 @@ export default () => {
             />
           </Column>
           <Column width={33}>
-            <h3 class="heading heading__h3 heading__h3--green">
+            <h3 className="heading heading__h3 heading__h3--green">
               Braden Hancock
             </h3>
             <Picture
@@ -218,7 +220,7 @@ export default () => {
               width="560"
               height="315"
               src="https://www.youtube.com/embed/DEPFsLoXXJY"
-              allowfullscreen
+              allowFullScreen
               title="about-botanicals-video"
             ></iframe>
           </Column>

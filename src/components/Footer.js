@@ -99,7 +99,7 @@ function Footer() {
               </a>
             </p>
             <Link
-              href="/contact/sandy"
+              to="/contact/sandy"
               className="navigation__links navigation__links--footer"
             >
               SEND A MESSAGE
@@ -132,7 +132,7 @@ function Footer() {
 
             <li className="navigation__list">
               <Link
-                href="/locations/saint-george"
+                to="/locations/saint-george"
                 className="navigation__links navigation__links--footer"
               >
                 <h4 className="heading heading__h6 heading__h6--green u-hover-link">
@@ -153,7 +153,7 @@ function Footer() {
               </a>
             </p>
             <Link
-              href="/contact/saint-george"
+              to="/contact/saint-george"
               className="navigation__links navigation__links--footer"
             >
               SEND A MESSAGE
@@ -210,13 +210,13 @@ function Footer() {
                 <li>Prospective Clients</li>
               </Link>
               <Link
-                to="/portfolios"
+                to="/portfolio"
                 className="navigation__links navigation__links--footer"
               >
-                <li>Portfolios</li>
+                <li>Portfolio</li>
               </Link>
               <Link
-                href="/locations"
+                to="/locations"
                 className="navigation__links navigation__links--footer"
               >
                 <li>Locations</li>

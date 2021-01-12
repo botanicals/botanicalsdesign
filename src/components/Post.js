@@ -10,7 +10,7 @@ const Post = props => (
         {props.author} | {props.date}
       </p>
       <p>{props.excerpt}</p>
-      <Link className="blog__read-more" href={props.readMore}>
+      <Link className="blog__read-more" to={props.readMore}>
         Read More &#8811;
       </Link>
     </div>

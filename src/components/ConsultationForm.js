@@ -1,69 +1,26 @@
-import React, { useState } from "react"
+import React from "react"
 
 function ConsultationForm() {
-  const [name, setName] = useState()
-  const [phone, setPhone] = useState()
-  const [email, setEmail] = useState()
-  const [subject, setSubject] = useState()
-  const [message, setMessage] = useState()
-
-  function formSubmit(e) {
-    e.preventDefault()
-  }
-
-  function subjectChange(e) {
-    setSubject(e.target.value)
-  }
-
-  function messageChange(e) {
-    setMessage(e.target.value)
-  }
-
-  function nameChange(e) {
-    setName(e.target.value)
-  }
-
-  function phoneChange(e) {
-    setPhone(e.target.value)
-  }
-
-  function emailChange(e) {
-    setEmail(e.target.value)
-  }
-
   return (
-    <form onSubmit={formSubmit} class="retail-contact">
+    <form
+      netlify
+      method="POST"
+      name="consultation_request"
+      class="retail-contact"
+    >
       <fieldset>
         <legend>Return Contact Info</legend>
         <label className="top">
           Name*
-          <input
-            onChange={nameChange}
-            type="text"
-            name="name"
-            value={name}
-            required
-          />
+          <input type="text" name="name" required />
         </label>
         <label className="top">
           Phone*
-          <input
-            onChange={phoneChange}
-            type="tel"
-            name="phone"
-            value={phone}
-            required
-          />
+          <input type="tel" name="phone" required />
         </label>
         <label className="top">
           Email*
-          <input
-            onChange={emailChange}
-            type="email"
-            name="email"
-            value={email}
-            required
-          />
+          <input type="email" name="email" required />
         </label>
       </fieldset>
       <fieldset>
@@ -71,50 +28,46 @@ function ConsultationForm() {
 
         <label className="top">
           Street Address
-          <input
-            onChange={subjectChange}
-            type="text"
-            name="subject"
-            value={subject}
-          />
+          <input type="text" name="address1" />
         </label>
         <label className="top">
           City, State*
-          <input
-            onChange={subjectChange}
-            type="text"
-            name="subject"
-            value={subject}
-            required
-          />
+          <input type="text" name="address2" required />
         </label>
         <label className="top">
           Zipcode
-          <input
-            onChange={subjectChange}
-            type="text"
-            name="subject"
-            value={subject}
-          />
+          <input type="text" name="address3" />
         </label>
 
-        <div>Residential or Commercial</div>
+        <div>I am interested in a design for a:</div>
         <label class="sbs">
-          <input type="radio" name="rescom" value="residential" /> Residential
+          <input type="radio" name="space-type" value="residential" />{" "}
+          Residential Space
         </label>
         <label class="sbs">
-          <input type="radio" name="rescom" value="commercial" /> Commercial
+          <input type="radio" name="space-type" value="commercial" /> Commercial
+          Space
+        </label>
+
+        <div>I am already working with:</div>
+        <label class="sbs">
+          <input type="check" name="working-with" value="architect" /> Architect
+        </label>
+        <label class="sbs">
+          <input type="check" name="working-with" value="interiordesigner" />{" "}
+          Interior Designer
+        </label>
+        <label class="sbs">
+          <input type="check" name="working-with" value="landscaper" />{" "}
+          Landscaper
+        </label>
+        <label class="sbs">
+          <input type="check" name="working-with" value="none" /> None
         </label>
 
         <label className="top">
           Briefly describe your space*
-          <textarea
-            onChange={messageChange}
-            name="message"
-            value={message}
-            required
-            rows="8"
-          />
+          <textarea name="space-description" required rows="8" />
         </label>
 
         <input

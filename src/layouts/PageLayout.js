@@ -1,5 +1,6 @@
 import React from "react"
 //import { Link } from "gastby"
+import "../styles/main.scss"
 
 import Header from "../components/Header"
 import Footer from "../components/Footer"

@@ -1,9 +1,9 @@
 import React from "react"
 
-import PageLayout from "../layouts/PageLayout"
-import Section from "../components/Section"
-import Row from "../components/Row"
-import Column from "../components/Column"
+import PageLayout from "../../layouts/PageLayout"
+import Section from "../../components/Section"
+import Row from "../../components/Row"
+import Column from "../../components/Column"
 
 export default () => {
   const seo = {

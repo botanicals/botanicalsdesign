@@ -92,7 +92,6 @@
     font-size: $font-size-default;
     color: $color-white;
     text-decoration: none;
-
     &:hover {
       color: $color-light-gray;
       text-decoration: none;
@@ -103,6 +102,17 @@
       text-transform: none;
       display: block;
     }
+  }
+}
+
+// styles the links in the footer that are not a part of a list //
+.navigation__links--footer {
+  color: $color-white;
+  padding: 0.25rem 0;
+
+  &:hover {
+    color: $color-light-gray;
+    text-decoration: none;
   }
 }
 
@@ -152,6 +162,9 @@
           padding: 3rem 2.5rem 3rem 1.5rem;
           &:not(:last-child) {
             border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+          }
+          a {
+            display: block;
           }
         }
       }

@@ -30,15 +30,16 @@ function UnsubscribeForm(props) {
 
         <div>I want to recieve emails with</div>
         <label className="sbs">
-          <input type="checkbox" name="shipments" value="shipments" /> Shipment
+          <input type="checkbox" name="shipments" value="yes" /> Shipment
           Notifications
         </label>
         <label className="sbs">
-          <input type="checkbox" name="updates" /> Updates &amp; News
+          <input type="checkbox" name="updates-news" value="yes" /> Updates
+          &amp; News
         </label>
         <label className="sbs">
-          <input type="checkbox" name="updates" /> Unsubscribe from all
-          communications
+          <input type="checkbox" name="unsub-from-all" value="yes" />{" "}
+          Unsubscribe from all communications
         </label>
 
         <input className="submit" type="submit" value="Save Changes" />

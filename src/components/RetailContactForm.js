@@ -33,7 +33,7 @@ function RetailContactForm(props) {
 
         <label className="top">
           Subject*
-          <input type="text" name="subject" required />
+          <input type="text" name="msg-subject" required />
         </label>
         <label className="top">
           Message*

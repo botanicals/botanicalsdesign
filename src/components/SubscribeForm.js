@@ -37,12 +37,12 @@ function SubscribeForm(props) {
 
         <div>I want to recieve emails with</div>
         <label className="sbs">
-          <input type="checkbox" name="shipments" value="shipments" /> Shipment
+          <input type="checkbox" name="shipments" value="yes" /> Shipment
           Notifications
         </label>
         <label className="sbs">
-          <input type="checkbox" name="updates" value="updates" /> Updates &amp;
-          News
+          <input type="checkbox" name="updates-news" value="yes" /> Updates
+          &amp; News
         </label>
 
         <input className="submit" type="submit" value="Sign Me Up" />

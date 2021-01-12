@@ -54,19 +54,16 @@ function ConsultationForm() {
 
         <div>I am already working with:</div>
         <label class="sbs">
-          <input type="checkbox" name="working-with" value="architect" />{" "}
-          Architect
+          <input type="checkbox" name="architect" /> Architect
         </label>
         <label class="sbs">
-          <input type="checkbox" name="working-with" value="interiordesigner" />{" "}
-          Interior Designer
+          <input type="checkbox" name="interior-designer" /> Interior Designer
         </label>
         <label class="sbs">
-          <input type="checkbox" name="working-with" value="landscaper" />{" "}
-          Landscaper
+          <input type="checkbox" name="landscaper" /> Landscaper
         </label>
         <label class="sbs">
-          <input type="checkbox" name="working-with" value="none" /> None
+          <input type="checkbox" name="none" /> None
         </label>
 
         <label className="top">

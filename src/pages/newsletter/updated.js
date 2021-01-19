@@ -9,13 +9,13 @@ import Button from "../../components/Button"
 
 export default () => {
   const seo = {
-    title: "Botanicals Design | Thank you for your subscription",
+    title: "Botanicals Design | Subscription was updated",
   }
   return (
     <PageLayout
-      mainHeading="Thank you"
-      subHeading="You are now subscribed"
-      pageHeading="Your subscription was successful"
+      mainHeading="Updated Successfully"
+      subHeading="Subscription updated"
+      pageHeading="Your subscription was successfully updated"
       heroImage="home"
       ext="jpg"
       seo={seo}
@@ -24,9 +24,8 @@ export default () => {
         <Row>
           <Column width={100}>
             <p>
-              Thank you for subscribing to our emailing list! We are excited to
-              be in communication with you. Please explore our site to learn
-              more about what we do.
+              Thank you for updating your subscription information. Please
+              explore our site to learn more about what we do.
             </p>
             <h3 className="heading heading__h3 heading__h3--green">
               Visit us at our retail locations

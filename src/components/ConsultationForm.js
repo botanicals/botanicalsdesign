@@ -4,7 +4,7 @@ function ConsultationForm() {
   return (
     <form
       method="post"
-      action="/thanks"
+      action="/contact/thanks"
       netlify-honeypot="bot-field"
       data-netlify="true"
       name="consultation_request"

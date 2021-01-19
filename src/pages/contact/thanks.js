@@ -22,7 +22,7 @@ export default () => {
         <Row>
           <Column width={100}>
             <p>
-              We thank you for reaching out and will get back to you promptly.
+              We thank you for reaching out!. We will get back to you shortly.
             </p>
           </Column>
         </Row>

@@ -5,7 +5,7 @@ function UnsubscribeForm(props) {
   return (
     <form
       method="post"
-      action="/newsletter/success"
+      action="/newsletter/updated"
       netlify-honeypot="bot-field"
       data-netlify="true"
       name="unsubscribe"

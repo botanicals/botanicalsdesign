@@ -1,8 +1,4 @@
-/**
- * Configure your Gatsby site with this file.
- *
- * See: https://www.gatsbyjs.com/docs/gatsby-config/
- */
+require("dotenv").config()
 
 module.exports = {
   /* Your site config here */
@@ -19,6 +15,16 @@ module.exports = {
     `gatsby-plugin-sass`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-styled-components`,
+    {
+      resolve: `gatsby-source-cloudinary`,
+      options: {
+        cloudName: process.env.CLOUDINARY_CLOUD_NAME,
+        apiKey: process.env.CLOUDINARY_API_KEY,
+        apiSecret: process.env.CLOUDINARY_API_SECRET,
+        resourceType: `image`,
+        maxResults: 100,
+      },
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {

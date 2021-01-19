@@ -5,7 +5,7 @@ function UnsubscribeForm(props) {
   return (
     <form
       method="post"
-      action="/blog"
+      action="/newsletter/success"
       netlify-honeypot="bot-field"
       data-netlify="true"
       name="unsubscribe"
@@ -23,24 +23,42 @@ function UnsubscribeForm(props) {
         <h3 className="heading heading__h3 heading__h3--red">
           Mailing List Unsubscription
         </h3>
-        <p>Enter your subscribed email below to change your settings.</p>
+
+        <label>
+          *We will <strong>never</strong> share or sell your information.
+          <br />
+          <br />
+          Enter your subscribed email below to change your settings.
+        </label>
         <label className="top">
           Email
           <input type="email" name="email" required />
         </label>
 
-        <div>I want to recieve emails with</div>
+        <div>I want to recieve emails with:</div>
         <label className="sbs">
-          <input type="checkbox" name="shipments" value="yes" /> Shipment
-          Notifications
+          <input
+            type="checkbox"
+            name="shipment-updates-northern-utah"
+            value="yes"
+          />{" "}
+          Shipment Notifications (Northern Utah)
         </label>
         <label className="sbs">
-          <input type="checkbox" name="updates-news" value="yes" /> Updates
+          <input
+            type="checkbox"
+            name="shipment-updates-southern-utah"
+            value="yes"
+          />{" "}
+          Shipment Notifications (Southern Utah)
+        </label>
+        <label className="sbs">
+          <input type="checkbox" name="tips-and-tricks" value="yes" />{" "}
+          Professional Tips &amp; Tricks
+        </label>
+        <label className="sbs">
+          <input type="checkbox" name="updates-and-news" value="yes" /> Updates
           &amp; News
-        </label>
-        <label className="sbs">
-          <input type="checkbox" name="unsub-from-all" value="yes" />{" "}
-          Unsubscribe from all communications
         </label>
 
         <input className="submit" type="submit" value="Save Changes" />

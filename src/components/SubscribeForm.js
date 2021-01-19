@@ -5,7 +5,7 @@ function SubscribeForm(props) {
   return (
     <form
       method="post"
-      action="/blog"
+      action="/newsletter/success"
       netlify-honeypot="bot-field"
       data-netlify="true"
       name="subscribe"
@@ -27,6 +27,9 @@ function SubscribeForm(props) {
         <h3 className="heading heading__h3 heading__h3--red">
           Newsletter Subscription
         </h3>
+        <label>
+          *We will <strong>never</strong> share or sell your information.
+        </label>
         <label className="top">
           Name
           <input type="text" name="name" required />
@@ -36,14 +39,32 @@ function SubscribeForm(props) {
           <input type="email" name="email" required />
         </label>
 
-        <div>I want to recieve emails with</div>
+        <div>I want to recieve emails with:</div>
         <label className="sbs">
-          <input type="checkbox" name="shipments" value="yes" /> Shipment
-          Notifications
+          <input
+            type="checkbox"
+            name="shipment-updates-northern-utah"
+            value="yes"
+            checked
+          />{" "}
+          Shipment Notifications (Northern Utah)
         </label>
         <label className="sbs">
-          <input type="checkbox" name="updates-news" value="yes" /> Updates
-          &amp; News
+          <input
+            type="checkbox"
+            name="shipment-updates-southern-utah"
+            value="yes"
+            checked
+          />{" "}
+          Shipment Notifications (Southern Utah)
+        </label>
+        <label className="sbs">
+          <input type="checkbox" name="tips-and-tricks" value="yes" checked />{" "}
+          Professional Tips &amp; Tricks
+        </label>
+        <label className="sbs">
+          <input type="checkbox" name="updates-and-news" value="yes" checked />{" "}
+          Updates &amp; News
         </label>
 
         <input className="submit" type="submit" value="Sign Me Up" />

@@ -37,26 +37,6 @@ export default ({ data }) => {
       pageHeading="Living interiors"
       seo={seo}
     >
-      <Section sectionHeading="">
-        <Row>
-          <Column width={100}>
-            <div className="carousel-container">
-              <Slider {...sliderSettings}>
-                {data.interiorOverview.edges.map((image, index) => (
-                  <div key={`${index}-io`} className="carousel-image-container">
-                    <img
-                      className="carousel-image"
-                      src={image.node.secure_url}
-                      alt="interior portfolio"
-                    />
-                  </div>
-                ))}
-              </Slider>
-            </div>
-          </Column>
-        </Row>
-      </Section>
-
       <Section sectionHeading="Commercial">
         <Row>
           <Column width={100}>
@@ -163,16 +143,6 @@ export default ({ data }) => {
 
 export const query = graphql`
   query {
-    interiorOverview: allCloudinaryMedia(
-      filter: { public_id: { glob: "interior/overview/*" } }
-    ) {
-      edges {
-        node {
-          secure_url
-        }
-      }
-    }
-
     interiorCommercialOverview: allCloudinaryMedia(
       filter: { public_id: { glob: "interior/commercial/overview/*" } }
     ) {

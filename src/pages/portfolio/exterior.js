@@ -37,25 +37,6 @@ export default ({ data }) => {
       pageHeading="Living exteriors"
       seo={seo}
     >
-      <Section sectionHeading="">
-        <Row>
-          <Column width={100}>
-            <div className="carousel-container">
-              <Slider {...sliderSettings}>
-                {data.exteriorOverview.edges.map((image, index) => (
-                  <div key={`${index}-eo`} className="carousel-image-container">
-                    <img
-                      className="carousel-image"
-                      src={image.node.secure_url}
-                      alt="exterior portfolio"
-                    />
-                  </div>
-                ))}
-              </Slider>
-            </div>
-          </Column>
-        </Row>
-      </Section>
 
       <Section sectionHeading="Commercial">
         <Row>
@@ -65,7 +46,7 @@ export default ({ data }) => {
             </h3>
             <div className="carousel-container">
               <Slider {...sliderSettings}>
-                {data.exteriorCommercialTheRidge.edges.map((image, index) => (
+                {data.exteriorCommercialCrimsonCornerCafe.edges.map((image, index) => (
                   <div
                     key={`${index}-ectr`}
                     className="carousel-image-container"
@@ -114,18 +95,9 @@ export default ({ data }) => {
 
 export const query = graphql`
   query {
-    exteriorOverview: allCloudinaryMedia(
-      filter: { public_id: { glob: "exterior/overview/*" } }
-    ) {
-      edges {
-        node {
-          secure_url
-        }
-      }
-    }
 
-    exteriorCommercialTheRidge: allCloudinaryMedia(
-      filter: { public_id: { glob: "exterior/commercial/the-ridge/*" } }
+    exteriorCommercialCrimsonCornerCafe: allCloudinaryMedia(
+      filter: { public_id: { glob: "exterior/commercial/crimson-corner-cafe/*" } }
     ) {
       edges {
         node {

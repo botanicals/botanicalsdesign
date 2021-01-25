@@ -246,23 +246,25 @@ export default () => {
       <Section sectionHeading="Bring life to your space">
         <Locations />
       </Section>
-      <Section sectionHeading="">
+      <Section sectionHeading="More than just pots&#8230;">
         <Row>
-          <Column width={50}>
-            <h2 className="heading heading__h2">More than just pots&#8230;</h2>
+          <Column width={33}>
             <p>
               We offer more than just pottery and decor at our retail locations.
               We are constantly evolving and growing at our stores. We are
               starting to implement more events, such as plantings, bonsai club
-              meetings, and more. Sign up for our retail locations newsletters
-              to stay updated on what we have going on.
+              meetings, and more.
             </p>
             <h3 className="heading heading__h3 heading__h3--green heading__quote">
               Sign up for our Newsletter to stay updated on our events,
               shipments, and more.
             </h3>
+            <p>
+              Sign up for our retail locations newsletters to stay updated on
+              what we have going on.
+            </p>
           </Column>
-          <Column width={50}>
+          <Column width={66}>
             <SubscribeForm />
           </Column>
         </Row>

@@ -17,7 +17,7 @@ export default () => {
       mainHeading="Thank you"
       subHeading="Update successful"
       pageHeading="Your information was successfully updated"
-      heroImage="home"
+      heroImage="blog"
       ext="jpg"
       seo={seo}
     >

@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "gatsby"
 
 import PageLayout from "../../layouts/PageLayout"
 import Section from "../../components/Section"
@@ -9,14 +10,14 @@ import Button from "../../components/Button"
 
 export default () => {
   const seo = {
-    title: "Botanicals Design | Thank you for your subscription",
+    title: "Botanicals Design | Your subscription has been confirmed",
   }
   return (
     <PageLayout
       mainHeading="Thank you"
-      subHeading="Subscription successful"
-      pageHeading="Please confirm your subscription"
-      heroImage="blog"
+      subHeading="Subscription confirmed"
+      pageHeading="Your subscription was successfully confirmed"
+      heroImage="portfolios"
       ext="jpg"
       seo={seo}
     >
@@ -24,16 +25,16 @@ export default () => {
         <Row>
           <Column width={100}>
             <p>
-              Thank you for subscribing to our emailing list! We are excited to
-              be in communication with you.
+              Thank you for confirming your subscription to our emailing list!
+              We are excited to be in communication with you.
             </p>
             <p>
-              <strong>IMPORTANT: </strong> If this is your first time
-              subscribing, please visit your email to confirm your subscription.
-              You will NOT recieve emails until you have confirmed your
-              subscription via email. If you do not recieve a confirmation
-              email, try checking your spam. The email could have accidentally
-              been sent there by your filters.
+              If at any time you need to update your subscription, please visit
+              our{" "}
+              <Link to="/newsletter/update-preferences">
+                update newsletter preferences
+              </Link>{" "}
+              page and we will get your information changed.
             </p>
             <p>Feel free to explore our site to learn more about what we do.</p>
             <h3 className="heading heading__h3 heading__h3--green">

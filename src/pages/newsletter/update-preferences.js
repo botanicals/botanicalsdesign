@@ -2,12 +2,12 @@ import React from "react"
 
 import "../../styles/main.scss"
 
-import SubscribeForm from "../../components/SubscribeForm"
+import UpdatePreferencesForm from "../../components/UpdatePreferencesForm"
 
 export default () => {
   return (
     <div className="full-page">
-      <SubscribeForm />
+      <UpdatePreferencesForm />
     </div>
   )
 }

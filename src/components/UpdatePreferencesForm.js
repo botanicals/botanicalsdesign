@@ -1,23 +1,25 @@
 import React from "react"
 
-import "../sass/components/_convert-kit.scss"
-
-function SubscribeForm() {
+function UpdatePreferencesForm() {
   return (
     <>
       <script src="https://f.convertkit.com/ckjs/ck.5.js" />
       <form
-        action="https://app.convertkit.com/forms/1665028/subscriptions"
-        className="seva-form formkit-form"
         method="post"
+        action="/newsletter/update-successful"
+        netlify-honeypot="bot-field"
+        data-netlify="true"
+        name="unsubscribe"
+        className="seva-form formkit-form"
         data-sv-form="1665028"
         data-uid="f1b30cf43c"
         data-format="inline"
         data-version="5"
-        data-options='{"settings":{"after_subscribe":{"action":"redirect","success_message":"Success! Now check your email to confirm your subscription.\nVisit us at <a href=\"https://botanicalsdesign.com>botanicalsdesign.com</a>","redirect_url":"https://botanicalsdesign.com/newsletter/success"},"analytics":{"google":null,"facebook":null,"segment":null,"pinterest":null,"sparkloop":null,"googletagmanager":null},"modal":{"trigger":"timer","scroll_percentage":null,"timer":5,"devices":"all","show_once_every":15},"powered_by":{"show":true,"url":"https://convertkit.com?utm_source=dynamic&amp;utm_medium=referral&amp;utm_campaign=poweredby&amp;utm_content=form"},"recaptcha":{"enabled":true},"return_visitor":{"action":"show","custom_content":""},"slide_in":{"display_in":"bottom_right","trigger":"timer","scroll_percentage":null,"timer":5,"devices":"all","show_once_every":15},"sticky_bar":{"display_in":"top","trigger":"timer","scroll_percentage":null,"timer":5,"devices":"all","show_once_every":15}},"version":"5"}'
         min-width="400 500 600 700 800"
         style={{ backgroundColor: "rgb(255, 255, 255)", borderRadius: "6px" }}
       >
+        <input type="hidden" name="bot-field" />
+        <input type="hidden" name="form-name" value="unsubscribe" />
         <div data-style="full" className="remove-padding">
           <div
             data-element="column"
@@ -50,7 +52,11 @@ function SubscribeForm() {
               data-element="subheader"
               style={{ color: "rgb(0, 0, 0)", fontSize: "15px" }}
             >
+              <p>Update Your Mailing List Preferences.</p>
               <p>We will never sell or share your information.</p>
+              <p>
+                Enter your name and subscribed email to choose your settings.
+              </p>
             </div>
             <div
               className="formkit-image formkit-image relative focus:outline-none"
@@ -225,7 +231,7 @@ function SubscribeForm() {
                   <div></div>
                   <div></div>
                 </div>
-                <span className="">SUBSCRIBE</span>
+                <span className="">UPDATE PREFERENCES</span>
               </button>
             </div>
             <div
@@ -258,4 +264,4 @@ function SubscribeForm() {
   )
 }
 
-export default SubscribeForm
+export default UpdatePreferencesForm

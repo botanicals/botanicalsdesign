@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "gatsby"
 
 import PageLayout from "../../layouts/PageLayout"
 import Section from "../../components/Section"
@@ -9,13 +10,13 @@ import Button from "../../components/Button"
 
 export default () => {
   const seo = {
-    title: "Botanicals Design | Subscription was updated",
+    title: "Botanicals Design | Subscription information successfully updated",
   }
   return (
     <PageLayout
-      mainHeading="Updated Successfully"
-      subHeading="Subscription updated"
-      pageHeading="Your subscription was successfully updated"
+      mainHeading="Thank you"
+      subHeading="Update successful"
+      pageHeading="Your information was successfully updated"
       heroImage="home"
       ext="jpg"
       seo={seo}
@@ -24,9 +25,13 @@ export default () => {
         <Row>
           <Column width={100}>
             <p>
-              Thank you for updating your subscription information. Please
-              explore our site to learn more about what we do.
+              Thank you for updating your preferences! We are glad to be able to
+              communicate with you in exactly the way you want. Please give us a
+              short time to get your preferences updated in our system. Feel
+              free to <Link to="/contact/saint-george">email us</Link> anytime
+              with questions or for help.
             </p>
+            <p>Feel free to explore our site to learn more about what we do.</p>
             <h3 className="heading heading__h3 heading__h3--green">
               Visit us at our retail locations
             </h3>

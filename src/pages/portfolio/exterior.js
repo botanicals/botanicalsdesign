@@ -24,8 +24,6 @@ export default ({ data }) => {
     speed: 1500,
     slidesToShow: 1,
     slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 8000,
   }
 
   return (
@@ -37,27 +35,28 @@ export default ({ data }) => {
       pageHeading="Living exteriors"
       seo={seo}
     >
-
       <Section sectionHeading="Commercial">
         <Row>
           <Column width={100}>
             <h3 className="heading heading__h3 heading__h3--red">
-              Featuring The Ridge
+              Featuring Crimson Corner Cafe
             </h3>
             <div className="carousel-container">
               <Slider {...sliderSettings}>
-                {data.exteriorCommercialCrimsonCornerCafe.edges.map((image, index) => (
-                  <div
-                    key={`${index}-ectr`}
-                    className="carousel-image-container"
-                  >
-                    <img
-                      className="carousel-image"
-                      src={image.node.secure_url}
-                      alt="exterior portfolio"
-                    />
-                  </div>
-                ))}
+                {data.exteriorCommercialCrimsonCornerCafe.edges.map(
+                  (image, index) => (
+                    <div
+                      key={`${index}-ectr`}
+                      className="carousel-image-container"
+                    >
+                      <img
+                        className="carousel-image"
+                        src={image.node.secure_url}
+                        alt="exterior portfolio"
+                      />
+                    </div>
+                  )
+                )}
               </Slider>
             </div>
           </Column>
@@ -95,9 +94,10 @@ export default ({ data }) => {
 
 export const query = graphql`
   query {
-
     exteriorCommercialCrimsonCornerCafe: allCloudinaryMedia(
-      filter: { public_id: { glob: "exterior/commercial/crimson-corner-cafe/*" } }
+      filter: {
+        public_id: { glob: "exterior/commercial/crimson-corner-cafe/*" }
+      }
     ) {
       edges {
         node {

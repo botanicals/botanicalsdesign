@@ -24,8 +24,6 @@ export default ({ data }) => {
     speed: 1500,
     slidesToShow: 1,
     slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 8000,
   }
 
   return (

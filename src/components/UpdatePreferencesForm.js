@@ -9,7 +9,7 @@ function UpdatePreferencesForm() {
         action="/newsletter/update-successful"
         netlify-honeypot="bot-field"
         data-netlify="true"
-        name="unsubscribe"
+        name="Update Newsletter Preferences"
         className="seva-form formkit-form"
         data-sv-form="1665028"
         data-uid="f1b30cf43c"
@@ -19,7 +19,11 @@ function UpdatePreferencesForm() {
         style={{ backgroundColor: "rgb(255, 255, 255)", borderRadius: "6px" }}
       >
         <input type="hidden" name="bot-field" />
-        <input type="hidden" name="form-name" value="unsubscribe" />
+        <input
+          type="hidden"
+          name="form-name"
+          value="Update Newsletter Preferences"
+        />
         <div data-style="full" className="remove-padding">
           <div
             data-element="column"
@@ -44,7 +48,7 @@ function UpdatePreferencesForm() {
               }}
             >
               <h1 className="formkit-header__heading">
-                NEWSLETTER SUBSCRIPTION
+                NEWSLETTER SUBSCRIPTION SETTINGS
               </h1>
             </div>
             <div
@@ -55,7 +59,8 @@ function UpdatePreferencesForm() {
               <p>Update Your Mailing List Preferences.</p>
               <p>We will never sell or share your information.</p>
               <p>
-                Enter your name and subscribed email to choose your settings.
+                Enter your subscribed email to choose your notification
+                settings.
               </p>
             </div>
             <div
@@ -78,7 +83,7 @@ function UpdatePreferencesForm() {
               data-group="alert"
             ></ul>
             <div data-element="fields" className="seva-fields formkit-fields">
-              <div className="formkit-field">
+              {/* <div className="formkit-field">
                 <input
                   className="formkit-input"
                   aria-label="Name"
@@ -93,7 +98,7 @@ function UpdatePreferencesForm() {
                     fontweight: "400",
                   }}
                 />
-              </div>
+              </div> */}
               <div className="formkit-field">
                 <input
                   className="formkit-input"
@@ -141,7 +146,7 @@ function UpdatePreferencesForm() {
                         id="tag-20298694-2131965"
                         type="checkbox"
                         name="tags[]"
-                        value="2131965"
+                        value="2131965-shipment-updates-northern-utah"
                       />
                       <label htmlFor="tag-20298694-2131965">
                         Shipment Notifications (Northern Utah)
@@ -163,7 +168,7 @@ function UpdatePreferencesForm() {
                         id="tag-20298694-2131966"
                         type="checkbox"
                         name="tags[]"
-                        value="2131966"
+                        value="2131966-shipment-updates-southern-utah"
                       />
                       <label htmlFor="tag-20298694-2131966">
                         Shipment Notifications (Southern Utah)
@@ -185,7 +190,7 @@ function UpdatePreferencesForm() {
                         id="tag-20298694-2131967"
                         type="checkbox"
                         name="tags[]"
-                        value="2131967"
+                        value="2131967-professional-tips-and-tricks"
                       />
                       <label htmlFor="tag-20298694-2131967">
                         Professional Tips &amp; Tricks
@@ -207,7 +212,7 @@ function UpdatePreferencesForm() {
                         id="tag-20298694-2131968"
                         type="checkbox"
                         name="tags[]"
-                        value="2131968"
+                        value="2131968-updates-news-and-events"
                       />
                       <label htmlFor="tag-20298694-2131968">
                         Updates, Events &amp; News
@@ -218,6 +223,7 @@ function UpdatePreferencesForm() {
               </div>
               <button
                 data-element="submit"
+                type="submit"
                 className="formkit-submit formkit-submit"
                 style={{
                   color: "rgb(255, 255, 255)",

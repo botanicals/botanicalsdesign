@@ -1,12 +1,20 @@
 import React from "react"
+import { Redirect } from "react-router-dom"
 
 function UpdatePreferencesForm() {
+  const onSubmit = e => {
+    //e.preventDefault()
+    console.log("submitted")
+    return <Redirect to="/newsletter/update-preferences" />
+  }
+
   return (
     <>
       <script src="https://f.convertkit.com/ckjs/ck.5.js" />
       <form
         method="post"
         action="/newsletter/update-successful"
+        onSubmit={onSubmit}
         netlify-honeypot="bot-field"
         data-netlify="true"
         name="Update Newsletter Preferences"

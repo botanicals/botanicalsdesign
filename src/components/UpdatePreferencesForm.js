@@ -1,11 +1,11 @@
 import React from "react"
-import { Redirect } from "react-router-dom"
+import { navigate } from "gatsby"
 
 function UpdatePreferencesForm() {
   const onSubmit = e => {
-    //e.preventDefault()
+    e.preventDefault()
     console.log("submitted")
-    return <Redirect to="/newsletter/update-preferences" />
+    navigate("/newsletter/update-successful")
   }
 
   return (

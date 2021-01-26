@@ -1,4 +1,5 @@
 import React from "react"
+import { OutboundLink } from "gatsby-plugin-google-gtag"
 
 import PageLayout from "../../layouts/PageLayout"
 import Section from "../../components/Section"
@@ -109,13 +110,13 @@ export default () => {
             </p>
             <h3 className="heading heading__h3 heading__h3--green heading__quote">
               Sign up for our email list and{" "}
-              <a
+              <OutboundLink
                 href="https://www.facebook.com/BotanicalsSandy/"
                 target="_blank"
                 rel="noreferrer noopener"
               >
                 follow us on Facebook
-              </a>{" "}
+              </OutboundLink>{" "}
               to stay updated on our events, shipments, and more.
             </h3>{" "}
           </Column>

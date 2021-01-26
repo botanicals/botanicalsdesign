@@ -1,4 +1,5 @@
 import React from "react"
+import { OutboundLink } from "gatsby-plugin-google-gtag"
 
 import PageLayout from "../../layouts/PageLayout"
 import Section from "../../components/Section"
@@ -237,32 +238,32 @@ export default () => {
         </Row>
         <div style={{ fontSize: "10px", textTransform: "uppercase" }}>
           Icons made by{" "}
-          <a
+          <OutboundLink
             title="SimpleIcon"
             href="https://www.flaticon.com/authors/simpleicon"
             rel="noopener noreferrer"
             target="_blank"
           >
             SimpleIcon
-          </a>{" "}
+          </OutboundLink>{" "}
           from{" "}
-          <a
+          <OutboundLink
             title="Flaticon"
             href="https://www.flaticon.com/"
             rel="noopener noreferrer"
             target="_blank"
           >
             www.flaticon.com
-          </a>{" "}
+          </OutboundLink>{" "}
           and is licensed by{" "}
-          <a
+          <OutboundLink
             title="Creative Commons BY 3.0"
             href="http://creativecommons.org/licenses/by/3.0/"
             target="_blank"
             rel="noopener noreferrer"
           >
             CC 3.0 BY
-          </a>
+          </OutboundLink>
         </div>
       </Section>
     </PageLayout>

@@ -1,4 +1,5 @@
 import React from "react"
+import { OutboundLink } from "gatsby-plugin-google-gtag"
 
 import "../sass/components/_convert-kit.scss"
 
@@ -240,7 +241,7 @@ function SubscribeForm() {
               <p>We respect your privacy. Unsubscribe at any time.</p>
             </div>
             <div className="formkit-powered-by-convertkit-container">
-              <a
+              <OutboundLink
                 href="https://convertkit.com?utm_source=dynamic&amp;utm_medium=referral&amp;utm_campaign=poweredby&amp;utm_content=form"
                 data-element="powered-by"
                 className="formkit-powered-by-convertkit"
@@ -249,7 +250,7 @@ function SubscribeForm() {
                 rel="noopener noreferrer"
               >
                 Built with ConvertKit
-              </a>
+              </OutboundLink>
             </div>
           </div>
         </div>

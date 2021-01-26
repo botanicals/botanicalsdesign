@@ -1,5 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
+import { OutboundLink } from "gatsby-plugin-google-gtag"
 
 import Row from "../components/Row"
 import Column from "../components/Column"
@@ -52,7 +53,7 @@ function Footer() {
               SEND A MESSAGE
             </Link>
             <br />
-            <a
+            <OutboundLink
               href="https://www.facebook.com/botanicalskaysville/"
               target="_blank"
               rel="noreferrer"
@@ -62,8 +63,8 @@ function Footer() {
                 className="footer__icon"
                 alt="botanicals kaysville facebook"
               />
-            </a>
-            <a
+            </OutboundLink>
+            <OutboundLink
               href="https://www.instagram.com/botanicalsdesign/"
               target="_blank"
               rel="noreferrer"
@@ -74,7 +75,7 @@ function Footer() {
                 className="footer__icon"
                 alt="botanicals design instagram"
               />
-            </a>
+            </OutboundLink>
 
             <li className="navigation__list">
               <Link
@@ -105,7 +106,7 @@ function Footer() {
               SEND A MESSAGE
             </Link>
             <br />
-            <a
+            <OutboundLink
               href="https://www.facebook.com/BotanicalsSandy/"
               target="_blank"
               rel="noreferrer"
@@ -115,8 +116,8 @@ function Footer() {
                 className="footer__icon"
                 alt="botanicals sandy facebook"
               />
-            </a>
-            <a
+            </OutboundLink>
+            <OutboundLink
               href="https://www.instagram.com/botanicalsdesign/"
               target="_blank"
               rel="noreferrer"
@@ -128,7 +129,7 @@ function Footer() {
                 className="footer__icon"
                 alt="botanicals design instagram"
               />
-            </a>
+            </OutboundLink>
 
             <li className="navigation__list">
               <Link
@@ -159,7 +160,7 @@ function Footer() {
               SEND A MESSAGE
             </Link>
             <br />
-            <a
+            <OutboundLink
               href="https://www.facebook.com/botanicalsstgeorge/"
               target="_blank"
               rel="noreferrer"
@@ -169,8 +170,8 @@ function Footer() {
                 className="footer__icon"
                 alt="botanicals saint george facebook"
               />
-            </a>
-            <a
+            </OutboundLink>
+            <OutboundLink
               href="https://www.instagram.com/botanicalsdesign/"
               target="_blank"
               rel="noreferrer"
@@ -181,7 +182,7 @@ function Footer() {
                 className="footer__icon"
                 alt="botanicals design instagram"
               />
-            </a>
+            </OutboundLink>
           </Column>
           <Column width={50}>
             <h3 className="heading heading__h5 heading__h5--green">
@@ -319,14 +320,14 @@ function Footer() {
           <Column centered width={100}>
             <span className="footer__copywrite-span">
               &copy; 2021 BY BOTANICALS
-              {/* <a
+              {/* <OutboundLink
                 href="http://talondurrant.com"
                 target="_blank"
                 className="footer__copywrite-link"
                 rel="noreferrer"
               >
                 TALON DURRANT
-              </a> */}
+              </OutboundLink> */}
             </span>
           </Column>
         </Row>

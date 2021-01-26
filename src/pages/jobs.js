@@ -1,5 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
+import { OutboundLink } from "gatsby-plugin-google-gtag"
 
 import PageLayout from "../layouts/PageLayout"
 import Section from "../components/Section"
@@ -64,13 +65,13 @@ export default () => {
             <p>
               IMPORTANT: Application must include personal character references,
               and a resume or letter of intent to: You may submit{" "}
-              <a
+              <OutboundLink
                 href="https://www.facebook.com/BotanicalsStGeorge/"
                 target="_blank"
                 rel="noreferrer noopener"
               >
                 through Facebook
-              </a>{" "}
+              </OutboundLink>{" "}
               or email to botanicalsdesign@me.com. OR drop one off at our retail
               store located at 592 N. Bluff St. in St. George.
             </p>

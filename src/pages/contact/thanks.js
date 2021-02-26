@@ -11,7 +11,7 @@ export default () => {
   }
   return (
     <PageLayout
-      mainHeading="Thank you"
+      mainHeading="Thank you Dev"
       subHeading=""
       pageHeading=""
       heroImage="home"

@@ -28,14 +28,14 @@ export default () => {
               Thank you for confirming your subscription to our emailing list!
               We are excited to be in communication with you.
             </p>
-            <p>
+            {/* <p>
               If at any time you need to update your subscription, please visit
               our{" "}
               <Link to="/newsletter/update-preferences">
                 update newsletter preferences
               </Link>{" "}
               page and we will get your information changed.
-            </p>
+            </p> */}
             <p>Feel free to explore our site to learn more about what we do.</p>
             <h3 className="heading heading__h3 heading__h3--green">
               Visit us at our retail locations

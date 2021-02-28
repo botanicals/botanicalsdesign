@@ -3,7 +3,16 @@ import { StaticQuery, graphql } from "gatsby"
 import { Helmet } from "react-helmet"
 
 const SEO = props => {
-  const { title, description, keywords, image } = props.config
+  const {
+    title,
+    description,
+    imagePath,
+    ogType,
+    ogTitle,
+    ogDescription,
+    ogImagePath,
+    urlPath,
+  } = props.config
   return (
     <StaticQuery
       query={query}
@@ -12,26 +21,48 @@ const SEO = props => {
           siteMetadata: {
             defaultTitle,
             defaultDescription,
-            defaultImage,
-            url,
-            defaultKeywords,
+            defaultImagePath,
+            baseUrl,
           },
         },
       }) => {
         const seo = {
           title: title || defaultTitle,
           description: description || defaultDescription,
-          image: `${image ? image : url + defaultImage}`,
-          keywords: keywords || defaultKeywords,
+          imagePath: `${
+            imagePath ? baseUrl + imagePath : baseUrl + defaultImagePath
+          }`,
+          ogType: ogType || "website",
+          ogTitle: ogTitle,
+          ogDescription: ogDescription,
+          ogImagePath: ogImagePath,
+          url: urlPath ? baseUrl + urlPath : baseUrl,
         }
         return (
           <Helmet>
-            <title>{seo.title}</title>
-            <meta name="image" content={seo.image} />
-            <meta name="description" content={seo.description} />
-            <meta name="keywords" content={seo.keywords} />
-            <meta name="robots" content="index,follow" />
             <html lang="en"></html>
+            <title>{seo.title}</title>
+            <meta name="description" content={seo.description} />
+
+            {/* Open Graph Protocol -- for Facebook and Google's Rich Snippets */}
+            <meta property="og:type" content={seo.ogType} />
+            <meta property="og:url" content={seo.url} />
+            <meta
+              property="og:title"
+              content={`${seo.ogTitle ? seo.ogTitle : seo.title}`}
+            />
+            <meta
+              property="og:image"
+              content={`${
+                seo.ogImagePath ? url + seo.ogImagePath : url + seo.imagePath
+              }`}
+            />
+            <meta
+              property="og:description"
+              content={`${
+                seo.ogDescription ? seo.ogDescription : seo.ogDescription
+              }`}
+            />
           </Helmet>
         )
       }}
@@ -47,9 +78,8 @@ const query = graphql`
       siteMetadata {
         defaultTitle: title
         defaultDescription: description
-        defaultImage: image
-        url
-        defaultKeywords: keywords
+        defaultImagePath: imagePath
+        baseUrl: baseUrl
       }
     }
   }

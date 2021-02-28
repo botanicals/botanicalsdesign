@@ -29,13 +29,11 @@ const SEO = props => {
         const seo = {
           title: title || defaultTitle,
           description: description || defaultDescription,
-          imagePath: `${
-            imagePath ? baseUrl + imagePath : baseUrl + defaultImagePath
-          }`,
+          imagePath: imagePath || defaultImagePath,
           ogType: ogType || "website",
-          ogTitle: ogTitle,
-          ogDescription: ogDescription,
-          ogImagePath: ogImagePath,
+          ogTitle: ogTitle || this.title,
+          ogDescription: ogDescription || this.description,
+          ogImagePath: ogImagePath || this.imagePath,
           url: urlPath ? baseUrl + urlPath : baseUrl,
         }
         console.log(seo)
@@ -48,24 +46,9 @@ const SEO = props => {
             {/* Open Graph Protocol -- for Facebook and Google's Rich Snippets */}
             <meta property="og:type" content={seo.ogType} />
             <meta property="og:url" content={seo.url} />
-            <meta
-              property="og:title"
-              content={`${seo.ogTitle ? seo.ogTitle : seo.title}`}
-            />
-            <meta
-              property="og:image"
-              content={`${
-                seo.ogImagePath
-                  ? seo.url + seo.ogImagePath
-                  : seo.url + seo.imagePath
-              }`}
-            />
-            <meta
-              property="og:description"
-              content={`${
-                seo.ogDescription ? seo.ogDescription : seo.ogDescription
-              }`}
-            />
+            <meta property="og:title" content={seo.ogTitle} />
+            <meta property="og:image" content={seo.ogImagePath} />
+            <meta property="og:description" content={seo.ogDescription} />
           </Helmet>
         )
       }}

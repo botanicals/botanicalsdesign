@@ -31,9 +31,9 @@ const SEO = props => {
           description: description || defaultDescription,
           imagePath: imagePath || defaultImagePath,
           ogType: ogType || "website",
-          ogTitle: ogTitle || this.title,
-          ogDescription: ogDescription || this.description,
-          ogImagePath: ogImagePath || this.imagePath,
+          ogTitle: ogTitle || title || defaultTitle,
+          ogDescription: ogDescription || description || defaultDescription,
+          ogImagePath: ogImagePath || imagePath || defaultImagePath,
           url: urlPath ? baseUrl + urlPath : baseUrl,
         }
         console.log(seo)

@@ -38,6 +38,7 @@ const SEO = props => {
           ogImagePath: ogImagePath,
           url: urlPath ? baseUrl + urlPath : baseUrl,
         }
+        console.log(seo)
         return (
           <Helmet>
             <html lang="en"></html>
@@ -54,7 +55,9 @@ const SEO = props => {
             <meta
               property="og:image"
               content={`${
-                seo.ogImagePath ? url + seo.ogImagePath : url + seo.imagePath
+                seo.ogImagePath
+                  ? seo.url + seo.ogImagePath
+                  : seo.url + seo.imagePath
               }`}
             />
             <meta

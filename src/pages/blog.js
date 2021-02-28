@@ -10,7 +10,6 @@ const seo = {
 }
 
 export default ({ data }) => {
-  console.log(data)
   return (
     <PageLayout
       heroImage="blog"

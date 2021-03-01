@@ -17,7 +17,7 @@ export default () => {
     description:
       "Botanicals St George retail location offers indoor and outdoor pottery and containers in a large range of sizes, materials, and types, as well as custom built fountains and firepots. We also offer metal art and other decor for your spaces.",
     imagePath: "/heroes/st-george-small-1x.jpg",
-    urlPath: "/locations/st-george",
+    urlPath: "/locations/saint-george",
   }
   return (
     <PageLayout

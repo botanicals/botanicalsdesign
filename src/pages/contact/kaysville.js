@@ -9,7 +9,11 @@ import Picture from "../../components/Picture"
 
 export default () => {
   const seo = {
-    title: "Botanicals Design | Locations > Kaysville > Contact",
+    title: "Kaysville Retail Contact | Botanicals Design",
+    description:
+      "Our trained staff are always happy to answer your questions or assist in any way. Visit us, call, or fill out our kaysville retail contact form today.",
+    imagePath: "/heroes/kaysville-small-1x.jpg",
+    urlPath: "/contact/kaysville",
   }
   return (
     <PageLayout

@@ -10,7 +10,11 @@ import Locations from "../components/Locations"
 
 export default () => {
   const seo = {
-    title: "Botanicals Design | Locations",
+    title: "Our Retail Locations | Botanicals Design",
+    description:
+      "If you are looking to liven up the spaces you spend your time in, BOTANICALS retail locations will provide you with the pottery, containers, metal art, and decor you need to do just that.",
+    imagePath: "/heroes/locations-small-1x.jpg",
+    urlPath: "/locations",
   }
   return (
     <PageLayout

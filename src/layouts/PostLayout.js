@@ -14,7 +14,10 @@ const PostLayout = ({ data }) => {
   const post = data.markdownRemark
 
   const seo = {
-    title: `Botanicals Design | Blog - ${post.frontmatter.title}`,
+    title: `${post.frontmatter.title} | Botanicals Design Blog`,
+    description: post.frontmatter.excerpt,
+    imagePath: "/heroes/blog-small-1x.jpg",
+    urlPath: post.fields.slug,
   }
 
   return (
@@ -58,6 +61,10 @@ export const query = graphql`
         title
         author
         date
+        excerpt
+      }
+      fields {
+        slug
       }
     }
   }

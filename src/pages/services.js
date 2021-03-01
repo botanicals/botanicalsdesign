@@ -10,7 +10,11 @@ import Picture from "../components/Picture"
 
 export default () => {
   const seo = {
-    title: "Botanicals Design | Services",
+    title: "Plantscape Design and Maintenance Services | Botanicals Design",
+    description:
+      "BOTANICALS provides plantscape design and maintenance services. We will work with you to achieve your dealines and relieve your worry by getting your plantscapes designed and installed, and even then stick by you to make sure your custom plantscape is maintained and stays beautiful.",
+    imagePath: "/heroes/services-small-1x.jpg",
+    urlPath: "/services",
   }
 
   return (

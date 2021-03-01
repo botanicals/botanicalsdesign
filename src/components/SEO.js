@@ -40,6 +40,7 @@ const SEO = props => {
         return (
           <Helmet>
             <html lang="en"></html>
+            {urlPath ? <link rel="canonical" href={`${seo.url}/`} /> : null}
             <title>{seo.title}</title>
             <meta name="description" content={seo.description} />
 

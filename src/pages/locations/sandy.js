@@ -12,7 +12,12 @@ import SubscribeForm from "../../components/SubscribeForm"
 
 export default () => {
   const seo = {
-    title: "Botanicals Design | Locations > Sandy",
+    title:
+      "Sandy Retail Location for Pottery, Containers, and Decor | Botanicals Design",
+    description:
+      "Botanicals Sandy retail location offers indoor and outdoor pottery and containers in a large range of sizes, materials, and types, as well as custom built fountains and firepots. We also offer metal art and other decor for your spaces.",
+    imagePath: "/heroes/sandy-small-1x.jpg",
+    urlPath: "/locations/sandy",
   }
   return (
     <PageLayout

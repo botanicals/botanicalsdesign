@@ -10,7 +10,11 @@ import Picture from "../../components/Picture"
 
 export default () => {
   const seo = {
-    title: "Botanicals Design | Services > Maintenance",
+    title: "Plantscape Maintenance Service | Botanicals Design",
+    description:
+      "We can help you continue the life and beauty of your investment into your space with a plantscape maintenance service package. We provide options suitable to your budget, ranging from a full-service full-guarantee plan to a once a month or on-call check in plans for the do-it-yourselfers.",
+    imagePath: "/heros/maintenance-small-1x.jpg",
+    urlPath: "/services/maintenance",
   }
   return (
     <PageLayout

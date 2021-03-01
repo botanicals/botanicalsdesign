@@ -8,7 +8,11 @@ import Portfolios from "../components/Portfolios"
 
 export default () => {
   const seo = {
-    title: "Botanicals Design | Portfolios",
+    title: "Plantscape Design Portfolio | Botanicals Design",
+    description:
+      "From interior to exterior and residential to commercial, see how our plantscapes have transformed spaces into places that live, breathe, and engage. View our plantscape design portfolio to see the quality of our work.",
+    imagePath: "/heroes/portfolios-small-1x.jpg",
+    urlPath: "/portfolio",
   }
   return (
     <PageLayout

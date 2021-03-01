@@ -9,7 +9,11 @@ import RetailContactForm from "../../components/RetailContactForm"
 
 export default () => {
   const seo = {
-    title: "Botanicals Design | Locations > Sandy > Contact",
+    title: "Sandy Retail Contact | Botanicals Design",
+    description:
+      "Our trained staff are always happy to answer your questions or assist in any way. Visit us, call, or fill out our Sandy retail contact form today.",
+    imagePath: "/heroes/sandy-small-1x.jpg",
+    urlPath: "/contact/sandy",
   }
   return (
     <PageLayout

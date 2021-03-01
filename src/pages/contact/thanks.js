@@ -10,6 +10,7 @@ export default () => {
     title: "Thank you for your submission | Botanicals Design",
     description:
       "Thank you for your submission. We will get back to you shortly.",
+    urlPath: "/newsletter/thanks",
   }
   return (
     <PageLayout

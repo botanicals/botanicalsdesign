@@ -13,6 +13,7 @@ export default () => {
     title: "Your subscription has been confirmed | Botanicals Design",
     description:
       "Thank you for confirming your subscription to our emailing list.",
+    urlPath: "/newsletter/confirmed",
   }
   return (
     <PageLayout

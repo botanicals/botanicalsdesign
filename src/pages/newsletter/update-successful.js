@@ -13,6 +13,7 @@ export default () => {
     title: "Subscription information successfully updated | Botanicals Design",
     description:
       "Thank you for updating your subscription preferences. We are happy to be able to communicate with you in exactly the way you want.",
+    urlPath: "/newsletter/update-successful",
   }
   return (
     <PageLayout

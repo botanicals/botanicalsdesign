@@ -7,7 +7,9 @@ import Column from "../../components/Column"
 
 export default () => {
   const seo = {
-    title: "Botanicals Design | Thank you for your submission",
+    title: "Thank you for your submission | Botanicals Design",
+    description:
+      "Thank you for your submission. We will get back to you shortly.",
   }
   return (
     <PageLayout

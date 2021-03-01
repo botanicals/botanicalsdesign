@@ -36,6 +36,7 @@ const SEO = props => {
           ogImagePath: ogImagePath || imagePath || defaultImagePath,
           url: urlPath ? baseUrl + urlPath : baseUrl,
         }
+        console.log(seo)
         return (
           <Helmet>
             <html lang="en"></html>

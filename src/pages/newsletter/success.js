@@ -9,7 +9,9 @@ import Button from "../../components/Button"
 
 export default () => {
   const seo = {
-    title: "Botanicals Design | Thank you for your subscription",
+    title: "Thank you for your subscription | Botanicals Design",
+    description:
+      "Thank you for subscribing to our emailing list. Please confirm your subscription to start recieving emails.",
   }
   return (
     <PageLayout

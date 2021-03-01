@@ -9,7 +9,11 @@ import ConsultationForm from "../components/ConsultationForm"
 
 export default () => {
   const seo = {
-    title: "Botanicals Design | Home",
+    title: "Request a Free Consultation | Botanicals Design",
+    description:
+      "We will work with you through the entire process of getting your plantscapes planned, designed, and installed, relieving you from the worry of hitting your deadline. Request a free consultation today to get started.",
+    imagePath: "/heroes/request-consultation-small-1x.jpg",
+    urlPath: "/request-consultation",
   }
 
   return (

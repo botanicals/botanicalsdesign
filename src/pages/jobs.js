@@ -9,7 +9,11 @@ import Column from "../components/Column"
 
 export default () => {
   const seo = {
-    title: "Botanicals Design | Jobs",
+    title: "Jobs - Join our Team | Botanicals Design",
+    description:
+      "We are seeking self-starters and reliable people to join our team who will help make BOTANICALS great.",
+    imagePath: "/heroes/exterior-portfolio-small-1x.jpg",
+    urlPath: "/jobs",
   }
   return (
     <PageLayout

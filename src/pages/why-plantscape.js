@@ -13,7 +13,11 @@ import Portfolios from "../components/Portfolios"
 
 export default () => {
   const seo = {
-    title: "Botanicals Design | Why Plantscape?",
+    title: "Why Plantscape? | Botanicals Design",
+    description:
+      "When we spend time in plantscaped spaces, we get happier, we get clamer, we feel at peace. Our mission at BOTANICALS is to provide everyone the perfect plantscape, indoor or outdoor. Let us explain why.",
+    imagePath: "/heroes/why-plantscape-small-1x.jpg",
+    urlPath: "/why-plantscape",
   }
 
   /* [TO DO] fix all the image captions and alts (and fix the image under the 'quality of life' heading) */

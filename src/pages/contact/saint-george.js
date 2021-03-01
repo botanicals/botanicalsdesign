@@ -9,7 +9,11 @@ import RetailContactForm from "../../components/RetailContactForm"
 
 export default () => {
   const seo = {
-    title: "Botanicals Design | Locations > Saint George > Contact",
+    title: "Saint George Retail Contact | Botanicals Design",
+    description:
+      "Our trained staff are always happy to answer your questions or assist in any way. Visit us, call, or fill out our Saint George retail contact form today.",
+    imagePath: "/heroes/st-george-small-1x.jpg",
+    urlPath: "/contact/saint-george",
   }
   return (
     <PageLayout

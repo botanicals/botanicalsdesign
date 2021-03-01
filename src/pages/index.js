@@ -14,7 +14,7 @@ import SubscribeForm from "../components/SubscribeForm"
 
 export default () => {
   const seo = {
-    title: "Botanicals Design | Home",
+    title: "Botanicals Design",
   }
 
   return (

@@ -36,11 +36,17 @@ const SEO = props => {
           ogImagePath: ogImagePath || imagePath || defaultImagePath,
           url: urlPath ? baseUrl + urlPath : baseUrl,
         }
-        console.log(seo)
         return (
           <Helmet>
             <html lang="en"></html>
-            {urlPath ? <link rel="canonical" href={`${seo.url}/`} /> : null}
+            {urlPath === "INDEX" ? (
+              <link rel="shortcut icon" href="/favicon.ico" />
+            ) : null}
+            {urlPath && urlPath === "INDEX" ? (
+              <link rel="canonical" href={`${baseUrl}/`} />
+            ) : urlPath ? (
+              <link rel="canonical" href={`${seo.url}/`} />
+            ) : null}
             <title>{seo.title}</title>
             <meta name="description" content={seo.description} />
 

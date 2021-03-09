@@ -6,11 +6,14 @@ import PageLayout from "../layouts/PageLayout"
 import Post from "../components/Post"
 
 const seo = {
-  title: "Botanicals Design | Blog",
+  title: "Blog | Botanicals Design",
+  description:
+    "Explore BOTANICALS blog and sign up for our newsletter for professional tips and tricks, updates and news about us, and other information.",
+  imagePath: "/heroes/blog-small-1x.jpg",
+  urlPath: "/blog",
 }
 
 export default ({ data }) => {
-  console.log(data)
   return (
     <PageLayout
       heroImage="blog"

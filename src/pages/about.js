@@ -11,7 +11,11 @@ import Locations from "../components/Locations"
 
 export default () => {
   const seo = {
-    title: "Botanicals Design | About Us",
+    title: "About Us | Botanicals Design",
+    description:
+      "BOTANICALS is family owned and operated. We were raised working alongside our parents, grandparents, uncles, and aunts and there learned to love the magic of green and growing things.",
+    imagePath: "/heroes/about-small-1x.jpg",
+    urlPath: "/about",
   }
   return (
     <PageLayout

@@ -10,7 +10,11 @@ import Picture from "../components/Picture"
 
 export default () => {
   const seo = {
-    title: "Botanicals Design | Prospective Clients",
+    title: "Prospective Clients | Botanicals Design",
+    description:
+      "We will help design any interior or exterior space, both commercial and residential. BOTANICALS also welcomes landscapers, architects, interior designers, and other design professionals, and will happily work to ensure we can fulfill your needs and help you achieve your goals.",
+    imagePath: "/heroes/prospective-clients-small-1x.jpg",
+    urlPath: "/prospective-clients",
   }
 
   return (

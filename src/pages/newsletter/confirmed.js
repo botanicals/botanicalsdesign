@@ -10,7 +10,10 @@ import Button from "../../components/Button"
 
 export default () => {
   const seo = {
-    title: "Botanicals Design | Your subscription has been confirmed",
+    title: "Your subscription has been confirmed | Botanicals Design",
+    description:
+      "Thank you for confirming your subscription to our emailing list.",
+    urlPath: "/newsletter/confirmed",
   }
   return (
     <PageLayout

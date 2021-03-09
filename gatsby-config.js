@@ -1,19 +1,18 @@
 require("dotenv").config()
 
 module.exports = {
-  /* Your site config here */
   siteMetadata: {
     title: "Botanicals Design",
     description:
       "BOTANICALS offers custom plantscape design and installations, plant maintenance services, and three retail locations selling pottery, containers, and yard decor.",
-    keywords:
-      "botanicals, botanicals design, pottery, ceramic, lawn and garden decor, metal art, yard decor, plant maintenance services, plantscape design",
-    image: "/heros/home-small-1x.jpg",
-    url: "https://localhost:8000",
+    imagePath: "/heroes/home-small-1x.jpg",
+    baseUrl: "https://botanicalsdesign.com",
+    siteUrl: "https://botanicalsdesign.com",
   },
   plugins: [
     `gatsby-plugin-sass`,
     `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-sitemap`,
     `gatsby-plugin-styled-components`,
     {
       resolve: `gatsby-source-cloudinary`,

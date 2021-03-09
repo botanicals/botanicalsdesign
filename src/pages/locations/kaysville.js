@@ -12,7 +12,12 @@ import SubscribeForm from "../../components/SubscribeForm"
 
 export default () => {
   const seo = {
-    title: "Botanicals Design | Locations > Kaysville",
+    title:
+      "Kaysville Retail Location in Partnership with Tri City Nursery | Botanicals Design",
+    description:
+      "Botanicals Kaysville retail location is in partnership with Tri City Nursery to provide you with a wide range of pottery and containers, metal art, and decor, as well as custom built fountains and firepots.",
+    imagePath: "/heroes/kaysville-small-1x.jpg",
+    urlPath: "/locations/kaysville",
   }
   return (
     <PageLayout

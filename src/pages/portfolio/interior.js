@@ -14,7 +14,11 @@ import Column from "../../components/Column"
 
 export default ({ data }) => {
   const seo = {
-    title: "Botanicals Design | Portfolios > Interior",
+    title: "Interior Plantscape Design Portfolio | Botanicals Design",
+    description:
+      "See how our carefully curated interior plantscapes have transformed spaces into places that live, breathe, and engage. View our interior plantscape design portfolio to see the quality of our work and request a consultation to get started with your own.",
+    imagePath: "/heros/interior-portfolio-small-1x.jpg",
+    urlPath: "/portfolio/interior",
   }
 
   const sliderSettings = {
@@ -184,15 +188,3 @@ export const query = graphql`
     }
   }
 `
-
-{
-  /* 
-      import { Image } from "cloudinary-react"
-
-      <Image
-        className="carousel-image"
-        cloudName="botanicals"
-        publicId="samples/animals/kitten-playing.gif"
-      />
-  */
-}

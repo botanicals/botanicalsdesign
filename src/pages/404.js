@@ -7,7 +7,8 @@ import Column from "../components/Column"
 
 export default () => {
   const seo = {
-    title: "Botanicals Design | Oops...",
+    title: "Page Not Found | Botanicals Design",
+    description: "The page you are looking for could not be located.",
   }
   return (
     <PageLayout

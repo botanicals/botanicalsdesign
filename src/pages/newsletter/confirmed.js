@@ -1,5 +1,5 @@
 import React from "react"
-import { Link } from "gatsby"
+// import { Link } from "gatsby"
 
 import PageLayout from "../../layouts/PageLayout"
 import Section from "../../components/Section"

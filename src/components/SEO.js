@@ -36,17 +36,18 @@ const SEO = props => {
           ogImagePath: ogImagePath || imagePath || defaultImagePath,
           url: urlPath ? baseUrl + urlPath : baseUrl,
         }
+        console.log(urlPath === "INDEX")
         return (
           <Helmet>
             <html lang="en"></html>
             {urlPath === "INDEX" ? (
-              <>
-                <link rel="shortcut icon" href="/favicon.ico" />
-                <meta
-                  name="google-site-verification"
-                  content="yNz4rVHM0aIlN_Pr0MCUzVK9_7PS3Bk8RcSdV0ezYIo"
-                />
-              </>
+              <link rel="shortcut icon" href="/favicon.ico" />
+            ) : null}
+            {urlPath === "INDEX" ? (
+              <meta
+                name="google-site-verification"
+                content="yNz4rVHM0aIlN_Pr0MCUzVK9_7PS3Bk8RcSdV0ezYIo"
+              />
             ) : null}
             {urlPath && urlPath === "INDEX" ? (
               <link rel="canonical" href={`${baseUrl}/`} />

@@ -40,7 +40,13 @@ const SEO = props => {
           <Helmet>
             <html lang="en"></html>
             {urlPath === "INDEX" ? (
-              <link rel="shortcut icon" href="/favicon.ico" />
+              <>
+                <link rel="shortcut icon" href="/favicon.ico" />
+                <meta
+                  name="google-site-verification"
+                  content="yNz4rVHM0aIlN_Pr0MCUzVK9_7PS3Bk8RcSdV0ezYIo"
+                />
+              </>
             ) : null}
             {urlPath && urlPath === "INDEX" ? (
               <link rel="canonical" href={`${baseUrl}/`} />

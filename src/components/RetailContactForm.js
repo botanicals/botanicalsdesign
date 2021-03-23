@@ -13,7 +13,11 @@ function RetailContactForm(props) {
       className="retail-contact"
     >
       <input type="hidden" name="bot-field" />
-      <input type="hidden" name="form-name" value={`${location}_contact`} />
+      <input
+        type="hidden"
+        name="form-name"
+        value={`${location} Retail Contact`}
+      />
       <input type="hidden" name="store location" value={location} />
       <fieldset>
         <legend>Sender Info</legend>

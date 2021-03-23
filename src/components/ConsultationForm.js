@@ -11,7 +11,7 @@ function ConsultationForm() {
       className="retail-contact"
     >
       <input type="hidden" name="bot-field" />
-      <input type="hidden" name="form-name" value="consultation_request" />
+      <input type="hidden" name="form-name" value="Request Consultation Form" />
       <fieldset>
         <legend>Return Contact Info</legend>
         <label className="top">

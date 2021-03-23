@@ -17,7 +17,7 @@ export default () => {
   }
   return (
     <PageLayout
-      heroImage="kaysville"
+      heroImage="Kaysville"
       ext="jpg"
       mainHeading="Botanicals Kaysville Contact"
       subHeading="Please fill out the form below with any questions you may have"

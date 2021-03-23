@@ -98,7 +98,7 @@ export default () => {
               and make adjustments to our hours. Our current hours are:
             </p>
 
-            <p>Monday &#8211; Friday 9:00AM &#8211; 5:00PM</p>
+            <p>Monday &#8211; Saturday 8:00AM &#8211; 6:00PM</p>
           </Column>
         </Row>
       </Section>

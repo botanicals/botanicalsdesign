@@ -17,7 +17,7 @@ export default () => {
   }
   return (
     <PageLayout
-      heroImage="Kaysville"
+      heroImage="kaysville"
       ext="jpg"
       mainHeading="Botanicals Kaysville Contact"
       subHeading="Please fill out the form below with any questions you may have"
@@ -38,7 +38,7 @@ export default () => {
             />
           </Column>
           <Column width={50}>
-            <RetailContactForm location="kaysville" />
+            <RetailContactForm location="Kaysville" />
           </Column>
         </Row>
       </Section>

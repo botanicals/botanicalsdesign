@@ -14,6 +14,7 @@ function RetailContactForm(props) {
     >
       <input type="hidden" name="bot-field" />
       <input type="hidden" name="form-name" value={`${location}_contact`} />
+      <input type="hidden" name="store location" value={location} />
       <fieldset>
         <legend>Sender Info</legend>
         <label className="top">
@@ -34,7 +35,7 @@ function RetailContactForm(props) {
 
         <label className="top">
           Subject*
-          <input type="text" name="msg-subject" required />
+          <input type="text" name="subject" required />
         </label>
         <label className="top">
           Message*

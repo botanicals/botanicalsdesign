@@ -12,6 +12,11 @@ function ConsultationForm() {
     >
       <input type="hidden" name="bot-field" />
       <input type="hidden" name="form-name" value="Request Consultation Form" />
+      <input
+        type="hidden"
+        name="subject"
+        value="New Consultation Request from Website"
+      />
       <fieldset>
         <legend>Return Contact Info</legend>
         <label className="top">

@@ -1,8 +1,4 @@
 import React, { useEffect } from "react"
-import { OutboundLink } from "gatsby-plugin-google-gtag"
-
-//import "../sass/components/_convert-kit.scss"
-//import "../sass/components/_aweber.scss"
 
 function SubscribeForm() {
   useEffect(() => {
@@ -17,7 +13,7 @@ function SubscribeForm() {
     })(document, "script", "aweber-wjs-anqda5p2d")
   }, [])
 
-  return <div class="AW-Form-906319308"></div>
+  return <div className="AW-Form-668219434 subscription-form"></div>
 }
 
 export default SubscribeForm

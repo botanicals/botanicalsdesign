@@ -1,4 +1,12 @@
-.formkit-form {
+.subscription-form {
+  margin-top: -4rem;
+  p {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+  }
+}
+
+formkit-form {
   margin: 0 auto 0 auto;
   @media (max-width: 1000px) {
     margin: 0;

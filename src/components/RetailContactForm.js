@@ -6,10 +6,10 @@ function RetailContactForm(props) {
   return (
     <form
       method="post"
-      action="/contact/thanks"
+      action="/contact/thanks/"
       netlify-honeypot="bot-field"
       data-netlify="true"
-      name={`${location}_contact`}
+      name={`${location} Retail Contact`}
       className="retail-contact"
     >
       <input type="hidden" name="bot-field" />

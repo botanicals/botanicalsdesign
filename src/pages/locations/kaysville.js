@@ -66,11 +66,12 @@ export default () => {
         <Row>
           <Column width={50}>
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3009.7609484394766!2d-111.95278308428071!3d41.03048562600614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87530201e0667405%3A0xe7e80dcec7ce65e3!2sTri%20City%20Nursery!5e0!3m2!1sen!2sus!4v1600906958970!5m2!1sen!2sus"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3009.776193650648!2d-111.95259928428062!3d41.030152126026806!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8752ff4aeab7a34d%3A0x8e6b53cc30854ea8!2sBotanicals!5e0!3m2!1sen!2sus!4v1616472731580!5m2!1sen!2sus"
               width="100%"
               height="100%"
               frameBorder="0"
               allowFullScreen=""
+              loading="lazy"
               title="kaysville-map"
             ></iframe>
           </Column>
@@ -98,7 +99,7 @@ export default () => {
               and make adjustments to our hours. Our current hours are:
             </p>
 
-            <p>Monday &#8211; Friday 9:00AM &#8211; 5:00PM</p>
+            <p>Monday &#8211; Saturday 8:00AM &#8211; 6:00PM</p>
           </Column>
         </Row>
       </Section>

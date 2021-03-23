@@ -4,14 +4,19 @@ function ConsultationForm() {
   return (
     <form
       method="post"
-      action="/contact/thanks"
+      action="/contact/thanks/"
       netlify-honeypot="bot-field"
       data-netlify="true"
-      name="consultation_request"
+      name="Request Consultation Form"
       className="retail-contact"
     >
       <input type="hidden" name="bot-field" />
-      <input type="hidden" name="form-name" value="consultation_request" />
+      <input type="hidden" name="form-name" value="Request Consultation Form" />
+      <input
+        type="hidden"
+        name="subject"
+        value="New Consultation Request from Website"
+      />
       <fieldset>
         <legend>Return Contact Info</legend>
         <label className="top">

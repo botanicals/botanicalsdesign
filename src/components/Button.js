@@ -7,6 +7,7 @@ const Button = props => {
       <Link
         className={`button ${props.inverse && "button--inverse"}`}
         to={props.href}
+        {...props}
       >
         {props.children} <strong>&#8811;</strong>
       </Link>

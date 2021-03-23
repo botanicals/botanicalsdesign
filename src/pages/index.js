@@ -249,7 +249,7 @@ export default () => {
       </Section>
       <Section sectionHeading="More than just pots&#8230;">
         <Row>
-          <Column width={33}>
+          <Column width={50}>
             <p>
               We offer more than just pottery and decor at our retail locations.
               We are constantly evolving and growing at our stores. We are
@@ -265,7 +265,7 @@ export default () => {
               what we have going on.
             </p>
           </Column>
-          <Column width={66}>
+          <Column width={50}>
             <SubscribeForm />
           </Column>
         </Row>

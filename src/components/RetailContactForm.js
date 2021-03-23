@@ -6,14 +6,19 @@ function RetailContactForm(props) {
   return (
     <form
       method="post"
-      action="/contact/thanks"
+      action="/contact/thanks/"
       netlify-honeypot="bot-field"
       data-netlify="true"
-      name={`${location}_contact`}
+      name={`${location} Retail Contact`}
       className="retail-contact"
     >
       <input type="hidden" name="bot-field" />
-      <input type="hidden" name="form-name" value={`${location}_contact`} />
+      <input
+        type="hidden"
+        name="form-name"
+        value={`${location} Retail Contact`}
+      />
+      <input type="hidden" name="store location" value={location} />
       <fieldset>
         <legend>Sender Info</legend>
         <label className="top">
@@ -34,7 +39,7 @@ function RetailContactForm(props) {
 
         <label className="top">
           Subject*
-          <input type="text" name="msg-subject" required />
+          <input type="text" name="subject" required />
         </label>
         <label className="top">
           Message*

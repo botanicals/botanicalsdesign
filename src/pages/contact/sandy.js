@@ -38,7 +38,7 @@ export default () => {
             />
           </Column>
           <Column width={50}>
-            <RetailContactForm location="sandy" />
+            <RetailContactForm location="Sandy" />
           </Column>
         </Row>
       </Section>

@@ -20,11 +20,12 @@ export default () => {
 
   return (
     <PageLayout
-      heroImage="home"
+      heroImage="kaysville"
       ext="jpg"
-      mainHeading="Botanicals Design"
-      subHeading="Explore all that we have to offer"
+      mainHeading="Announcing: New Botanicals Garden Center"
+      subHeading="Visit our new Botanicals Garden Center in Kaysville, UT"
       pageHeading="Who we are"
+      link="/locations/kaysville"
       seo={seo}
     >
       <Section sectionHeading="We create beautiful plantscapes">

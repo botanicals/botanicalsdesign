@@ -21,6 +21,7 @@ function PageLayout(props) {
         mainHeading={props.mainHeading}
         subHeading={props.subHeading}
         ext={props.ext}
+        link={props.link}
       />
       <ContentContainer pageHeading={props.pageHeading}>
         {props.children}

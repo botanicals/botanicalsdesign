@@ -24,21 +24,27 @@ export default () => {
       heroImage="kaysville"
       ext="jpg"
       mainHeading="Botanicals Kaysville"
-      subHeading="Our newest destination for garden art and pottery"
+      subHeading="Our newest destination for all your indoor and outdoor gardening needs"
       pageHeading="About us"
       seo={seo}
     >
-      <Section sectionHeading="We sell pottery and yard decor in partnership with Tri City Nursery">
+      <Section sectionHeading="Botanicals launches its first full-scale retail gardening center">
         <Row>
           <Column width={50}>
             <p>
               Botanicals is proud to announce our newest retail location in
-              Kaysville, Utah. Our Kaysville location stands out from the
-              other&#8217;s in that we are partnering with Tri City Nursery to
-              sell a selection of our pottery, planters, and yard décor on their
-              retail lot.
+              Kaysville, Utah. Through a unique partnership with Tri City
+              Nursery, Botanicals will now operate the retail aspect of serving
+              the general public, while Tri City Nursery shifts its focus back
+              toward serving landscapers and contractors.
             </p>
-
+            <p>
+              Botanicals is pleased to focus on serving the needs of home owners
+              in providing top quality trees, shrubs, vegetables, herbs,
+              flowers, and houseplants. We also offer a full range of soils,
+              fertilizers, garden tools, and pest and weed management. We also
+              look forward to adding classes and community outreach programs.
+            </p>
             <p>
               Come visit our newest location to see for yourself and find that
               perfect piece for your outdoor or indoor design.
@@ -55,7 +61,7 @@ export default () => {
               column={50}
               page="kaysville"
               breakpoint="default"
-              imageName="botanicals-kaysville"
+              imageName="botanicals-kaysville-garden-center"
               ext="jpg"
               alt="our retail location in kaysville, utah"
               caption=""

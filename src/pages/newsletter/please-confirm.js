@@ -6,7 +6,7 @@ export default () => {
   return (
     <div
       className="full-page"
-      style={{ padding: "0 10rem", backgroundColor: "#F3F1F1" }}
+      style={{ padding: "4rem 10rem", backgroundColor: "#F3F1F1" }}
     >
       <p>
         Thank you for subscribing to our emailing list! We are excited to be in

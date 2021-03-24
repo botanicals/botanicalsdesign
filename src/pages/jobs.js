@@ -18,7 +18,7 @@ export default () => {
   }
   return (
     <PageLayout
-      heroImage="exterior-portfolio"
+      heroImage="jobs"
       ext="jpg"
       mainHeading="Work with us"
       subHeading="Join the Botanicals family"

@@ -12,10 +12,9 @@ import SubscribeForm from "../../components/SubscribeForm"
 
 export default () => {
   const seo = {
-    title:
-      "Kaysville Retail Location in Partnership with Tri City Nursery | Botanicals Design",
+    title: "Botanicals Garden Center in Kaysville, UT | Botanicals Design",
     description:
-      "Botanicals Kaysville retail location is in partnership with Tri City Nursery to provide you with a wide range of pottery and containers, metal art, and decor, as well as custom built fountains and firepots.",
+      "Botanicals Kaysville is pleased to focus on serving the needs of home owners by providing top quality trees, shrubs, vegetables, herbs, flowers, and houseplants. We also offer a full range of soils, fertilizers, garden tools, and pest and weed management. We look forward to adding classes and community outreach programs in the near future.",
     imagePath: "/heroes/kaysville-small-1x.jpg",
     urlPath: "/locations/kaysville",
   }
@@ -24,21 +23,27 @@ export default () => {
       heroImage="kaysville"
       ext="jpg"
       mainHeading="Botanicals Kaysville"
-      subHeading="Our newest destination for garden art and pottery"
+      subHeading="Our newest destination for all your indoor and outdoor gardening needs"
       pageHeading="About us"
       seo={seo}
     >
-      <Section sectionHeading="We sell pottery and yard decor in partnership with Tri City Nursery">
+      <Section sectionHeading="Botanicals launches its first full-scale retail gardening center">
         <Row>
           <Column width={50}>
             <p>
               Botanicals is proud to announce our newest retail location in
-              Kaysville, Utah. Our Kaysville location stands out from the
-              other&#8217;s in that we are partnering with Tri City Nursery to
-              sell a selection of our pottery, planters, and yard décor on their
-              retail lot.
+              Kaysville, Utah. Through a unique partnership with Tri City
+              Nursery, Botanicals will now operate the retail aspect of serving
+              the general public, while Tri City Nursery shifts its focus back
+              toward serving landscapers and contractors.
             </p>
-
+            <p>
+              Botanicals is pleased to focus on serving the needs of home owners
+              in providing top quality trees, shrubs, vegetables, herbs,
+              flowers, and houseplants. We also offer a full range of soils,
+              fertilizers, garden tools, and pest and weed management. We also
+              look forward to adding classes and community outreach programs.
+            </p>
             <p>
               Come visit our newest location to see for yourself and find that
               perfect piece for your outdoor or indoor design.
@@ -47,6 +52,8 @@ export default () => {
             <h3 className="heading heading__h3 heading__h3--green">
               Questions? Reach out to us.
             </h3>
+
+            <Button tel="tel:8017973188">801.797.3188</Button>
             <Button href="/contact/kaysville">Email us</Button>
           </Column>
 
@@ -54,15 +61,16 @@ export default () => {
             <Picture
               column={50}
               page="kaysville"
-              breakpoint="default"
-              imageName="botanicals-kaysville"
+              breakpoint={1200}
+              imageName="botanicals-kaysville-garden-center"
               ext="jpg"
-              alt="our retail location in kaysville, utah"
+              alt="our garden center in kaysville, utah"
               caption=""
             />
           </Column>
         </Row>
-
+      </Section>
+      <Section sectionHeading="Visit Us in Kaysville Today">
         <Row>
           <Column width={50}>
             <iframe
@@ -76,30 +84,43 @@ export default () => {
             ></iframe>
           </Column>
           <Column width={50}>
-            <h3 className="heading heading__h3 heading__h3--green">
-              Visit us Today
-            </h3>
+            <h3 className="heading heading__h3 heading__h3--green">Address</h3>
 
             <h4 className="heading heading__h4 heading__h4--red">
-              We have our pottery and décor on the lot of Tri City Nursery
+              We are temporarily sharing office space with Tri City Nursery
             </h4>
 
             <p>395 S Deseret Drive</p>
 
             <p>Kaysville, Utah 84037</p>
 
+            <p>
+              We ask for your patience in this time of transition. Tri City
+              Nursery is in the process of building a new office space nearby.
+              We will update you as soon as their move is permanent.
+            </p>
+
             <h3 className="heading heading__h3 heading__h3--green">Hours</h3>
 
             <h4 className="heading heading__h4 heading__h4--red">
-              Hours are subject to change at this time
+              Spring Hours
             </h4>
 
-            <p>
-              We ask for your patience as we set up our new Kaysville location
-              and make adjustments to our hours. Our current hours are:
-            </p>
-
             <p>Monday &#8211; Saturday 8:00AM &#8211; 6:00PM</p>
+          </Column>
+        </Row>
+      </Section>
+
+      <Section sectionHeading="Contractors and Landscape Professionals">
+        <Row>
+          <Column width={100}>
+            <p>
+              While we are focused on serving the needs of homeowners with the
+              garden center, Tri City Nursery is focused on serving you.
+            </p>
+            <Button target="_blank" href="https://tricitynurseryutah.com/">
+              Tri City Nursery
+            </Button>
           </Column>
         </Row>
       </Section>

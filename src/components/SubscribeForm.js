@@ -1,19 +1,15 @@
-import React, { useEffect } from "react"
+import React from "react"
 
 function SubscribeForm() {
-  useEffect(() => {
-    ;(function (d, s, id) {
-      var js,
-        fjs = d.getElementsByTagName(s)[0]
-      if (d.getElementById(id)) return
-      js = d.createElement(s)
-      js.id = id
-      js.src = "//forms.aweber.com/form/34/668219434.js"
-      fjs.parentNode.insertBefore(js, fjs)
-    })(document, "script", "aweber-wjs-anqda5p2d")
-  }, [])
-
-  return <div className="AW-Form-668219434 subscription-form"></div>
+  return (
+    <iframe
+      title="AWeber_Subscription_Form"
+      src="https://forms.aweber.com/form/34/668219434.htm"
+      frameborder="0"
+      width="100%"
+      height="500px"
+    ></iframe>
+  )
 }
 
 export default SubscribeForm

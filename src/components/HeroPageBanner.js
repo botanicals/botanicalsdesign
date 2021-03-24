@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "gatsby"
 
 function HeroPageBanner(props) {
   return (
@@ -56,12 +57,29 @@ function HeroPageBanner(props) {
           />
         )}
         <div>
-          <div className="hero-image-container__page-banner">
-            <div className="page-banner__container">
-              <h1 className="page-banner__main-heading">{props.mainHeading}</h1>
-              <h2 className="page-banner__sub-heading">{props.subHeading}</h2>
+          {props.link ? (
+            <Link to={props.link}>
+              <div className="hero-image-container__page-banner">
+                <div className="page-banner__container">
+                  <h1 className="page-banner__main-heading">
+                    {props.mainHeading}
+                  </h1>
+                  <h2 className="page-banner__sub-heading">
+                    {props.subHeading}
+                  </h2>
+                </div>
+              </div>
+            </Link>
+          ) : (
+            <div className="hero-image-container__page-banner">
+              <div className="page-banner__container">
+                <h1 className="page-banner__main-heading">
+                  {props.mainHeading}
+                </h1>
+                <h2 className="page-banner__sub-heading">{props.subHeading}</h2>
+              </div>
             </div>
-          </div>
+          )}
         </div>
       </div>
     </>

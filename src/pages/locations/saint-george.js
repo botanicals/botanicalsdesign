@@ -42,7 +42,7 @@ export default () => {
             <h3 className="heading heading__h3 heading__h3--green">
               Questions? Reach out to us.
             </h3>
-            <Button href="/contact/saint-george">435.656.2151</Button>
+            <Button tel="tel:4356562151">435.656.2151</Button>
             <Button href="/contact/saint-george">Email us</Button>
           </Column>
 

@@ -68,7 +68,8 @@ export default () => {
             />
           </Column>
         </Row>
-
+      </Section>
+      <Section sectionHeading="Visit Us in Kaysville Today">
         <Row>
           <Column width={50}>
             <iframe
@@ -82,12 +83,10 @@ export default () => {
             ></iframe>
           </Column>
           <Column width={50}>
-            <h3 className="heading heading__h3 heading__h3--green">
-              Visit us Today
-            </h3>
+            <h3 className="heading heading__h3 heading__h3--green">Address</h3>
 
             <h4 className="heading heading__h4 heading__h4--red">
-              We have our pottery and décor on the lot of Tri City Nursery
+              We share retail space with Tri City Nursery
             </h4>
 
             <p>395 S Deseret Drive</p>
@@ -106,6 +105,20 @@ export default () => {
             </p>
 
             <p>Monday &#8211; Saturday 8:00AM &#8211; 6:00PM</p>
+          </Column>
+        </Row>
+      </Section>
+
+      <Section sectionHeading="Contractors and Landscape Professionals">
+        <Row>
+          <Column width={100}>
+            <p>
+              While we are focused on serving the needs of homeowners with the
+              garden center, Tri City Nursery is focused on serving you.
+            </p>
+            <Button target="_blank" href="https://tricitynurseryutah.com/">
+              Tri City Nursery
+            </Button>
           </Column>
         </Row>
       </Section>

@@ -49,27 +49,27 @@ function ConsultationForm() {
         </label>
 
         <div>I am interested in a design for a:</div>
-        <label class="sbs">
+        <label className="sbs">
           <input type="radio" name="space-type" value="residential" />{" "}
           Residential Space
         </label>
-        <label class="sbs">
+        <label className="sbs">
           <input type="radio" name="space-type" value="commercial" /> Commercial
           Space
         </label>
 
         <div>I am already working with:</div>
-        <label class="sbs">
+        <label className="sbs">
           <input type="checkbox" name="architect" value="yes" /> Architect
         </label>
-        <label class="sbs">
+        <label className="sbs">
           <input type="checkbox" name="interior-designer" value="yes" />{" "}
           Interior Designer
         </label>
-        <label class="sbs">
+        <label className="sbs">
           <input type="checkbox" name="landscaper" value="yes" /> Landscaper
         </label>
-        <label class="sbs">
+        <label className="sbs">
           <input type="checkbox" name="none" value="yes" /> None
         </label>
 

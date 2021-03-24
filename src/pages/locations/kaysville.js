@@ -12,10 +12,9 @@ import SubscribeForm from "../../components/SubscribeForm"
 
 export default () => {
   const seo = {
-    title:
-      "Kaysville Retail Location in Partnership with Tri City Nursery | Botanicals Design",
+    title: "Botanicals Garden Center in Kaysville, UT | Botanicals Design",
     description:
-      "Botanicals Kaysville retail location is in partnership with Tri City Nursery to provide you with a wide range of pottery and containers, metal art, and decor, as well as custom built fountains and firepots.",
+      "Botanicals Kaysville is pleased to focus on serving the needs of home owners by providing top quality trees, shrubs, vegetables, herbs, flowers, and houseplants. We also offer a full range of soils, fertilizers, garden tools, and pest and weed management. We look forward to adding classes and community outreach programs in the near future.",
     imagePath: "/heroes/kaysville-small-1x.jpg",
     urlPath: "/locations/kaysville",
   }
@@ -53,6 +52,8 @@ export default () => {
             <h3 className="heading heading__h3 heading__h3--green">
               Questions? Reach out to us.
             </h3>
+
+            <Button tel="tel:8017973188">801.797.3188</Button>
             <Button href="/contact/kaysville">Email us</Button>
           </Column>
 
@@ -60,10 +61,10 @@ export default () => {
             <Picture
               column={50}
               page="kaysville"
-              breakpoint="default"
+              breakpoint={1200}
               imageName="botanicals-kaysville-garden-center"
               ext="jpg"
-              alt="our retail location in kaysville, utah"
+              alt="our garden center in kaysville, utah"
               caption=""
             />
           </Column>
@@ -86,23 +87,24 @@ export default () => {
             <h3 className="heading heading__h3 heading__h3--green">Address</h3>
 
             <h4 className="heading heading__h4 heading__h4--red">
-              We share retail space with Tri City Nursery
+              We are temporarily sharing office space with Tri City Nursery
             </h4>
 
             <p>395 S Deseret Drive</p>
 
             <p>Kaysville, Utah 84037</p>
 
+            <p>
+              We ask for your patience in this time of transition. Tri City
+              Nursery is in the process of building a new office space nearby.
+              We will update you as soon as their move is permanent.
+            </p>
+
             <h3 className="heading heading__h3 heading__h3--green">Hours</h3>
 
             <h4 className="heading heading__h4 heading__h4--red">
-              Hours are subject to change at this time
+              Spring Hours
             </h4>
-
-            <p>
-              We ask for your patience as we set up our new Kaysville location
-              and make adjustments to our hours. Our current hours are:
-            </p>
 
             <p>Monday &#8211; Saturday 8:00AM &#8211; 6:00PM</p>
           </Column>
